@@ -246,8 +246,10 @@ bằng ModelSim. Bộ firmware Icarus 9 kịch bản riêng đã liệt kê ở 
 | `third_party/README.md` | new |
 
 Ngoài bảng source của dự án, thêm checkout upstream `third_party/riscv-tests/`
-nguyên bản và giữ LICENSE. Danh sách từng file/vendor SHA256 nằm trong
-`docs/freeze_phase_files.json`; `.git` và build database không thuộc inventory.
+nguyên bản và giữ LICENSE. Inventory lịch sử từng file/vendor SHA256 được giữ
+cục bộ tại `docs/freeze_phase_files.json`, không đi kèm checkout GitHub;
+`.git` và build database không thuộc inventory. Manifest kiểm tra core hiện tại
+vẫn được cung cấp tại `docs/core_frozen_manifest.json`.
 Các ELF/BIN/MIF/log simulation/timing sinh ra là bằng chứng tái lập, nằm ở
 `firmware/build/verify_*`, `sim/isa`, `sim/firmware`, `sim/modelsim/work`,
 `sim/iverilog/work`, `tmp/freeze_*` và `quartus/output_files`.

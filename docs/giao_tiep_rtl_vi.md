@@ -256,7 +256,8 @@ cần thêm đường dẫn này tương ứng (`+incdir+.../rtl/bus` hoặc `-I
 Nâng cấp P0/P1 ngày 26/09/2026 giữ handshake core/ISA, đổi interface nội bộ
 bus và offset MMIO lên 12 bit; GPIO board là 8 bit, SoC thêm uart_rx_i.
 Mọi nơi instantiate SoC cần nối RX idle=1 nếu không dùng. Xem
-[báo cáo P0/P1](bao_cao_kien_truc_p0_p1_vi.md) để biết thay đổi và kiểm chứng.
+[đặc tả core, bus và ngoại vi](dac_ta_core_bus_ngoai_vi.md) để biết register map;
+kết quả kiểm chứng nằm trong [báo cáo freeze](bao_cao_freeze_isa_soc_vi.md).
 
 ## 5. Giao tiếp nội bộ pipeline
 

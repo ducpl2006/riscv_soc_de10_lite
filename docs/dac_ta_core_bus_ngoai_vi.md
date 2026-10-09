@@ -343,7 +343,7 @@ PowerShell/ModelSim dùng `./scripts/run_tests.ps1 -Scope Base` hoặc `-Scope A
 Script tìm source/testbench đệ quy nên tuân theo cấu trúc thư mục mới.
 Testbench SoC MMIO tự nạp instruction vào ROM mô phỏng; không build firmware
 hoặc cài model. Kết quả kiểm thử và Quartus xem
-[bao_cao_xac_minh_vi.md](bao_cao_xac_minh_vi.md).
+[báo cáo freeze, ISA và firmware](bao_cao_freeze_isa_soc_vi.md).
 
 Tiêu chí: mỗi test kết thúc với PASS, không có fatal/timeout; testbench phải kiểm
 response lỗi, byte-enable, reset và timing; request stalled phải ổn định; trap

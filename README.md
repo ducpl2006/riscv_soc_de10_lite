@@ -17,13 +17,9 @@ gia tốc ở đây được thiết kế cho DE10-Lite.
 > [cấu hình INA228](docs/firmware_ina228_vi.md).
 
 Core được tổ chức thành các tầng xử lý, ba module thanh ghi giữa tầng và hai
-module hàng đợi của IF. Bắt đầu đọc tại [hướng dẫn core](docs/doc_hieu_core_vi.md)
-và [báo cáo tách module](docs/bao_cao_tach_module_core_vi.md).
-[Đợt làm rõ chú thích ngày 2026-09-29](docs/bao_cao_lam_ro_core_20260929_vi.md)
-là bước trước đó, được lưu riêng để đối chiếu lịch sử.
-
-Theo dõi chuẩn hóa RTL và regression tại
-[báo cáo chất lượng 2026-09-28](docs/bao_cao_chat_luong_20260928_vi.md).
+module hàng đợi của IF. Bắt đầu đọc tại [kiến trúc pipeline](docs/kien_truc_rv32i_vi.md)
+và [hướng dẫn đọc RTL](docs/doc_hieu_core_vi.md). [Mục lục tài liệu](docs/README.md)
+dẫn tới thiết kế SoC, đặc tả tích hợp và kết quả kiểm chứng.
 Phần xác minh phần cứng còn chờ theo
 [biên bản kiểm chứng board](docs/kiem_chung_board_vi.md).
 
@@ -116,17 +112,14 @@ Kiểm tra core frozen, ISA và firmware:
 
 ```bash
 python3 scripts/check_core_freeze.py
-python3 scripts/check_core_module_equivalence.py --label kiem_tra_lai
 python3 scripts/run_isa.py
 python3 scripts/run_firmware_tests.py
 ```
 
-Bộ đối chiếu module chạy bản hiện tại và bản lưu trước tách với cùng đầu vào,
-so sánh đầu ra sau hai cạnh clock. Mỗi lần chạy dùng một nhãn mới để giữ log.
-Đây là kiểm thử vi sai, không phải chứng minh tương đương hình thức.
-Kiểm toán riêng đợt chỉ sửa chú thích dùng
-`python3 scripts/check_core_readability.py --source-archive docs/core_module_baseline_20260929.zip`;
-lệnh này kiểm tra bản lưu, không kiểm tra cấu trúc module hiện tại.
+Các công cụ đối chiếu lịch sử `check_core_module_equivalence.py` và
+`check_core_readability.py` cần bản sao lưu ZIP tương ứng, được giữ cục bộ và
+không đi kèm checkout GitHub. Kiểm tra baseline hiện tại dùng
+`check_core_freeze.py`; các lệnh ISA và regression ở trên không cần ZIP lịch sử.
 
 Build firmware board riêng để review; chỉ train lại khi chủ động đổi mô hình:
 
@@ -177,7 +170,6 @@ lớp board. Chế độ này hiện nằm trong script ModelSim PowerShell; scr
 vẫn chạy bộ test mặc định. Test mới kiểm tra timeout, phục hồi bus, UART RX/overrun/framing/baud mismatch,
 POR, forwarding qua registered bus và lỗi MMIO truyền về trap CPU.
 Kết quả mới nhất xem [báo cáo freeze/ISA/firmware](docs/bao_cao_freeze_isa_soc_vi.md).
-[Báo cáo P0/P1](docs/bao_cao_kien_truc_p0_p1_vi.md) lưu baseline trước phase này.
 
 ## Quartus và NativeLink
 
@@ -216,22 +208,13 @@ firmware INA228 mới vào ROM board. Chi tiết trong
 
 ## Tài liệu
 
-- [Kịch bản đi dây và chạy INA228 → ESP32-C3 (Arduino) → DE10-Lite → PuTTY](docs/kich_ban_ket_noi_esp32c3_ina228_de10_lite_vi.md): pin JP1, nguồn/GND, kiểm tra từng đoạn và trạng thái firmware nhận UART.
+Xem [mục lục trong `docs`](docs/README.md) để chọn tài liệu theo chủ đề.
 
-- [Báo cáo kiến trúc P0/P1: thay đổi, kiểm thử và timing trước/sau](docs/bao_cao_kien_truc_p0_p1_vi.md).
-
-- [Ý tưởng học từ SoC_CNN_Driver và phần đã áp dụng](docs/hoc_hoi_soc_cnn_driver_vi.md).
-
-- [docs/giao_tiep_rtl_vi.md](docs/giao_tiep_rtl_vi.md): bảng cổng, handshake,
-  reset, lỗi, credit FIFO, trace và hướng dẫn chuyển giao tiếp phiên bản 2.0.
-- [docs/dac_ta_core_bus_ngoai_vi.md](docs/dac_ta_core_bus_ngoai_vi.md): cấu trúc
-  pipeline 5 tầng, contract bus, register map, timing và giới hạn baseline.
-- `docs/kien_truc_rv32i_vi.md`: tư duy pipeline, hazard, bus và precise trap.
-- `docs/module_va_testbench_vi.md`: contract và cách kiểm thử từng module.
-- `docs/isa_scope_vi.md`: ma trận instruction RV32I và phạm vi ISA.
-- `docs/soc_qnn_de10_lite_vi.md`: SoC, QNN, firmware, khác biệt với bài báo và
-  quy trình đưa model thật lên kit.
-- `docs/bao_cao_xac_minh_vi.md`: ma trận test, tài nguyên, timing và NativeLink.
+- [Kiến trúc RV32I](docs/kien_truc_rv32i_vi.md): pipeline, forwarding, hazard và precise trap.
+- [SoC và QNN](docs/soc_qnn_de10_lite_vi.md): luồng dữ liệu, accelerator và triển khai model.
+- [Kiểm chứng ISA](docs/isa_verification_vi.md): coverage, kết quả và lệnh tái lập.
+- [Timing FPGA](docs/timing_review_freeze_vi.md): critical path và setup/hold/recovery/removal.
+- [Kiểm chứng board](docs/kiem_chung_board_vi.md): cấu hình đo, trình tự và tiêu chí đạt.
 
 ## Quy ước mã nguồn
 

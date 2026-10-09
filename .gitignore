@@ -9,3 +9,13 @@ firmware/build/*.elf
 firmware/build/*.bin
 firmware/build/*.map
 firmware/build/*.disasm
+
+# Local historical reports, inventories and backup archives
+/docs/bao_cao_chat_luong_20260928_vi.md
+/docs/bao_cao_kien_truc_p0_p1_vi.md
+/docs/bao_cao_lam_ro_core_20260929_vi.md
+/docs/bao_cao_tach_module_core_vi.md
+/docs/hoc_hoi_soc_cnn_driver_vi.md
+/docs/bao_cao_xac_minh_vi.md
+/docs/freeze_phase_files.json
+/docs/*.zip
