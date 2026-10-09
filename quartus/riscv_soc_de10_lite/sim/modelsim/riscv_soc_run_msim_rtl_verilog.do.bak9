@@ -1,0 +1,37 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_branch_unit.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_hazard_unit.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_lsu.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_regfile.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory {C:/FPGA/riscv_soc_de10_lite/rtl/memory/intel_sync_rom_1p.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory {C:/FPGA/riscv_soc_de10_lite/rtl/memory/intel_sync_rom_2p.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory {C:/FPGA/riscv_soc_de10_lite/rtl/memory/intel_sync_ram_1p.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory {C:/FPGA/riscv_soc_de10_lite/rtl/memory/soc_rom_dp.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory {C:/FPGA/riscv_soc_de10_lite/rtl/memory/soc_ram.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals {C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_gpio.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals {C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_uart_tx.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals {C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_i2c_master.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals {C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_timer.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/accelerator {C:/FPGA/riscv_soc_de10_lite/rtl/accelerator/qnn_soc_accelerator.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/soc {C:/FPGA/riscv_soc_de10_lite/rtl/soc/rv32_soc.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_alu.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_decoder.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_imm_gen.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_core.v}
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/board {C:/FPGA/riscv_soc_de10_lite/rtl/board/de10_lite_top.v}
+
+vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/quartus/../tb/soc {C:/FPGA/riscv_soc_de10_lite/quartus/../tb/soc/tb_rv32_soc.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_rv32_soc
+
+#add wave *
+#view structure
+#view signals
+run -all
+quit -f

@@ -1,0 +1,1 @@
+/usr/lib/gcc/riscv64-unknown-elf/14.2.0/../../../riscv64-unknown-elf/bin/ld: warning: /mnt/c/FPGA/riscv_soc_de10_lite/sim/isa/sw.elf has a LOAD segment with RWX permissions

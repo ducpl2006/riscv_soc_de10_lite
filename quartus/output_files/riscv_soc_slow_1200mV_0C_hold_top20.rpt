@@ -1,0 +1,1757 @@
+----------------
+; Command Info ;
+----------------
+Report Timing: Found 20 hold paths (0 violated).  Worst case slack is 0.247 
+
+Tcl Command:
+    report_timing -hold -file output_files/riscv_soc_slow_1200mV_0C_hold_top20.rpt -nworst 1 -npaths 20 -detail full_path
+
+Options:
+    -hold 
+    -nworst 1 
+    -npaths 20 
+    -detail full_path 
+    -file {output_files/riscv_soc_slow_1200mV_0C_hold_top20.rpt} 
+
+Delay Model:
+    Slow 1200mV 0C Model
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Summary of Paths                                                                                                                                                                                                                                                                                ;
++-------+-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                                       ; To Node                                                                                                                                         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.247 ; rv32_soc:u_soc|soc_bus:u_bus|slave_wdata_o[26]                  ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a26~porta_datain_reg0 ; clk_50       ; clk_50      ; 0.000        ; 0.511      ; 0.907      ;
+; 0.255 ; rv32_soc:u_soc|soc_bus:u_bus|slave_wstrb_o[0]                   ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a2~porta_bytena_reg0  ; clk_50       ; clk_50      ; 0.000        ; 0.510      ; 0.914      ;
+; 0.278 ; rv32_soc:u_soc|soc_bus:u_bus|slave_wstrb_o[3]                   ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a26~porta_bytena_reg0 ; clk_50       ; clk_50      ; 0.000        ; 0.511      ; 0.938      ;
+; 0.284 ; rv32_soc:u_soc|soc_bus:u_bus|slave_wstrb_o[2]                   ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a18~porta_bytena_reg0 ; clk_50       ; clk_50      ; 0.000        ; 0.518      ; 0.951      ;
+; 0.306 ; reset_controller:u_reset|count_q[0]                             ; reset_controller:u_reset|count_q[0]                                                                                                             ; clk_50       ; clk_50      ; 0.000        ; 0.066      ; 0.532      ;
+; 0.307 ; rv32_soc:u_soc|soc_rom_dp:u_rom|d_pending_q                     ; rv32_soc:u_soc|soc_rom_dp:u_rom|d_pending_q                                                                                                     ; clk_50       ; clk_50      ; 0.000        ; 0.065      ; 0.532      ;
+; 0.307 ; rv32_soc:u_soc|soc_i2c_master:u_i2c|done_q                      ; rv32_soc:u_soc|soc_i2c_master:u_i2c|done_q                                                                                                      ; clk_50       ; clk_50      ; 0.000        ; 0.065      ; 0.532      ;
+; 0.307 ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[2]              ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[2]                                                                                              ; clk_50       ; clk_50      ; 0.000        ; 0.065      ; 0.532      ;
+; 0.307 ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[0]              ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[0]                                                                                              ; clk_50       ; clk_50      ; 0.000        ; 0.065      ; 0.532      ;
+; 0.307 ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[1]              ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[1]                                                                                              ; clk_50       ; clk_50      ; 0.000        ; 0.065      ; 0.532      ;
+; 0.307 ; rv32_soc:u_soc|soc_i2c_master:u_i2c|recovering_q                ; rv32_soc:u_soc|soc_i2c_master:u_i2c|recovering_q                                                                                                ; clk_50       ; clk_50      ; 0.000        ; 0.065      ; 0.532      ;
+; 0.307 ; rv32_soc:u_soc|soc_i2c_master:u_i2c|state_q.ST_IDLE             ; rv32_soc:u_soc|soc_i2c_master:u_i2c|state_q.ST_IDLE                                                                                             ; clk_50       ; clk_50      ; 0.000        ; 0.065      ; 0.532      ;
+; 0.307 ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[2]            ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[2]                                                                                            ; clk_50       ; clk_50      ; 0.000        ; 0.065      ; 0.532      ;
+; 0.307 ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|state_q.DATA        ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|state_q.DATA                                                                                        ; clk_50       ; clk_50      ; 0.000        ; 0.065      ; 0.532      ;
+; 0.307 ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[1]            ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[1]                                                                                            ; clk_50       ; clk_50      ; 0.000        ; 0.065      ; 0.532      ;
+; 0.307 ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[0]            ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[0]                                                                                            ; clk_50       ; clk_50      ; 0.000        ; 0.065      ; 0.532      ;
+; 0.307 ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[1] ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[1]                                                                                 ; clk_50       ; clk_50      ; 0.000        ; 0.065      ; 0.532      ;
+; 0.307 ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[2] ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[2]                                                                                 ; clk_50       ; clk_50      ; 0.000        ; 0.065      ; 0.532      ;
+; 0.307 ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[3] ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[3]                                                                                 ; clk_50       ; clk_50      ; 0.000        ; 0.065      ; 0.532      ;
+; 0.307 ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|shift_q[1]          ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|shift_q[1]                                                                                          ; clk_50       ; clk_50      ; 0.000        ; 0.065      ; 0.532      ;
++-------+-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+Path #1: Hold slack is 0.247 
+===============================================================================
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Path Summary                                                                                                                                                         ;
++--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Property           ; Value                                                                                                                                           ;
++--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_bus:u_bus|slave_wdata_o[26]                                                                                                  ;
+; To Node            ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a26~porta_datain_reg0 ;
+; Launch Clock       ; clk_50                                                                                                                                          ;
+; Latch Clock        ; clk_50                                                                                                                                          ;
+; Data Arrival Time  ; 4.174                                                                                                                                           ;
+; Data Required Time ; 3.927                                                                                                                                           ;
+; Slack              ; 0.247                                                                                                                                           ;
++--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.511 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.907 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 0     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.064       ; 63         ; 0.000 ; 1.294 ;
+;    Cell                ;       ; 3     ; 1.203       ; 37         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 1     ; 0.669       ; 74         ; 0.669 ; 0.669 ;
+;    Cell                ;       ; 2     ; 0.047       ; 5          ; 0.000 ; 0.047 ;
+;    uTco                ;       ; 1     ; 0.191       ; 21         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.156       ; 56         ; 0.000 ; 1.354 ;
+;    Cell                ;       ; 3     ; 1.678       ; 44         ; 0.000 ; 0.913 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                                                                                                            ;
++---------+---------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location          ; Element                                                                                                                                         ;
++---------+---------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                   ; launch edge time                                                                                                                                ;
+; 3.267   ; 3.267   ;    ;      ;        ;                   ; clock path                                                                                                                                      ;
+;   0.000 ;   0.000 ;    ;      ;        ;                   ; source latency                                                                                                                                  ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                                                                                                                   ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                                                                                                           ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                                                                                                           ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                                                                                                             ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                                                                                                               ;
+;   2.829 ;   1.294 ; RR ; IC   ; 1      ; FF_X54_Y18_N23    ; u_soc|u_bus|slave_wdata_o[26]|clk                                                                                                               ;
+;   3.267 ;   0.438 ; RR ; CELL ; 1      ; FF_X54_Y18_N23    ; rv32_soc:u_soc|soc_bus:u_bus|slave_wdata_o[26]                                                                                                  ;
+; 4.174   ; 0.907   ;    ;      ;        ;                   ; data path                                                                                                                                       ;
+;   3.458 ;   0.191 ;    ; uTco ; 1      ; FF_X54_Y18_N23    ; rv32_soc:u_soc|soc_bus:u_bus|slave_wdata_o[26]                                                                                                  ;
+;   3.458 ;   0.000 ; FF ; CELL ; 2      ; FF_X54_Y18_N23    ; u_soc|u_bus|slave_wdata_o[26]|q                                                                                                                 ;
+;   4.127 ;   0.669 ; FF ; IC   ; 1      ; M9K_X53_Y18_N0    ; u_soc|u_ram|u_storage|u_altsyncram|auto_generated|ram_block1a26|portadatain[0]                                                                  ;
+;   4.174 ;   0.047 ; FF ; CELL ; 0      ; M9K_X53_Y18_N0    ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a26~porta_datain_reg0 ;
++---------+---------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                                                                                                                            ;
++---------+----------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                                                                                                                         ;
++---------+----------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                                                                                                                 ;
+; 3.778   ; 3.778    ;    ;      ;        ;                   ; clock path                                                                                                                                      ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                                                                                                                  ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                                                                                                                   ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                                                                                                           ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                                                                                                           ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                                                                                                             ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                                                                                                               ;
+;   2.921 ;   1.354  ; RR ; IC   ; 5      ; M9K_X53_Y18_N0    ; u_soc|u_ram|u_storage|u_altsyncram|auto_generated|ram_block1a26|clk0                                                                            ;
+;   3.834 ;   0.913  ; RR ; CELL ; 0      ; M9K_X53_Y18_N0    ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a26~porta_datain_reg0 ;
+;   3.778 ;   -0.056 ;    ;      ;        ;                   ; clock pessimism removed                                                                                                                         ;
+; 3.778   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                                                                                                               ;
+; 3.927   ; 0.149    ;    ; uTh  ; 0      ; M9K_X53_Y18_N0    ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a26~porta_datain_reg0 ;
++---------+----------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+Path #2: Hold slack is 0.255 
+===============================================================================
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Path Summary                                                                                                                                                        ;
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Property           ; Value                                                                                                                                          ;
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_bus:u_bus|slave_wstrb_o[0]                                                                                                  ;
+; To Node            ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a2~porta_bytena_reg0 ;
+; Launch Clock       ; clk_50                                                                                                                                         ;
+; Latch Clock        ; clk_50                                                                                                                                         ;
+; Data Arrival Time  ; 4.181                                                                                                                                          ;
+; Data Required Time ; 3.926                                                                                                                                          ;
+; Slack              ; 0.255                                                                                                                                          ;
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.510 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.914 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 0     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.064       ; 63         ; 0.000 ; 1.294 ;
+;    Cell                ;       ; 3     ; 1.203       ; 37         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 1     ; 0.673       ; 74         ; 0.673 ; 0.673 ;
+;    Cell                ;       ; 2     ; 0.050       ; 5          ; 0.000 ; 0.050 ;
+;    uTco                ;       ; 1     ; 0.191       ; 21         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.155       ; 56         ; 0.000 ; 1.353 ;
+;    Cell                ;       ; 3     ; 1.678       ; 44         ; 0.000 ; 0.913 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                                                                                                           ;
++---------+---------+----+------+--------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location          ; Element                                                                                                                                        ;
++---------+---------+----+------+--------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                   ; launch edge time                                                                                                                               ;
+; 3.267   ; 3.267   ;    ;      ;        ;                   ; clock path                                                                                                                                     ;
+;   0.000 ;   0.000 ;    ;      ;        ;                   ; source latency                                                                                                                                 ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                                                                                                                  ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                                                                                                          ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                                                                                                          ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                                                                                                            ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                                                                                                              ;
+;   2.829 ;   1.294 ; RR ; IC   ; 1      ; FF_X54_Y18_N25    ; u_soc|u_bus|slave_wstrb_o[0]|clk                                                                                                               ;
+;   3.267 ;   0.438 ; RR ; CELL ; 1      ; FF_X54_Y18_N25    ; rv32_soc:u_soc|soc_bus:u_bus|slave_wstrb_o[0]                                                                                                  ;
+; 4.181   ; 0.914   ;    ;      ;        ;                   ; data path                                                                                                                                      ;
+;   3.458 ;   0.191 ;    ; uTco ; 1      ; FF_X54_Y18_N25    ; rv32_soc:u_soc|soc_bus:u_bus|slave_wstrb_o[0]                                                                                                  ;
+;   3.458 ;   0.000 ; RR ; CELL ; 7      ; FF_X54_Y18_N25    ; u_soc|u_bus|slave_wstrb_o[0]|q                                                                                                                 ;
+;   4.131 ;   0.673 ; RR ; IC   ; 1      ; M9K_X53_Y17_N0    ; u_soc|u_ram|u_storage|u_altsyncram|auto_generated|ram_block1a2|portabyteenamasks[0]                                                            ;
+;   4.181 ;   0.050 ; RR ; CELL ; 0      ; M9K_X53_Y17_N0    ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a2~porta_bytena_reg0 ;
++---------+---------+----+------+--------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                                                                                                                           ;
++---------+----------+----+------+--------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                                                                                                                        ;
++---------+----------+----+------+--------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                                                                                                                ;
+; 3.777   ; 3.777    ;    ;      ;        ;                   ; clock path                                                                                                                                     ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                                                                                                                 ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                                                                                                                  ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                                                                                                          ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                                                                                                          ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                                                                                                            ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                                                                                                              ;
+;   2.920 ;   1.353  ; RR ; IC   ; 5      ; M9K_X53_Y17_N0    ; u_soc|u_ram|u_storage|u_altsyncram|auto_generated|ram_block1a2|clk0                                                                            ;
+;   3.833 ;   0.913  ; RR ; CELL ; 0      ; M9K_X53_Y17_N0    ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a2~porta_bytena_reg0 ;
+;   3.777 ;   -0.056 ;    ;      ;        ;                   ; clock pessimism removed                                                                                                                        ;
+; 3.777   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                                                                                                              ;
+; 3.926   ; 0.149    ;    ; uTh  ; 0      ; M9K_X53_Y17_N0    ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a2~porta_bytena_reg0 ;
++---------+----------+----+------+--------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+Path #3: Hold slack is 0.278 
+===============================================================================
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Path Summary                                                                                                                                                         ;
++--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Property           ; Value                                                                                                                                           ;
++--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_bus:u_bus|slave_wstrb_o[3]                                                                                                   ;
+; To Node            ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a26~porta_bytena_reg0 ;
+; Launch Clock       ; clk_50                                                                                                                                          ;
+; Latch Clock        ; clk_50                                                                                                                                          ;
+; Data Arrival Time  ; 4.205                                                                                                                                           ;
+; Data Required Time ; 3.927                                                                                                                                           ;
+; Slack              ; 0.278                                                                                                                                           ;
++--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.511 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.938 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 0     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.064       ; 63         ; 0.000 ; 1.294 ;
+;    Cell                ;       ; 3     ; 1.203       ; 37         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 1     ; 0.697       ; 74         ; 0.697 ; 0.697 ;
+;    Cell                ;       ; 2     ; 0.050       ; 5          ; 0.000 ; 0.050 ;
+;    uTco                ;       ; 1     ; 0.191       ; 20         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.156       ; 56         ; 0.000 ; 1.354 ;
+;    Cell                ;       ; 3     ; 1.678       ; 44         ; 0.000 ; 0.913 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                                                                                                            ;
++---------+---------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location          ; Element                                                                                                                                         ;
++---------+---------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                   ; launch edge time                                                                                                                                ;
+; 3.267   ; 3.267   ;    ;      ;        ;                   ; clock path                                                                                                                                      ;
+;   0.000 ;   0.000 ;    ;      ;        ;                   ; source latency                                                                                                                                  ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                                                                                                                   ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                                                                                                           ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                                                                                                           ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                                                                                                             ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                                                                                                               ;
+;   2.829 ;   1.294 ; RR ; IC   ; 1      ; FF_X54_Y18_N31    ; u_soc|u_bus|slave_wstrb_o[3]|clk                                                                                                                ;
+;   3.267 ;   0.438 ; RR ; CELL ; 1      ; FF_X54_Y18_N31    ; rv32_soc:u_soc|soc_bus:u_bus|slave_wstrb_o[3]                                                                                                   ;
+; 4.205   ; 0.938   ;    ;      ;        ;                   ; data path                                                                                                                                       ;
+;   3.458 ;   0.191 ;    ; uTco ; 1      ; FF_X54_Y18_N31    ; rv32_soc:u_soc|soc_bus:u_bus|slave_wstrb_o[3]                                                                                                   ;
+;   3.458 ;   0.000 ; RR ; CELL ; 4      ; FF_X54_Y18_N31    ; u_soc|u_bus|slave_wstrb_o[3]|q                                                                                                                  ;
+;   4.155 ;   0.697 ; RR ; IC   ; 1      ; M9K_X53_Y18_N0    ; u_soc|u_ram|u_storage|u_altsyncram|auto_generated|ram_block1a26|portabyteenamasks[0]                                                            ;
+;   4.205 ;   0.050 ; RR ; CELL ; 0      ; M9K_X53_Y18_N0    ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a26~porta_bytena_reg0 ;
++---------+---------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                                                                                                                            ;
++---------+----------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                                                                                                                         ;
++---------+----------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                                                                                                                 ;
+; 3.778   ; 3.778    ;    ;      ;        ;                   ; clock path                                                                                                                                      ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                                                                                                                  ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                                                                                                                   ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                                                                                                           ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                                                                                                           ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                                                                                                             ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                                                                                                               ;
+;   2.921 ;   1.354  ; RR ; IC   ; 5      ; M9K_X53_Y18_N0    ; u_soc|u_ram|u_storage|u_altsyncram|auto_generated|ram_block1a26|clk0                                                                            ;
+;   3.834 ;   0.913  ; RR ; CELL ; 0      ; M9K_X53_Y18_N0    ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a26~porta_bytena_reg0 ;
+;   3.778 ;   -0.056 ;    ;      ;        ;                   ; clock pessimism removed                                                                                                                         ;
+; 3.778   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                                                                                                               ;
+; 3.927   ; 0.149    ;    ; uTh  ; 0      ; M9K_X53_Y18_N0    ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a26~porta_bytena_reg0 ;
++---------+----------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+Path #4: Hold slack is 0.284 
+===============================================================================
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Path Summary                                                                                                                                                         ;
++--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Property           ; Value                                                                                                                                           ;
++--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_bus:u_bus|slave_wstrb_o[2]                                                                                                   ;
+; To Node            ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a18~porta_bytena_reg0 ;
+; Launch Clock       ; clk_50                                                                                                                                          ;
+; Latch Clock        ; clk_50                                                                                                                                          ;
+; Data Arrival Time  ; 4.218                                                                                                                                           ;
+; Data Required Time ; 3.934                                                                                                                                           ;
+; Slack              ; 0.284                                                                                                                                           ;
++--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.518 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.951 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 0     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.064       ; 63         ; 0.000 ; 1.294 ;
+;    Cell                ;       ; 3     ; 1.203       ; 37         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 1     ; 0.710       ; 75         ; 0.710 ; 0.710 ;
+;    Cell                ;       ; 2     ; 0.050       ; 5          ; 0.000 ; 0.050 ;
+;    uTco                ;       ; 1     ; 0.191       ; 20         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.163       ; 56         ; 0.000 ; 1.361 ;
+;    Cell                ;       ; 3     ; 1.678       ; 44         ; 0.000 ; 0.913 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                                                                                                            ;
++---------+---------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location          ; Element                                                                                                                                         ;
++---------+---------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                   ; launch edge time                                                                                                                                ;
+; 3.267   ; 3.267   ;    ;      ;        ;                   ; clock path                                                                                                                                      ;
+;   0.000 ;   0.000 ;    ;      ;        ;                   ; source latency                                                                                                                                  ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                                                                                                                   ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                                                                                                           ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                                                                                                           ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                                                                                                             ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                                                                                                               ;
+;   2.829 ;   1.294 ; RR ; IC   ; 1      ; FF_X54_Y18_N19    ; u_soc|u_bus|slave_wstrb_o[2]|clk                                                                                                                ;
+;   3.267 ;   0.438 ; RR ; CELL ; 1      ; FF_X54_Y18_N19    ; rv32_soc:u_soc|soc_bus:u_bus|slave_wstrb_o[2]                                                                                                   ;
+; 4.218   ; 0.951   ;    ;      ;        ;                   ; data path                                                                                                                                       ;
+;   3.458 ;   0.191 ;    ; uTco ; 1      ; FF_X54_Y18_N19    ; rv32_soc:u_soc|soc_bus:u_bus|slave_wstrb_o[2]                                                                                                   ;
+;   3.458 ;   0.000 ; RR ; CELL ; 4      ; FF_X54_Y18_N19    ; u_soc|u_bus|slave_wstrb_o[2]|q                                                                                                                  ;
+;   4.168 ;   0.710 ; RR ; IC   ; 1      ; M9K_X53_Y16_N0    ; u_soc|u_ram|u_storage|u_altsyncram|auto_generated|ram_block1a18|portabyteenamasks[0]                                                            ;
+;   4.218 ;   0.050 ; RR ; CELL ; 0      ; M9K_X53_Y16_N0    ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a18~porta_bytena_reg0 ;
++---------+---------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                                                                                                                            ;
++---------+----------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                                                                                                                         ;
++---------+----------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                                                                                                                 ;
+; 3.785   ; 3.785    ;    ;      ;        ;                   ; clock path                                                                                                                                      ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                                                                                                                  ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                                                                                                                   ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                                                                                                           ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                                                                                                           ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                                                                                                             ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                                                                                                               ;
+;   2.928 ;   1.361  ; RR ; IC   ; 5      ; M9K_X53_Y16_N0    ; u_soc|u_ram|u_storage|u_altsyncram|auto_generated|ram_block1a18|clk0                                                                            ;
+;   3.841 ;   0.913  ; RR ; CELL ; 0      ; M9K_X53_Y16_N0    ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a18~porta_bytena_reg0 ;
+;   3.785 ;   -0.056 ;    ;      ;        ;                   ; clock pessimism removed                                                                                                                         ;
+; 3.785   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                                                                                                               ;
+; 3.934   ; 0.149    ;    ; uTh  ; 0      ; M9K_X53_Y16_N0    ; rv32_soc:u_soc|soc_ram:u_ram|intel_sync_ram_1p:u_storage|altsyncram:u_altsyncram|altsyncram_t241:auto_generated|ram_block1a18~porta_bytena_reg0 ;
++---------+----------+----+------+--------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+Path #5: Hold slack is 0.306 
+===============================================================================
++----------------------------------------------------------+
+; Path Summary                                             ;
++--------------------+-------------------------------------+
+; Property           ; Value                               ;
++--------------------+-------------------------------------+
+; From Node          ; reset_controller:u_reset|count_q[0] ;
+; To Node            ; reset_controller:u_reset|count_q[0] ;
+; Launch Clock       ; clk_50                              ;
+; Latch Clock        ; clk_50                              ;
+; Data Arrival Time  ; 3.879                               ;
+; Data Required Time ; 3.573                               ;
+; Slack              ; 0.306                               ;
++--------------------+-------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.066 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.532 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 1     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.144       ; 64         ; 0.000 ; 1.374 ;
+;    Cell                ;       ; 3     ; 1.203       ; 36         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 2     ; 0.000       ; 0          ; 0.000 ; 0.000 ;
+;    Cell                ;       ; 3     ; 0.341       ; 64         ; 0.000 ; 0.279 ;
+;    uTco                ;       ; 1     ; 0.191       ; 36         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.233       ; 64         ; 0.000 ; 1.431 ;
+;    Cell                ;       ; 3     ; 1.236       ; 36         ; 0.000 ; 0.765 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++---------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                 ;
++---------+---------+----+------+--------+--------------------+-------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location           ; Element                             ;
++---------+---------+----+------+--------+--------------------+-------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                    ; launch edge time                    ;
+; 3.347   ; 3.347   ;    ;      ;        ;                    ; clock path                          ;
+;   0.000 ;   0.000 ;    ;      ;        ;                    ; source latency                      ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11            ; MAX10_CLK1_50                       ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|i               ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|o               ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|inclk[0] ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|outclk   ;
+;   2.909 ;   1.374 ; RR ; IC   ; 1      ; FF_X46_Y30_N31     ; u_reset|count_q[0]|clk              ;
+;   3.347 ;   0.438 ; RR ; CELL ; 1      ; FF_X46_Y30_N31     ; reset_controller:u_reset|count_q[0] ;
+; 3.879   ; 0.532   ;    ;      ;        ;                    ; data path                           ;
+;   3.538 ;   0.191 ;    ; uTco ; 1      ; FF_X46_Y30_N31     ; reset_controller:u_reset|count_q[0] ;
+;   3.538 ;   0.000 ; FF ; CELL ; 3      ; FF_X46_Y30_N31     ; u_reset|count_q[0]|q                ;
+;   3.538 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X46_Y30_N30 ; u_reset|count_q[0]~9|datac          ;
+;   3.817 ;   0.279 ; FF ; CELL ; 1      ; LCCOMB_X46_Y30_N30 ; u_reset|count_q[0]~9|combout        ;
+;   3.817 ;   0.000 ; FF ; IC   ; 1      ; FF_X46_Y30_N31     ; u_reset|count_q[0]|d                ;
+;   3.879 ;   0.062 ; FF ; CELL ; 1      ; FF_X46_Y30_N31     ; reset_controller:u_reset|count_q[0] ;
++---------+---------+----+------+--------+--------------------+-------------------------------------+
+
++---------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                ;
++---------+----------+----+------+--------+-------------------+-------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                             ;
++---------+----------+----+------+--------+-------------------+-------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                     ;
+; 3.413   ; 3.413    ;    ;      ;        ;                   ; clock path                          ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                      ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                       ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i               ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o               ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0] ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk   ;
+;   2.998 ;   1.431  ; RR ; IC   ; 1      ; FF_X46_Y30_N31    ; u_reset|count_q[0]|clk              ;
+;   3.469 ;   0.471  ; RR ; CELL ; 1      ; FF_X46_Y30_N31    ; reset_controller:u_reset|count_q[0] ;
+;   3.413 ;   -0.056 ;    ;      ;        ;                   ; clock pessimism removed             ;
+; 3.413   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                   ;
+; 3.573   ; 0.160    ;    ; uTh  ; 1      ; FF_X46_Y30_N31    ; reset_controller:u_reset|count_q[0] ;
++---------+----------+----+------+--------+-------------------+-------------------------------------+
+
+
+Path #6: Hold slack is 0.307 
+===============================================================================
++------------------------------------------------------------------+
+; Path Summary                                                     ;
++--------------------+---------------------------------------------+
+; Property           ; Value                                       ;
++--------------------+---------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_rom_dp:u_rom|d_pending_q ;
+; To Node            ; rv32_soc:u_soc|soc_rom_dp:u_rom|d_pending_q ;
+; Launch Clock       ; clk_50                                      ;
+; Latch Clock        ; clk_50                                      ;
+; Data Arrival Time  ; 3.745                                       ;
+; Data Required Time ; 3.438                                       ;
+; Slack              ; 0.307                                       ;
++--------------------+---------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.065 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.532 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 1     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.010       ; 63         ; 0.000 ; 1.240 ;
+;    Cell                ;       ; 3     ; 1.203       ; 37         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 2     ; 0.000       ; 0          ; 0.000 ; 0.000 ;
+;    Cell                ;       ; 3     ; 0.341       ; 64         ; 0.000 ; 0.279 ;
+;    uTco                ;       ; 1     ; 0.191       ; 36         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.094       ; 63         ; 0.000 ; 1.292 ;
+;    Cell                ;       ; 3     ; 1.236       ; 37         ; 0.000 ; 0.765 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++-----------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                         ;
++---------+---------+----+------+--------+--------------------+---------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location           ; Element                                     ;
++---------+---------+----+------+--------+--------------------+---------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                    ; launch edge time                            ;
+; 3.213   ; 3.213   ;    ;      ;        ;                    ; clock path                                  ;
+;   0.000 ;   0.000 ;    ;      ;        ;                    ; source latency                              ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11            ; MAX10_CLK1_50                               ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|i                       ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|o                       ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|inclk[0]         ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|outclk           ;
+;   2.775 ;   1.240 ; RR ; IC   ; 1      ; FF_X42_Y25_N11     ; u_soc|u_rom|d_pending_q|clk                 ;
+;   3.213 ;   0.438 ; RR ; CELL ; 1      ; FF_X42_Y25_N11     ; rv32_soc:u_soc|soc_rom_dp:u_rom|d_pending_q ;
+; 3.745   ; 0.532   ;    ;      ;        ;                    ; data path                                   ;
+;   3.404 ;   0.191 ;    ; uTco ; 1      ; FF_X42_Y25_N11     ; rv32_soc:u_soc|soc_rom_dp:u_rom|d_pending_q ;
+;   3.404 ;   0.000 ; FF ; CELL ; 5      ; FF_X42_Y25_N11     ; u_soc|u_rom|d_pending_q|q                   ;
+;   3.404 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X42_Y25_N10 ; u_soc|u_rom|d_pending_q~2|datac             ;
+;   3.683 ;   0.279 ; FF ; CELL ; 1      ; LCCOMB_X42_Y25_N10 ; u_soc|u_rom|d_pending_q~2|combout           ;
+;   3.683 ;   0.000 ; FF ; IC   ; 1      ; FF_X42_Y25_N11     ; u_soc|u_rom|d_pending_q|d                   ;
+;   3.745 ;   0.062 ; FF ; CELL ; 1      ; FF_X42_Y25_N11     ; rv32_soc:u_soc|soc_rom_dp:u_rom|d_pending_q ;
++---------+---------+----+------+--------+--------------------+---------------------------------------------+
+
++-----------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                        ;
++---------+----------+----+------+--------+-------------------+---------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                     ;
++---------+----------+----+------+--------+-------------------+---------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                             ;
+; 3.278   ; 3.278    ;    ;      ;        ;                   ; clock path                                  ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                              ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                               ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                       ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                       ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]         ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk           ;
+;   2.859 ;   1.292  ; RR ; IC   ; 1      ; FF_X42_Y25_N11    ; u_soc|u_rom|d_pending_q|clk                 ;
+;   3.330 ;   0.471  ; RR ; CELL ; 1      ; FF_X42_Y25_N11    ; rv32_soc:u_soc|soc_rom_dp:u_rom|d_pending_q ;
+;   3.278 ;   -0.052 ;    ;      ;        ;                   ; clock pessimism removed                     ;
+; 3.278   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                           ;
+; 3.438   ; 0.160    ;    ; uTh  ; 1      ; FF_X42_Y25_N11    ; rv32_soc:u_soc|soc_rom_dp:u_rom|d_pending_q ;
++---------+----------+----+------+--------+-------------------+---------------------------------------------+
+
+
+Path #7: Hold slack is 0.307 
+===============================================================================
++-----------------------------------------------------------------+
+; Path Summary                                                    ;
++--------------------+--------------------------------------------+
+; Property           ; Value                                      ;
++--------------------+--------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_i2c_master:u_i2c|done_q ;
+; To Node            ; rv32_soc:u_soc|soc_i2c_master:u_i2c|done_q ;
+; Launch Clock       ; clk_50                                     ;
+; Latch Clock        ; clk_50                                     ;
+; Data Arrival Time  ; 3.846                                      ;
+; Data Required Time ; 3.539                                      ;
+; Slack              ; 0.307                                      ;
++--------------------+--------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.065 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.532 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 1     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.111       ; 64         ; 0.000 ; 1.341 ;
+;    Cell                ;       ; 3     ; 1.203       ; 36         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 2     ; 0.000       ; 0          ; 0.000 ; 0.000 ;
+;    Cell                ;       ; 3     ; 0.341       ; 64         ; 0.000 ; 0.279 ;
+;    uTco                ;       ; 1     ; 0.191       ; 36         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.199       ; 64         ; 0.000 ; 1.397 ;
+;    Cell                ;       ; 3     ; 1.236       ; 36         ; 0.000 ; 0.765 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++----------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                        ;
++---------+---------+----+------+--------+--------------------+--------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location           ; Element                                    ;
++---------+---------+----+------+--------+--------------------+--------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                    ; launch edge time                           ;
+; 3.314   ; 3.314   ;    ;      ;        ;                    ; clock path                                 ;
+;   0.000 ;   0.000 ;    ;      ;        ;                    ; source latency                             ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11            ; MAX10_CLK1_50                              ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|i                      ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|o                      ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|inclk[0]        ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|outclk          ;
+;   2.876 ;   1.341 ; RR ; IC   ; 1      ; FF_X46_Y23_N25     ; u_soc|u_i2c|done_q|clk                     ;
+;   3.314 ;   0.438 ; RR ; CELL ; 1      ; FF_X46_Y23_N25     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|done_q ;
+; 3.846   ; 0.532   ;    ;      ;        ;                    ; data path                                  ;
+;   3.505 ;   0.191 ;    ; uTco ; 1      ; FF_X46_Y23_N25     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|done_q ;
+;   3.505 ;   0.000 ; FF ; CELL ; 3      ; FF_X46_Y23_N25     ; u_soc|u_i2c|done_q|q                       ;
+;   3.505 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X46_Y23_N24 ; u_soc|u_i2c|done_q~3|datac                 ;
+;   3.784 ;   0.279 ; FF ; CELL ; 1      ; LCCOMB_X46_Y23_N24 ; u_soc|u_i2c|done_q~3|combout               ;
+;   3.784 ;   0.000 ; FF ; IC   ; 1      ; FF_X46_Y23_N25     ; u_soc|u_i2c|done_q|d                       ;
+;   3.846 ;   0.062 ; FF ; CELL ; 1      ; FF_X46_Y23_N25     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|done_q ;
++---------+---------+----+------+--------+--------------------+--------------------------------------------+
+
++----------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                       ;
++---------+----------+----+------+--------+-------------------+--------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                    ;
++---------+----------+----+------+--------+-------------------+--------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                            ;
+; 3.379   ; 3.379    ;    ;      ;        ;                   ; clock path                                 ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                             ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                              ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                      ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                      ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]        ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk          ;
+;   2.964 ;   1.397  ; RR ; IC   ; 1      ; FF_X46_Y23_N25    ; u_soc|u_i2c|done_q|clk                     ;
+;   3.435 ;   0.471  ; RR ; CELL ; 1      ; FF_X46_Y23_N25    ; rv32_soc:u_soc|soc_i2c_master:u_i2c|done_q ;
+;   3.379 ;   -0.056 ;    ;      ;        ;                   ; clock pessimism removed                    ;
+; 3.379   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                          ;
+; 3.539   ; 0.160    ;    ; uTh  ; 1      ; FF_X46_Y23_N25    ; rv32_soc:u_soc|soc_i2c_master:u_i2c|done_q ;
++---------+----------+----+------+--------+-------------------+--------------------------------------------+
+
+
+Path #8: Hold slack is 0.307 
+===============================================================================
++-------------------------------------------------------------------------+
+; Path Summary                                                            ;
++--------------------+----------------------------------------------------+
+; Property           ; Value                                              ;
++--------------------+----------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[2] ;
+; To Node            ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[2] ;
+; Launch Clock       ; clk_50                                             ;
+; Latch Clock        ; clk_50                                             ;
+; Data Arrival Time  ; 3.731                                              ;
+; Data Required Time ; 3.424                                              ;
+; Slack              ; 0.307                                              ;
++--------------------+----------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.065 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.532 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 1     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 1.996       ; 62         ; 0.000 ; 1.226 ;
+;    Cell                ;       ; 3     ; 1.203       ; 38         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 2     ; 0.000       ; 0          ; 0.000 ; 0.000 ;
+;    Cell                ;       ; 3     ; 0.341       ; 64         ; 0.000 ; 0.279 ;
+;    uTco                ;       ; 1     ; 0.191       ; 36         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.080       ; 63         ; 0.000 ; 1.278 ;
+;    Cell                ;       ; 3     ; 1.236       ; 37         ; 0.000 ; 0.765 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                ;
++---------+---------+----+------+--------+--------------------+----------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location           ; Element                                            ;
++---------+---------+----+------+--------+--------------------+----------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                    ; launch edge time                                   ;
+; 3.199   ; 3.199   ;    ;      ;        ;                    ; clock path                                         ;
+;   0.000 ;   0.000 ;    ;      ;        ;                    ; source latency                                     ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11            ; MAX10_CLK1_50                                      ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|i                              ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|o                              ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|inclk[0]                ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|outclk                  ;
+;   2.761 ;   1.226 ; RR ; IC   ; 1      ; FF_X42_Y23_N31     ; u_soc|u_i2c|bit_index_q[2]|clk                     ;
+;   3.199 ;   0.438 ; RR ; CELL ; 1      ; FF_X42_Y23_N31     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[2] ;
+; 3.731   ; 0.532   ;    ;      ;        ;                    ; data path                                          ;
+;   3.390 ;   0.191 ;    ; uTco ; 1      ; FF_X42_Y23_N31     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[2] ;
+;   3.390 ;   0.000 ; FF ; CELL ; 10     ; FF_X42_Y23_N31     ; u_soc|u_i2c|bit_index_q[2]|q                       ;
+;   3.390 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X42_Y23_N30 ; u_soc|u_i2c|bit_index_q[2]~6|datac                 ;
+;   3.669 ;   0.279 ; FF ; CELL ; 1      ; LCCOMB_X42_Y23_N30 ; u_soc|u_i2c|bit_index_q[2]~6|combout               ;
+;   3.669 ;   0.000 ; FF ; IC   ; 1      ; FF_X42_Y23_N31     ; u_soc|u_i2c|bit_index_q[2]|d                       ;
+;   3.731 ;   0.062 ; FF ; CELL ; 1      ; FF_X42_Y23_N31     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[2] ;
++---------+---------+----+------+--------+--------------------+----------------------------------------------------+
+
++------------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                               ;
++---------+----------+----+------+--------+-------------------+----------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                            ;
++---------+----------+----+------+--------+-------------------+----------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                    ;
+; 3.264   ; 3.264    ;    ;      ;        ;                   ; clock path                                         ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                     ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                      ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                              ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                              ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                  ;
+;   2.845 ;   1.278  ; RR ; IC   ; 1      ; FF_X42_Y23_N31    ; u_soc|u_i2c|bit_index_q[2]|clk                     ;
+;   3.316 ;   0.471  ; RR ; CELL ; 1      ; FF_X42_Y23_N31    ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[2] ;
+;   3.264 ;   -0.052 ;    ;      ;        ;                   ; clock pessimism removed                            ;
+; 3.264   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                  ;
+; 3.424   ; 0.160    ;    ; uTh  ; 1      ; FF_X42_Y23_N31    ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[2] ;
++---------+----------+----+------+--------+-------------------+----------------------------------------------------+
+
+
+Path #9: Hold slack is 0.307 
+===============================================================================
++-------------------------------------------------------------------------+
+; Path Summary                                                            ;
++--------------------+----------------------------------------------------+
+; Property           ; Value                                              ;
++--------------------+----------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[0] ;
+; To Node            ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[0] ;
+; Launch Clock       ; clk_50                                             ;
+; Latch Clock        ; clk_50                                             ;
+; Data Arrival Time  ; 3.731                                              ;
+; Data Required Time ; 3.424                                              ;
+; Slack              ; 0.307                                              ;
++--------------------+----------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.065 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.532 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 1     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 1.996       ; 62         ; 0.000 ; 1.226 ;
+;    Cell                ;       ; 3     ; 1.203       ; 38         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 2     ; 0.000       ; 0          ; 0.000 ; 0.000 ;
+;    Cell                ;       ; 3     ; 0.341       ; 64         ; 0.000 ; 0.279 ;
+;    uTco                ;       ; 1     ; 0.191       ; 36         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.080       ; 63         ; 0.000 ; 1.278 ;
+;    Cell                ;       ; 3     ; 1.236       ; 37         ; 0.000 ; 0.765 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                ;
++---------+---------+----+------+--------+--------------------+----------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location           ; Element                                            ;
++---------+---------+----+------+--------+--------------------+----------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                    ; launch edge time                                   ;
+; 3.199   ; 3.199   ;    ;      ;        ;                    ; clock path                                         ;
+;   0.000 ;   0.000 ;    ;      ;        ;                    ; source latency                                     ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11            ; MAX10_CLK1_50                                      ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|i                              ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|o                              ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|inclk[0]                ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|outclk                  ;
+;   2.761 ;   1.226 ; RR ; IC   ; 1      ; FF_X42_Y23_N25     ; u_soc|u_i2c|bit_index_q[0]|clk                     ;
+;   3.199 ;   0.438 ; RR ; CELL ; 1      ; FF_X42_Y23_N25     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[0] ;
+; 3.731   ; 0.532   ;    ;      ;        ;                    ; data path                                          ;
+;   3.390 ;   0.191 ;    ; uTco ; 1      ; FF_X42_Y23_N25     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[0] ;
+;   3.390 ;   0.000 ; FF ; CELL ; 10     ; FF_X42_Y23_N25     ; u_soc|u_i2c|bit_index_q[0]|q                       ;
+;   3.390 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X42_Y23_N24 ; u_soc|u_i2c|bit_index_q[0]~7|datac                 ;
+;   3.669 ;   0.279 ; FF ; CELL ; 1      ; LCCOMB_X42_Y23_N24 ; u_soc|u_i2c|bit_index_q[0]~7|combout               ;
+;   3.669 ;   0.000 ; FF ; IC   ; 1      ; FF_X42_Y23_N25     ; u_soc|u_i2c|bit_index_q[0]|d                       ;
+;   3.731 ;   0.062 ; FF ; CELL ; 1      ; FF_X42_Y23_N25     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[0] ;
++---------+---------+----+------+--------+--------------------+----------------------------------------------------+
+
++------------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                               ;
++---------+----------+----+------+--------+-------------------+----------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                            ;
++---------+----------+----+------+--------+-------------------+----------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                    ;
+; 3.264   ; 3.264    ;    ;      ;        ;                   ; clock path                                         ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                     ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                      ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                              ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                              ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                  ;
+;   2.845 ;   1.278  ; RR ; IC   ; 1      ; FF_X42_Y23_N25    ; u_soc|u_i2c|bit_index_q[0]|clk                     ;
+;   3.316 ;   0.471  ; RR ; CELL ; 1      ; FF_X42_Y23_N25    ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[0] ;
+;   3.264 ;   -0.052 ;    ;      ;        ;                   ; clock pessimism removed                            ;
+; 3.264   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                  ;
+; 3.424   ; 0.160    ;    ; uTh  ; 1      ; FF_X42_Y23_N25    ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[0] ;
++---------+----------+----+------+--------+-------------------+----------------------------------------------------+
+
+
+Path #10: Hold slack is 0.307 
+===============================================================================
++-------------------------------------------------------------------------+
+; Path Summary                                                            ;
++--------------------+----------------------------------------------------+
+; Property           ; Value                                              ;
++--------------------+----------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[1] ;
+; To Node            ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[1] ;
+; Launch Clock       ; clk_50                                             ;
+; Latch Clock        ; clk_50                                             ;
+; Data Arrival Time  ; 3.731                                              ;
+; Data Required Time ; 3.424                                              ;
+; Slack              ; 0.307                                              ;
++--------------------+----------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.065 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.532 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 1     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 1.996       ; 62         ; 0.000 ; 1.226 ;
+;    Cell                ;       ; 3     ; 1.203       ; 38         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 2     ; 0.000       ; 0          ; 0.000 ; 0.000 ;
+;    Cell                ;       ; 3     ; 0.341       ; 64         ; 0.000 ; 0.279 ;
+;    uTco                ;       ; 1     ; 0.191       ; 36         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.080       ; 63         ; 0.000 ; 1.278 ;
+;    Cell                ;       ; 3     ; 1.236       ; 37         ; 0.000 ; 0.765 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                ;
++---------+---------+----+------+--------+--------------------+----------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location           ; Element                                            ;
++---------+---------+----+------+--------+--------------------+----------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                    ; launch edge time                                   ;
+; 3.199   ; 3.199   ;    ;      ;        ;                    ; clock path                                         ;
+;   0.000 ;   0.000 ;    ;      ;        ;                    ; source latency                                     ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11            ; MAX10_CLK1_50                                      ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|i                              ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|o                              ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|inclk[0]                ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|outclk                  ;
+;   2.761 ;   1.226 ; RR ; IC   ; 1      ; FF_X42_Y23_N19     ; u_soc|u_i2c|bit_index_q[1]|clk                     ;
+;   3.199 ;   0.438 ; RR ; CELL ; 1      ; FF_X42_Y23_N19     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[1] ;
+; 3.731   ; 0.532   ;    ;      ;        ;                    ; data path                                          ;
+;   3.390 ;   0.191 ;    ; uTco ; 1      ; FF_X42_Y23_N19     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[1] ;
+;   3.390 ;   0.000 ; FF ; CELL ; 9      ; FF_X42_Y23_N19     ; u_soc|u_i2c|bit_index_q[1]|q                       ;
+;   3.390 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X42_Y23_N18 ; u_soc|u_i2c|bit_index_q[1]~8|datac                 ;
+;   3.669 ;   0.279 ; FF ; CELL ; 1      ; LCCOMB_X42_Y23_N18 ; u_soc|u_i2c|bit_index_q[1]~8|combout               ;
+;   3.669 ;   0.000 ; FF ; IC   ; 1      ; FF_X42_Y23_N19     ; u_soc|u_i2c|bit_index_q[1]|d                       ;
+;   3.731 ;   0.062 ; FF ; CELL ; 1      ; FF_X42_Y23_N19     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[1] ;
++---------+---------+----+------+--------+--------------------+----------------------------------------------------+
+
++------------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                               ;
++---------+----------+----+------+--------+-------------------+----------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                            ;
++---------+----------+----+------+--------+-------------------+----------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                    ;
+; 3.264   ; 3.264    ;    ;      ;        ;                   ; clock path                                         ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                     ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                      ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                              ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                              ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                  ;
+;   2.845 ;   1.278  ; RR ; IC   ; 1      ; FF_X42_Y23_N19    ; u_soc|u_i2c|bit_index_q[1]|clk                     ;
+;   3.316 ;   0.471  ; RR ; CELL ; 1      ; FF_X42_Y23_N19    ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[1] ;
+;   3.264 ;   -0.052 ;    ;      ;        ;                   ; clock pessimism removed                            ;
+; 3.264   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                  ;
+; 3.424   ; 0.160    ;    ; uTh  ; 1      ; FF_X42_Y23_N19    ; rv32_soc:u_soc|soc_i2c_master:u_i2c|bit_index_q[1] ;
++---------+----------+----+------+--------+-------------------+----------------------------------------------------+
+
+
+Path #11: Hold slack is 0.307 
+===============================================================================
++-----------------------------------------------------------------------+
+; Path Summary                                                          ;
++--------------------+--------------------------------------------------+
+; Property           ; Value                                            ;
++--------------------+--------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_i2c_master:u_i2c|recovering_q ;
+; To Node            ; rv32_soc:u_soc|soc_i2c_master:u_i2c|recovering_q ;
+; Launch Clock       ; clk_50                                           ;
+; Latch Clock        ; clk_50                                           ;
+; Data Arrival Time  ; 3.846                                            ;
+; Data Required Time ; 3.539                                            ;
+; Slack              ; 0.307                                            ;
++--------------------+--------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.065 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.532 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 1     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.111       ; 64         ; 0.000 ; 1.341 ;
+;    Cell                ;       ; 3     ; 1.203       ; 36         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 2     ; 0.000       ; 0          ; 0.000 ; 0.000 ;
+;    Cell                ;       ; 3     ; 0.341       ; 64         ; 0.000 ; 0.279 ;
+;    uTco                ;       ; 1     ; 0.191       ; 36         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.199       ; 64         ; 0.000 ; 1.397 ;
+;    Cell                ;       ; 3     ; 1.236       ; 36         ; 0.000 ; 0.765 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++----------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                              ;
++---------+---------+----+------+--------+--------------------+--------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location           ; Element                                          ;
++---------+---------+----+------+--------+--------------------+--------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                    ; launch edge time                                 ;
+; 3.314   ; 3.314   ;    ;      ;        ;                    ; clock path                                       ;
+;   0.000 ;   0.000 ;    ;      ;        ;                    ; source latency                                   ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11            ; MAX10_CLK1_50                                    ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|i                            ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|o                            ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|inclk[0]              ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|outclk                ;
+;   2.876 ;   1.341 ; RR ; IC   ; 1      ; FF_X47_Y23_N19     ; u_soc|u_i2c|recovering_q|clk                     ;
+;   3.314 ;   0.438 ; RR ; CELL ; 1      ; FF_X47_Y23_N19     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|recovering_q ;
+; 3.846   ; 0.532   ;    ;      ;        ;                    ; data path                                        ;
+;   3.505 ;   0.191 ;    ; uTco ; 1      ; FF_X47_Y23_N19     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|recovering_q ;
+;   3.505 ;   0.000 ; FF ; CELL ; 4      ; FF_X47_Y23_N19     ; u_soc|u_i2c|recovering_q|q                       ;
+;   3.505 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X47_Y23_N18 ; u_soc|u_i2c|recovering_q~2|datac                 ;
+;   3.784 ;   0.279 ; FF ; CELL ; 1      ; LCCOMB_X47_Y23_N18 ; u_soc|u_i2c|recovering_q~2|combout               ;
+;   3.784 ;   0.000 ; FF ; IC   ; 1      ; FF_X47_Y23_N19     ; u_soc|u_i2c|recovering_q|d                       ;
+;   3.846 ;   0.062 ; FF ; CELL ; 1      ; FF_X47_Y23_N19     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|recovering_q ;
++---------+---------+----+------+--------+--------------------+--------------------------------------------------+
+
++----------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                             ;
++---------+----------+----+------+--------+-------------------+--------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                          ;
++---------+----------+----+------+--------+-------------------+--------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                  ;
+; 3.379   ; 3.379    ;    ;      ;        ;                   ; clock path                                       ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                   ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                    ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                            ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                            ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]              ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                ;
+;   2.964 ;   1.397  ; RR ; IC   ; 1      ; FF_X47_Y23_N19    ; u_soc|u_i2c|recovering_q|clk                     ;
+;   3.435 ;   0.471  ; RR ; CELL ; 1      ; FF_X47_Y23_N19    ; rv32_soc:u_soc|soc_i2c_master:u_i2c|recovering_q ;
+;   3.379 ;   -0.056 ;    ;      ;        ;                   ; clock pessimism removed                          ;
+; 3.379   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                ;
+; 3.539   ; 0.160    ;    ; uTh  ; 1      ; FF_X47_Y23_N19    ; rv32_soc:u_soc|soc_i2c_master:u_i2c|recovering_q ;
++---------+----------+----+------+--------+-------------------+--------------------------------------------------+
+
+
+Path #12: Hold slack is 0.307 
+===============================================================================
++--------------------------------------------------------------------------+
+; Path Summary                                                             ;
++--------------------+-----------------------------------------------------+
+; Property           ; Value                                               ;
++--------------------+-----------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_i2c_master:u_i2c|state_q.ST_IDLE ;
+; To Node            ; rv32_soc:u_soc|soc_i2c_master:u_i2c|state_q.ST_IDLE ;
+; Launch Clock       ; clk_50                                              ;
+; Latch Clock        ; clk_50                                              ;
+; Data Arrival Time  ; 3.846                                               ;
+; Data Required Time ; 3.539                                               ;
+; Slack              ; 0.307                                               ;
++--------------------+-----------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.065 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.532 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 1     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.111       ; 64         ; 0.000 ; 1.341 ;
+;    Cell                ;       ; 3     ; 1.203       ; 36         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 2     ; 0.000       ; 0          ; 0.000 ; 0.000 ;
+;    Cell                ;       ; 3     ; 0.341       ; 64         ; 0.000 ; 0.279 ;
+;    uTco                ;       ; 1     ; 0.191       ; 36         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.199       ; 64         ; 0.000 ; 1.397 ;
+;    Cell                ;       ; 3     ; 1.236       ; 36         ; 0.000 ; 0.765 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++-------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                 ;
++---------+---------+----+------+--------+--------------------+-----------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location           ; Element                                             ;
++---------+---------+----+------+--------+--------------------+-----------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                    ; launch edge time                                    ;
+; 3.314   ; 3.314   ;    ;      ;        ;                    ; clock path                                          ;
+;   0.000 ;   0.000 ;    ;      ;        ;                    ; source latency                                      ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11            ; MAX10_CLK1_50                                       ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|i                               ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|o                               ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|inclk[0]                 ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|outclk                   ;
+;   2.876 ;   1.341 ; RR ; IC   ; 1      ; FF_X46_Y23_N23     ; u_soc|u_i2c|state_q.ST_IDLE|clk                     ;
+;   3.314 ;   0.438 ; RR ; CELL ; 1      ; FF_X46_Y23_N23     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|state_q.ST_IDLE ;
+; 3.846   ; 0.532   ;    ;      ;        ;                    ; data path                                           ;
+;   3.505 ;   0.191 ;    ; uTco ; 1      ; FF_X46_Y23_N23     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|state_q.ST_IDLE ;
+;   3.505 ;   0.000 ; FF ; CELL ; 4      ; FF_X46_Y23_N23     ; u_soc|u_i2c|state_q.ST_IDLE|q                       ;
+;   3.505 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X46_Y23_N22 ; u_soc|u_i2c|state_q~48|datac                        ;
+;   3.784 ;   0.279 ; FF ; CELL ; 1      ; LCCOMB_X46_Y23_N22 ; u_soc|u_i2c|state_q~48|combout                      ;
+;   3.784 ;   0.000 ; FF ; IC   ; 1      ; FF_X46_Y23_N23     ; u_soc|u_i2c|state_q.ST_IDLE|d                       ;
+;   3.846 ;   0.062 ; FF ; CELL ; 1      ; FF_X46_Y23_N23     ; rv32_soc:u_soc|soc_i2c_master:u_i2c|state_q.ST_IDLE ;
++---------+---------+----+------+--------+--------------------+-----------------------------------------------------+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                                ;
++---------+----------+----+------+--------+-------------------+-----------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                             ;
++---------+----------+----+------+--------+-------------------+-----------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                     ;
+; 3.379   ; 3.379    ;    ;      ;        ;                   ; clock path                                          ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                      ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                       ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                               ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                               ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                 ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                   ;
+;   2.964 ;   1.397  ; RR ; IC   ; 1      ; FF_X46_Y23_N23    ; u_soc|u_i2c|state_q.ST_IDLE|clk                     ;
+;   3.435 ;   0.471  ; RR ; CELL ; 1      ; FF_X46_Y23_N23    ; rv32_soc:u_soc|soc_i2c_master:u_i2c|state_q.ST_IDLE ;
+;   3.379 ;   -0.056 ;    ;      ;        ;                   ; clock pessimism removed                             ;
+; 3.379   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                   ;
+; 3.539   ; 0.160    ;    ; uTh  ; 1      ; FF_X46_Y23_N23    ; rv32_soc:u_soc|soc_i2c_master:u_i2c|state_q.ST_IDLE ;
++---------+----------+----+------+--------+-------------------+-----------------------------------------------------+
+
+
+Path #13: Hold slack is 0.307 
+===============================================================================
++---------------------------------------------------------------------------+
+; Path Summary                                                              ;
++--------------------+------------------------------------------------------+
+; Property           ; Value                                                ;
++--------------------+------------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[2] ;
+; To Node            ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[2] ;
+; Launch Clock       ; clk_50                                               ;
+; Latch Clock        ; clk_50                                               ;
+; Data Arrival Time  ; 3.751                                                ;
+; Data Required Time ; 3.444                                                ;
+; Slack              ; 0.307                                                ;
++--------------------+------------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.065 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.532 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 1     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.016       ; 63         ; 0.000 ; 1.246 ;
+;    Cell                ;       ; 3     ; 1.203       ; 37         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 2     ; 0.000       ; 0          ; 0.000 ; 0.000 ;
+;    Cell                ;       ; 3     ; 0.341       ; 64         ; 0.000 ; 0.279 ;
+;    uTco                ;       ; 1     ; 0.191       ; 36         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.100       ; 63         ; 0.000 ; 1.298 ;
+;    Cell                ;       ; 3     ; 1.236       ; 37         ; 0.000 ; 0.765 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++-------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                 ;
++---------+---------+----+------+--------+-------------------+------------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location          ; Element                                              ;
++---------+---------+----+------+--------+-------------------+------------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                   ; launch edge time                                     ;
+; 3.219   ; 3.219   ;    ;      ;        ;                   ; clock path                                           ;
+;   0.000 ;   0.000 ;    ;      ;        ;                   ; source latency                                       ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                        ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                  ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                    ;
+;   2.781 ;   1.246 ; RR ; IC   ; 1      ; FF_X41_Y26_N3     ; u_soc|u_uart|u_rx|bit_q[2]|clk                       ;
+;   3.219 ;   0.438 ; RR ; CELL ; 1      ; FF_X41_Y26_N3     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[2] ;
+; 3.751   ; 0.532   ;    ;      ;        ;                   ; data path                                            ;
+;   3.410 ;   0.191 ;    ; uTco ; 1      ; FF_X41_Y26_N3     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[2] ;
+;   3.410 ;   0.000 ; FF ; CELL ; 9      ; FF_X41_Y26_N3     ; u_soc|u_uart|u_rx|bit_q[2]|q                         ;
+;   3.410 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X41_Y26_N2 ; u_soc|u_uart|u_rx|bit_q[2]~3|datac                   ;
+;   3.689 ;   0.279 ; FF ; CELL ; 1      ; LCCOMB_X41_Y26_N2 ; u_soc|u_uart|u_rx|bit_q[2]~3|combout                 ;
+;   3.689 ;   0.000 ; FF ; IC   ; 1      ; FF_X41_Y26_N3     ; u_soc|u_uart|u_rx|bit_q[2]|d                         ;
+;   3.751 ;   0.062 ; FF ; CELL ; 1      ; FF_X41_Y26_N3     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[2] ;
++---------+---------+----+------+--------+-------------------+------------------------------------------------------+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                                 ;
++---------+----------+----+------+--------+-------------------+------------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                              ;
++---------+----------+----+------+--------+-------------------+------------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                      ;
+; 3.284   ; 3.284    ;    ;      ;        ;                   ; clock path                                           ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                       ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                        ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                  ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                    ;
+;   2.865 ;   1.298  ; RR ; IC   ; 1      ; FF_X41_Y26_N3     ; u_soc|u_uart|u_rx|bit_q[2]|clk                       ;
+;   3.336 ;   0.471  ; RR ; CELL ; 1      ; FF_X41_Y26_N3     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[2] ;
+;   3.284 ;   -0.052 ;    ;      ;        ;                   ; clock pessimism removed                              ;
+; 3.284   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                    ;
+; 3.444   ; 0.160    ;    ; uTh  ; 1      ; FF_X41_Y26_N3     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[2] ;
++---------+----------+----+------+--------+-------------------+------------------------------------------------------+
+
+
+Path #14: Hold slack is 0.307 
+===============================================================================
++-------------------------------------------------------------------------------+
+; Path Summary                                                                  ;
++--------------------+----------------------------------------------------------+
+; Property           ; Value                                                    ;
++--------------------+----------------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|state_q.DATA ;
+; To Node            ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|state_q.DATA ;
+; Launch Clock       ; clk_50                                                   ;
+; Latch Clock        ; clk_50                                                   ;
+; Data Arrival Time  ; 3.751                                                    ;
+; Data Required Time ; 3.444                                                    ;
+; Slack              ; 0.307                                                    ;
++--------------------+----------------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.065 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.532 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 1     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.016       ; 63         ; 0.000 ; 1.246 ;
+;    Cell                ;       ; 3     ; 1.203       ; 37         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 2     ; 0.000       ; 0          ; 0.000 ; 0.000 ;
+;    Cell                ;       ; 3     ; 0.341       ; 64         ; 0.000 ; 0.279 ;
+;    uTco                ;       ; 1     ; 0.191       ; 36         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.100       ; 63         ; 0.000 ; 1.298 ;
+;    Cell                ;       ; 3     ; 1.236       ; 37         ; 0.000 ; 0.765 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++------------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                      ;
++---------+---------+----+------+--------+--------------------+----------------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location           ; Element                                                  ;
++---------+---------+----+------+--------+--------------------+----------------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                    ; launch edge time                                         ;
+; 3.219   ; 3.219   ;    ;      ;        ;                    ; clock path                                               ;
+;   0.000 ;   0.000 ;    ;      ;        ;                    ; source latency                                           ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11            ; MAX10_CLK1_50                                            ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|i                                    ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|o                                    ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|inclk[0]                      ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|outclk                        ;
+;   2.781 ;   1.246 ; RR ; IC   ; 1      ; FF_X41_Y26_N17     ; u_soc|u_uart|u_rx|state_q.DATA|clk                       ;
+;   3.219 ;   0.438 ; RR ; CELL ; 1      ; FF_X41_Y26_N17     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|state_q.DATA ;
+; 3.751   ; 0.532   ;    ;      ;        ;                    ; data path                                                ;
+;   3.410 ;   0.191 ;    ; uTco ; 1      ; FF_X41_Y26_N17     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|state_q.DATA ;
+;   3.410 ;   0.000 ; FF ; CELL ; 13     ; FF_X41_Y26_N17     ; u_soc|u_uart|u_rx|state_q.DATA|q                         ;
+;   3.410 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X41_Y26_N16 ; u_soc|u_uart|u_rx|Selector11~1|datac                     ;
+;   3.689 ;   0.279 ; FF ; CELL ; 1      ; LCCOMB_X41_Y26_N16 ; u_soc|u_uart|u_rx|Selector11~1|combout                   ;
+;   3.689 ;   0.000 ; FF ; IC   ; 1      ; FF_X41_Y26_N17     ; u_soc|u_uart|u_rx|state_q.DATA|d                         ;
+;   3.751 ;   0.062 ; FF ; CELL ; 1      ; FF_X41_Y26_N17     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|state_q.DATA ;
++---------+---------+----+------+--------+--------------------+----------------------------------------------------------+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                                     ;
++---------+----------+----+------+--------+-------------------+----------------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                                  ;
++---------+----------+----+------+--------+-------------------+----------------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                          ;
+; 3.284   ; 3.284    ;    ;      ;        ;                   ; clock path                                               ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                           ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                            ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                    ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                    ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                      ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                        ;
+;   2.865 ;   1.298  ; RR ; IC   ; 1      ; FF_X41_Y26_N17    ; u_soc|u_uart|u_rx|state_q.DATA|clk                       ;
+;   3.336 ;   0.471  ; RR ; CELL ; 1      ; FF_X41_Y26_N17    ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|state_q.DATA ;
+;   3.284 ;   -0.052 ;    ;      ;        ;                   ; clock pessimism removed                                  ;
+; 3.284   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                        ;
+; 3.444   ; 0.160    ;    ; uTh  ; 1      ; FF_X41_Y26_N17    ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|state_q.DATA ;
++---------+----------+----+------+--------+-------------------+----------------------------------------------------------+
+
+
+Path #15: Hold slack is 0.307 
+===============================================================================
++---------------------------------------------------------------------------+
+; Path Summary                                                              ;
++--------------------+------------------------------------------------------+
+; Property           ; Value                                                ;
++--------------------+------------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[1] ;
+; To Node            ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[1] ;
+; Launch Clock       ; clk_50                                               ;
+; Latch Clock        ; clk_50                                               ;
+; Data Arrival Time  ; 3.751                                                ;
+; Data Required Time ; 3.444                                                ;
+; Slack              ; 0.307                                                ;
++--------------------+------------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.065 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.532 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 1     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.016       ; 63         ; 0.000 ; 1.246 ;
+;    Cell                ;       ; 3     ; 1.203       ; 37         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 2     ; 0.000       ; 0          ; 0.000 ; 0.000 ;
+;    Cell                ;       ; 3     ; 0.341       ; 64         ; 0.000 ; 0.279 ;
+;    uTco                ;       ; 1     ; 0.191       ; 36         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.100       ; 63         ; 0.000 ; 1.298 ;
+;    Cell                ;       ; 3     ; 1.236       ; 37         ; 0.000 ; 0.765 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++-------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                 ;
++---------+---------+----+------+--------+-------------------+------------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location          ; Element                                              ;
++---------+---------+----+------+--------+-------------------+------------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                   ; launch edge time                                     ;
+; 3.219   ; 3.219   ;    ;      ;        ;                   ; clock path                                           ;
+;   0.000 ;   0.000 ;    ;      ;        ;                   ; source latency                                       ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                        ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                  ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                    ;
+;   2.781 ;   1.246 ; RR ; IC   ; 1      ; FF_X41_Y26_N7     ; u_soc|u_uart|u_rx|bit_q[1]|clk                       ;
+;   3.219 ;   0.438 ; RR ; CELL ; 1      ; FF_X41_Y26_N7     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[1] ;
+; 3.751   ; 0.532   ;    ;      ;        ;                   ; data path                                            ;
+;   3.410 ;   0.191 ;    ; uTco ; 1      ; FF_X41_Y26_N7     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[1] ;
+;   3.410 ;   0.000 ; FF ; CELL ; 6      ; FF_X41_Y26_N7     ; u_soc|u_uart|u_rx|bit_q[1]|q                         ;
+;   3.410 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X41_Y26_N6 ; u_soc|u_uart|u_rx|bit_q[1]~5|datac                   ;
+;   3.689 ;   0.279 ; FF ; CELL ; 1      ; LCCOMB_X41_Y26_N6 ; u_soc|u_uart|u_rx|bit_q[1]~5|combout                 ;
+;   3.689 ;   0.000 ; FF ; IC   ; 1      ; FF_X41_Y26_N7     ; u_soc|u_uart|u_rx|bit_q[1]|d                         ;
+;   3.751 ;   0.062 ; FF ; CELL ; 1      ; FF_X41_Y26_N7     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[1] ;
++---------+---------+----+------+--------+-------------------+------------------------------------------------------+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                                 ;
++---------+----------+----+------+--------+-------------------+------------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                              ;
++---------+----------+----+------+--------+-------------------+------------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                      ;
+; 3.284   ; 3.284    ;    ;      ;        ;                   ; clock path                                           ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                       ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                        ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                  ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                    ;
+;   2.865 ;   1.298  ; RR ; IC   ; 1      ; FF_X41_Y26_N7     ; u_soc|u_uart|u_rx|bit_q[1]|clk                       ;
+;   3.336 ;   0.471  ; RR ; CELL ; 1      ; FF_X41_Y26_N7     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[1] ;
+;   3.284 ;   -0.052 ;    ;      ;        ;                   ; clock pessimism removed                              ;
+; 3.284   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                    ;
+; 3.444   ; 0.160    ;    ; uTh  ; 1      ; FF_X41_Y26_N7     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[1] ;
++---------+----------+----+------+--------+-------------------+------------------------------------------------------+
+
+
+Path #16: Hold slack is 0.307 
+===============================================================================
++---------------------------------------------------------------------------+
+; Path Summary                                                              ;
++--------------------+------------------------------------------------------+
+; Property           ; Value                                                ;
++--------------------+------------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[0] ;
+; To Node            ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[0] ;
+; Launch Clock       ; clk_50                                               ;
+; Latch Clock        ; clk_50                                               ;
+; Data Arrival Time  ; 3.751                                                ;
+; Data Required Time ; 3.444                                                ;
+; Slack              ; 0.307                                                ;
++--------------------+------------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.065 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.532 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 1     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.016       ; 63         ; 0.000 ; 1.246 ;
+;    Cell                ;       ; 3     ; 1.203       ; 37         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 2     ; 0.000       ; 0          ; 0.000 ; 0.000 ;
+;    Cell                ;       ; 3     ; 0.341       ; 64         ; 0.000 ; 0.279 ;
+;    uTco                ;       ; 1     ; 0.191       ; 36         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.100       ; 63         ; 0.000 ; 1.298 ;
+;    Cell                ;       ; 3     ; 1.236       ; 37         ; 0.000 ; 0.765 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++-------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                 ;
++---------+---------+----+------+--------+-------------------+------------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location          ; Element                                              ;
++---------+---------+----+------+--------+-------------------+------------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                   ; launch edge time                                     ;
+; 3.219   ; 3.219   ;    ;      ;        ;                   ; clock path                                           ;
+;   0.000 ;   0.000 ;    ;      ;        ;                   ; source latency                                       ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                        ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                  ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                    ;
+;   2.781 ;   1.246 ; RR ; IC   ; 1      ; FF_X41_Y26_N5     ; u_soc|u_uart|u_rx|bit_q[0]|clk                       ;
+;   3.219 ;   0.438 ; RR ; CELL ; 1      ; FF_X41_Y26_N5     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[0] ;
+; 3.751   ; 0.532   ;    ;      ;        ;                   ; data path                                            ;
+;   3.410 ;   0.191 ;    ; uTco ; 1      ; FF_X41_Y26_N5     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[0] ;
+;   3.410 ;   0.000 ; FF ; CELL ; 7      ; FF_X41_Y26_N5     ; u_soc|u_uart|u_rx|bit_q[0]|q                         ;
+;   3.410 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X41_Y26_N4 ; u_soc|u_uart|u_rx|bit_q[0]~4|datac                   ;
+;   3.689 ;   0.279 ; FF ; CELL ; 1      ; LCCOMB_X41_Y26_N4 ; u_soc|u_uart|u_rx|bit_q[0]~4|combout                 ;
+;   3.689 ;   0.000 ; FF ; IC   ; 1      ; FF_X41_Y26_N5     ; u_soc|u_uart|u_rx|bit_q[0]|d                         ;
+;   3.751 ;   0.062 ; FF ; CELL ; 1      ; FF_X41_Y26_N5     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[0] ;
++---------+---------+----+------+--------+-------------------+------------------------------------------------------+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                                 ;
++---------+----------+----+------+--------+-------------------+------------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                              ;
++---------+----------+----+------+--------+-------------------+------------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                      ;
+; 3.284   ; 3.284    ;    ;      ;        ;                   ; clock path                                           ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                       ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                        ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                  ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                    ;
+;   2.865 ;   1.298  ; RR ; IC   ; 1      ; FF_X41_Y26_N5     ; u_soc|u_uart|u_rx|bit_q[0]|clk                       ;
+;   3.336 ;   0.471  ; RR ; CELL ; 1      ; FF_X41_Y26_N5     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[0] ;
+;   3.284 ;   -0.052 ;    ;      ;        ;                   ; clock pessimism removed                              ;
+; 3.284   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                    ;
+; 3.444   ; 0.160    ;    ; uTh  ; 1      ; FF_X41_Y26_N5     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|bit_q[0] ;
++---------+----------+----+------+--------+-------------------+------------------------------------------------------+
+
+
+Path #17: Hold slack is 0.307 
+===============================================================================
++--------------------------------------------------------------------------------------+
+; Path Summary                                                                         ;
++--------------------+-----------------------------------------------------------------+
+; Property           ; Value                                                           ;
++--------------------+-----------------------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[1] ;
+; To Node            ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[1] ;
+; Launch Clock       ; clk_50                                                          ;
+; Latch Clock        ; clk_50                                                          ;
+; Data Arrival Time  ; 3.853                                                           ;
+; Data Required Time ; 3.546                                                           ;
+; Slack              ; 0.307                                                           ;
++--------------------+-----------------------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.065 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.532 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 1     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.118       ; 64         ; 0.000 ; 1.348 ;
+;    Cell                ;       ; 3     ; 1.203       ; 36         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 2     ; 0.000       ; 0          ; 0.000 ; 0.000 ;
+;    Cell                ;       ; 3     ; 0.341       ; 64         ; 0.000 ; 0.279 ;
+;    uTco                ;       ; 1     ; 0.191       ; 36         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.206       ; 64         ; 0.000 ; 1.404 ;
+;    Cell                ;       ; 3     ; 1.236       ; 36         ; 0.000 ; 0.765 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                             ;
++---------+---------+----+------+--------+--------------------+-----------------------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location           ; Element                                                         ;
++---------+---------+----+------+--------+--------------------+-----------------------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                    ; launch edge time                                                ;
+; 3.321   ; 3.321   ;    ;      ;        ;                    ; clock path                                                      ;
+;   0.000 ;   0.000 ;    ;      ;        ;                    ; source latency                                                  ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11            ; MAX10_CLK1_50                                                   ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|i                                           ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|o                                           ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|inclk[0]                             ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|outclk                               ;
+;   2.883 ;   1.348 ; RR ; IC   ; 1      ; FF_X44_Y24_N13     ; u_soc|u_uart|u_rx_fifo|read_q[1]|clk                            ;
+;   3.321 ;   0.438 ; RR ; CELL ; 1      ; FF_X44_Y24_N13     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[1] ;
+; 3.853   ; 0.532   ;    ;      ;        ;                    ; data path                                                       ;
+;   3.512 ;   0.191 ;    ; uTco ; 1      ; FF_X44_Y24_N13     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[1] ;
+;   3.512 ;   0.000 ; FF ; CELL ; 33     ; FF_X44_Y24_N13     ; u_soc|u_uart|u_rx_fifo|read_q[1]|q                              ;
+;   3.512 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X44_Y24_N12 ; u_soc|u_uart|u_rx_fifo|read_q~4|datac                           ;
+;   3.791 ;   0.279 ; FF ; CELL ; 1      ; LCCOMB_X44_Y24_N12 ; u_soc|u_uart|u_rx_fifo|read_q~4|combout                         ;
+;   3.791 ;   0.000 ; FF ; IC   ; 1      ; FF_X44_Y24_N13     ; u_soc|u_uart|u_rx_fifo|read_q[1]|d                              ;
+;   3.853 ;   0.062 ; FF ; CELL ; 1      ; FF_X44_Y24_N13     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[1] ;
++---------+---------+----+------+--------+--------------------+-----------------------------------------------------------------+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                                            ;
++---------+----------+----+------+--------+-------------------+-----------------------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                                         ;
++---------+----------+----+------+--------+-------------------+-----------------------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                                 ;
+; 3.386   ; 3.386    ;    ;      ;        ;                   ; clock path                                                      ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                                  ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                                   ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                           ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                           ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                             ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                               ;
+;   2.971 ;   1.404  ; RR ; IC   ; 1      ; FF_X44_Y24_N13    ; u_soc|u_uart|u_rx_fifo|read_q[1]|clk                            ;
+;   3.442 ;   0.471  ; RR ; CELL ; 1      ; FF_X44_Y24_N13    ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[1] ;
+;   3.386 ;   -0.056 ;    ;      ;        ;                   ; clock pessimism removed                                         ;
+; 3.386   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                               ;
+; 3.546   ; 0.160    ;    ; uTh  ; 1      ; FF_X44_Y24_N13    ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[1] ;
++---------+----------+----+------+--------+-------------------+-----------------------------------------------------------------+
+
+
+Path #18: Hold slack is 0.307 
+===============================================================================
++--------------------------------------------------------------------------------------+
+; Path Summary                                                                         ;
++--------------------+-----------------------------------------------------------------+
+; Property           ; Value                                                           ;
++--------------------+-----------------------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[2] ;
+; To Node            ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[2] ;
+; Launch Clock       ; clk_50                                                          ;
+; Latch Clock        ; clk_50                                                          ;
+; Data Arrival Time  ; 3.853                                                           ;
+; Data Required Time ; 3.546                                                           ;
+; Slack              ; 0.307                                                           ;
++--------------------+-----------------------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.065 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.532 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 1     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.118       ; 64         ; 0.000 ; 1.348 ;
+;    Cell                ;       ; 3     ; 1.203       ; 36         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 2     ; 0.000       ; 0          ; 0.000 ; 0.000 ;
+;    Cell                ;       ; 3     ; 0.341       ; 64         ; 0.000 ; 0.279 ;
+;    uTco                ;       ; 1     ; 0.191       ; 36         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.206       ; 64         ; 0.000 ; 1.404 ;
+;    Cell                ;       ; 3     ; 1.236       ; 36         ; 0.000 ; 0.765 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                            ;
++---------+---------+----+------+--------+-------------------+-----------------------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location          ; Element                                                         ;
++---------+---------+----+------+--------+-------------------+-----------------------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                   ; launch edge time                                                ;
+; 3.321   ; 3.321   ;    ;      ;        ;                   ; clock path                                                      ;
+;   0.000 ;   0.000 ;    ;      ;        ;                   ; source latency                                                  ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                                   ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                           ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                           ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                             ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                               ;
+;   2.883 ;   1.348 ; RR ; IC   ; 1      ; FF_X44_Y24_N9     ; u_soc|u_uart|u_rx_fifo|read_q[2]|clk                            ;
+;   3.321 ;   0.438 ; RR ; CELL ; 1      ; FF_X44_Y24_N9     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[2] ;
+; 3.853   ; 0.532   ;    ;      ;        ;                   ; data path                                                       ;
+;   3.512 ;   0.191 ;    ; uTco ; 1      ; FF_X44_Y24_N9     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[2] ;
+;   3.512 ;   0.000 ; FF ; CELL ; 33     ; FF_X44_Y24_N9     ; u_soc|u_uart|u_rx_fifo|read_q[2]|q                              ;
+;   3.512 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X44_Y24_N8 ; u_soc|u_uart|u_rx_fifo|read_q~1|datac                           ;
+;   3.791 ;   0.279 ; FF ; CELL ; 1      ; LCCOMB_X44_Y24_N8 ; u_soc|u_uart|u_rx_fifo|read_q~1|combout                         ;
+;   3.791 ;   0.000 ; FF ; IC   ; 1      ; FF_X44_Y24_N9     ; u_soc|u_uart|u_rx_fifo|read_q[2]|d                              ;
+;   3.853 ;   0.062 ; FF ; CELL ; 1      ; FF_X44_Y24_N9     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[2] ;
++---------+---------+----+------+--------+-------------------+-----------------------------------------------------------------+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                                            ;
++---------+----------+----+------+--------+-------------------+-----------------------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                                         ;
++---------+----------+----+------+--------+-------------------+-----------------------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                                 ;
+; 3.386   ; 3.386    ;    ;      ;        ;                   ; clock path                                                      ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                                  ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                                   ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                           ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                           ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                             ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                               ;
+;   2.971 ;   1.404  ; RR ; IC   ; 1      ; FF_X44_Y24_N9     ; u_soc|u_uart|u_rx_fifo|read_q[2]|clk                            ;
+;   3.442 ;   0.471  ; RR ; CELL ; 1      ; FF_X44_Y24_N9     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[2] ;
+;   3.386 ;   -0.056 ;    ;      ;        ;                   ; clock pessimism removed                                         ;
+; 3.386   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                               ;
+; 3.546   ; 0.160    ;    ; uTh  ; 1      ; FF_X44_Y24_N9     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[2] ;
++---------+----------+----+------+--------+-------------------+-----------------------------------------------------------------+
+
+
+Path #19: Hold slack is 0.307 
+===============================================================================
++--------------------------------------------------------------------------------------+
+; Path Summary                                                                         ;
++--------------------+-----------------------------------------------------------------+
+; Property           ; Value                                                           ;
++--------------------+-----------------------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[3] ;
+; To Node            ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[3] ;
+; Launch Clock       ; clk_50                                                          ;
+; Latch Clock        ; clk_50                                                          ;
+; Data Arrival Time  ; 3.853                                                           ;
+; Data Required Time ; 3.546                                                           ;
+; Slack              ; 0.307                                                           ;
++--------------------+-----------------------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.065 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.532 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 1     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.118       ; 64         ; 0.000 ; 1.348 ;
+;    Cell                ;       ; 3     ; 1.203       ; 36         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 2     ; 0.000       ; 0          ; 0.000 ; 0.000 ;
+;    Cell                ;       ; 3     ; 0.341       ; 64         ; 0.000 ; 0.279 ;
+;    uTco                ;       ; 1     ; 0.191       ; 36         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.206       ; 64         ; 0.000 ; 1.404 ;
+;    Cell                ;       ; 3     ; 1.236       ; 36         ; 0.000 ; 0.765 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                            ;
++---------+---------+----+------+--------+-------------------+-----------------------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location          ; Element                                                         ;
++---------+---------+----+------+--------+-------------------+-----------------------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                   ; launch edge time                                                ;
+; 3.321   ; 3.321   ;    ;      ;        ;                   ; clock path                                                      ;
+;   0.000 ;   0.000 ;    ;      ;        ;                   ; source latency                                                  ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                                   ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                           ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                           ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                             ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                               ;
+;   2.883 ;   1.348 ; RR ; IC   ; 1      ; FF_X44_Y24_N3     ; u_soc|u_uart|u_rx_fifo|read_q[3]|clk                            ;
+;   3.321 ;   0.438 ; RR ; CELL ; 1      ; FF_X44_Y24_N3     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[3] ;
+; 3.853   ; 0.532   ;    ;      ;        ;                   ; data path                                                       ;
+;   3.512 ;   0.191 ;    ; uTco ; 1      ; FF_X44_Y24_N3     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[3] ;
+;   3.512 ;   0.000 ; FF ; CELL ; 32     ; FF_X44_Y24_N3     ; u_soc|u_uart|u_rx_fifo|read_q[3]|q                              ;
+;   3.512 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X44_Y24_N2 ; u_soc|u_uart|u_rx_fifo|read_q~3|datac                           ;
+;   3.791 ;   0.279 ; FF ; CELL ; 1      ; LCCOMB_X44_Y24_N2 ; u_soc|u_uart|u_rx_fifo|read_q~3|combout                         ;
+;   3.791 ;   0.000 ; FF ; IC   ; 1      ; FF_X44_Y24_N3     ; u_soc|u_uart|u_rx_fifo|read_q[3]|d                              ;
+;   3.853 ;   0.062 ; FF ; CELL ; 1      ; FF_X44_Y24_N3     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[3] ;
++---------+---------+----+------+--------+-------------------+-----------------------------------------------------------------+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                                            ;
++---------+----------+----+------+--------+-------------------+-----------------------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                                         ;
++---------+----------+----+------+--------+-------------------+-----------------------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                                 ;
+; 3.386   ; 3.386    ;    ;      ;        ;                   ; clock path                                                      ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                                  ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                                   ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                           ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                           ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                             ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                               ;
+;   2.971 ;   1.404  ; RR ; IC   ; 1      ; FF_X44_Y24_N3     ; u_soc|u_uart|u_rx_fifo|read_q[3]|clk                            ;
+;   3.442 ;   0.471  ; RR ; CELL ; 1      ; FF_X44_Y24_N3     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[3] ;
+;   3.386 ;   -0.056 ;    ;      ;        ;                   ; clock pessimism removed                                         ;
+; 3.386   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                               ;
+; 3.546   ; 0.160    ;    ; uTh  ; 1      ; FF_X44_Y24_N3     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx_fifo:u_rx_fifo|read_q[3] ;
++---------+----------+----+------+--------+-------------------+-----------------------------------------------------------------+
+
+
+Path #20: Hold slack is 0.307 
+===============================================================================
++-----------------------------------------------------------------------------+
+; Path Summary                                                                ;
++--------------------+--------------------------------------------------------+
+; Property           ; Value                                                  ;
++--------------------+--------------------------------------------------------+
+; From Node          ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|shift_q[1] ;
+; To Node            ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|shift_q[1] ;
+; Launch Clock       ; clk_50                                                 ;
+; Latch Clock        ; clk_50                                                 ;
+; Data Arrival Time  ; 3.751                                                  ;
+; Data Required Time ; 3.444                                                  ;
+; Slack              ; 0.307                                                  ;
++--------------------+--------------------------------------------------------+
+
++-----------------------------------------------------------------------------------+
+; Statistics                                                                        ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Property               ; Value ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+; Hold Relationship      ; 0.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; 0.065 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 0.532 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;       ; 1     ;             ;            ;       ;       ;
+; Physical Delays        ;       ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.016       ; 63         ; 0.000 ; 1.246 ;
+;    Cell                ;       ; 3     ; 1.203       ; 37         ; 0.000 ; 0.765 ;
+;   Data                 ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 2     ; 0.000       ; 0          ; 0.000 ; 0.000 ;
+;    Cell                ;       ; 3     ; 0.341       ; 64         ; 0.000 ; 0.279 ;
+;    uTco                ;       ; 1     ; 0.191       ; 36         ; 0.191 ; 0.191 ;
+;  Required Path         ;       ;       ;             ;            ;       ;       ;
+;   Clock                ;       ;       ;             ;            ;       ;       ;
+;    IC                  ;       ; 3     ; 2.100       ; 63         ; 0.000 ; 1.298 ;
+;    Cell                ;       ; 3     ; 1.236       ; 37         ; 0.000 ; 0.765 ;
++------------------------+-------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++----------------------------------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                                                    ;
++---------+---------+----+------+--------+--------------------+--------------------------------------------------------+
+; Total   ; Incr    ; RF ; Type ; Fanout ; Location           ; Element                                                ;
++---------+---------+----+------+--------+--------------------+--------------------------------------------------------+
+; 0.000   ; 0.000   ;    ;      ;        ;                    ; launch edge time                                       ;
+; 3.219   ; 3.219   ;    ;      ;        ;                    ; clock path                                             ;
+;   0.000 ;   0.000 ;    ;      ;        ;                    ; source latency                                         ;
+;   0.000 ;   0.000 ;    ;      ; 1      ; PIN_P11            ; MAX10_CLK1_50                                          ;
+;   0.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|i                                  ;
+;   0.765 ;   0.765 ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29  ; MAX10_CLK1_50~input|o                                  ;
+;   1.535 ;   0.770 ; RR ; IC   ; 1      ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|inclk[0]                    ;
+;   1.535 ;   0.000 ; RR ; CELL ; 3227   ; CLKCTRL_G19        ; MAX10_CLK1_50~inputclkctrl|outclk                      ;
+;   2.781 ;   1.246 ; RR ; IC   ; 1      ; FF_X42_Y26_N11     ; u_soc|u_uart|u_rx|shift_q[1]|clk                       ;
+;   3.219 ;   0.438 ; RR ; CELL ; 1      ; FF_X42_Y26_N11     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|shift_q[1] ;
+; 3.751   ; 0.532   ;    ;      ;        ;                    ; data path                                              ;
+;   3.410 ;   0.191 ;    ; uTco ; 1      ; FF_X42_Y26_N11     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|shift_q[1] ;
+;   3.410 ;   0.000 ; FF ; CELL ; 2      ; FF_X42_Y26_N11     ; u_soc|u_uart|u_rx|shift_q[1]|q                         ;
+;   3.410 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X42_Y26_N10 ; u_soc|u_uart|u_rx|shift_q~1|datac                      ;
+;   3.689 ;   0.279 ; FF ; CELL ; 1      ; LCCOMB_X42_Y26_N10 ; u_soc|u_uart|u_rx|shift_q~1|combout                    ;
+;   3.689 ;   0.000 ; FF ; IC   ; 1      ; FF_X42_Y26_N11     ; u_soc|u_uart|u_rx|shift_q[1]|d                         ;
+;   3.751 ;   0.062 ; FF ; CELL ; 1      ; FF_X42_Y26_N11     ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|shift_q[1] ;
++---------+---------+----+------+--------+--------------------+--------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Data Required Path                                                                                                   ;
++---------+----------+----+------+--------+-------------------+--------------------------------------------------------+
+; Total   ; Incr     ; RF ; Type ; Fanout ; Location          ; Element                                                ;
++---------+----------+----+------+--------+-------------------+--------------------------------------------------------+
+; 0.000   ; 0.000    ;    ;      ;        ;                   ; latch edge time                                        ;
+; 3.284   ; 3.284    ;    ;      ;        ;                   ; clock path                                             ;
+;   0.000 ;   0.000  ;    ;      ;        ;                   ; source latency                                         ;
+;   0.000 ;   0.000  ;    ;      ; 1      ; PIN_P11           ; MAX10_CLK1_50                                          ;
+;   0.000 ;   0.000  ; RR ; IC   ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|i                                  ;
+;   0.765 ;   0.765  ; RR ; CELL ; 1      ; IOIBUF_X34_Y0_N29 ; MAX10_CLK1_50~input|o                                  ;
+;   1.567 ;   0.802  ; RR ; IC   ; 1      ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|inclk[0]                    ;
+;   1.567 ;   0.000  ; RR ; CELL ; 3227   ; CLKCTRL_G19       ; MAX10_CLK1_50~inputclkctrl|outclk                      ;
+;   2.865 ;   1.298  ; RR ; IC   ; 1      ; FF_X42_Y26_N11    ; u_soc|u_uart|u_rx|shift_q[1]|clk                       ;
+;   3.336 ;   0.471  ; RR ; CELL ; 1      ; FF_X42_Y26_N11    ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|shift_q[1] ;
+;   3.284 ;   -0.052 ;    ;      ;        ;                   ; clock pessimism removed                                ;
+; 3.284   ; 0.000    ;    ;      ;        ;                   ; clock uncertainty                                      ;
+; 3.444   ; 0.160    ;    ; uTh  ; 1      ; FF_X42_Y26_N11    ; rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|shift_q[1] ;
++---------+----------+----+------+--------+-------------------+--------------------------------------------------------+
+
+

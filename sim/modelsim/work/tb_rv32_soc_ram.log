@@ -1,0 +1,16 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -L rtl_work work.tb_rv32_soc_ram -do "C:\FPGA\riscv_soc_de10_lite\sim\modelsim\work\run_test.do" 
+# Start time: 12:26:54 on Oct 05,2026
+# Loading sv_std.std
+# Loading work.tb_rv32_soc_ram
+# Loading work.soc_ram
+# Loading work.intel_sync_ram_1p
+# do {C:\FPGA\riscv_soc_de10_lite\sim\modelsim\work\run_test.do}
+# PASS tb_rv32_soc_ram: 35 checks
+# ** Note: $finish    : C:/FPGA/riscv_soc_de10_lite/tb/memory/tb_rv32_soc_ram.v(111)
+#    Time: 620 ns  Iteration: 1  Instance: /tb_rv32_soc_ram
+# End time: 12:26:54 on Oct 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

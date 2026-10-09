@@ -1,0 +1,15 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -L rtl_work work.tb_rv32_decoder -do "C:\FPGA\riscv_soc_de10_lite\sim\modelsim\work\run_test.do" 
+# Start time: 12:26:36 on Oct 05,2026
+# Loading sv_std.std
+# Loading work.tb_rv32_decoder
+# Loading work.rv32_decoder
+# do {C:\FPGA\riscv_soc_de10_lite\sim\modelsim\work\run_test.do}
+# PASS: 63 decoder checks
+# ** Note: $finish    : C:/FPGA/riscv_soc_de10_lite/tb/core/id/tb_rv32_decoder.v(389)
+#    Time: 63 ns  Iteration: 0  Instance: /tb_rv32_decoder
+# End time: 12:26:36 on Oct 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

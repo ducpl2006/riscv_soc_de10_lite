@@ -1,0 +1,43 @@
+
+State Machine - |de10_lite_top|rv32_soc:u_soc|qnn_soc_accelerator:u_qnn|state_q
+Name state_q.ST_OUT_MAC state_q.ST_L2_STORE state_q.ST_L2_MAC state_q.ST_L2_FETCH state_q.ST_L1_STORE state_q.ST_L1_MAC state_q.ST_L1_FETCH state_q.ST_IDLE state_q.ST_OUT_DONE 
+state_q.ST_IDLE 0 0 0 0 0 0 0 0 0 
+state_q.ST_L1_FETCH 0 0 0 0 0 0 1 1 0 
+state_q.ST_L1_MAC 0 0 0 0 0 1 0 1 0 
+state_q.ST_L1_STORE 0 0 0 0 1 0 0 1 0 
+state_q.ST_L2_FETCH 0 0 0 1 0 0 0 1 0 
+state_q.ST_L2_MAC 0 0 1 0 0 0 0 1 0 
+state_q.ST_L2_STORE 0 1 0 0 0 0 0 1 0 
+state_q.ST_OUT_MAC 1 0 0 0 0 0 0 1 0 
+state_q.ST_OUT_DONE 0 0 0 0 0 0 0 1 1 
+
+State Machine - |de10_lite_top|rv32_soc:u_soc|soc_i2c_master:u_i2c|state_q
+Name state_q.ST_REC_HIGH state_q.ST_REC_LOW state_q.ST_START_PRE state_q.ST_COMPLETE state_q.ST_STOP_C state_q.ST_STOP_B state_q.ST_STOP_A state_q.ST_ACK_HIGH state_q.ST_ACK_LOW state_q.ST_BIT_HIGH state_q.ST_BIT_LOW state_q.ST_START_B state_q.ST_START_A state_q.ST_IDLE 
+state_q.ST_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state_q.ST_START_A 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state_q.ST_START_B 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state_q.ST_BIT_LOW 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state_q.ST_BIT_HIGH 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state_q.ST_ACK_LOW 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state_q.ST_ACK_HIGH 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state_q.ST_STOP_A 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state_q.ST_STOP_B 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state_q.ST_STOP_C 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state_q.ST_COMPLETE 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state_q.ST_START_PRE 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state_q.ST_REC_LOW 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state_q.ST_REC_HIGH 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |de10_lite_top|rv32_soc:u_soc|soc_uart:u_uart|uart_rx:u_rx|state_q
+Name state_q.STOP state_q.DATA state_q.START state_q.IDLE state_q.WAIT_HIGH 
+state_q.IDLE 0 0 0 0 0 
+state_q.START 0 0 1 1 0 
+state_q.DATA 0 1 0 1 0 
+state_q.STOP 1 0 0 1 0 
+state_q.WAIT_HIGH 0 0 0 1 1 
+
+State Machine - |de10_lite_top|rv32_soc:u_soc|soc_bus:u_bus|state_q
+Name state_q.IDLE state_q.RESPONSE state_q.ACCESS 
+state_q.IDLE 0 0 0 
+state_q.ACCESS 1 0 1 
+state_q.RESPONSE 1 1 0 

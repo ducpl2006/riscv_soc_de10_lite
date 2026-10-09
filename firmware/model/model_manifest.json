@@ -1,0 +1,430 @@
+{
+  "schema_version": 1,
+  "model_id": "BEEDE8E56D64BA8C",
+  "seed": 20250920,
+  "topology": [
+    80,
+    16,
+    8,
+    1
+  ],
+  "sequence_length": 20,
+  "features": [
+    "voltage_mv",
+    "current_ma",
+    "temperature_deci_c",
+    "delta_ms"
+  ],
+  "feature_center": [
+    3402,
+    -1000,
+    225,
+    10000
+  ],
+  "feature_scale": [
+    5,
+    24,
+    2,
+    1
+  ],
+  "current_sign": "positive_is_charge",
+  "sample_period_ms": 10000,
+  "nominal_capacity_ah": 2.0,
+  "label_method": "Coulomb counting on Step_Index 7/8; effective capacity is inferred from the known initial SOC and the full dynamic-profile discharge",
+  "split": {
+    "train": [
+      "DST",
+      "FUDS"
+    ],
+    "validation": [
+      "US06"
+    ],
+    "test": [
+      "BJDST"
+    ]
+  },
+  "quantization": {
+    "weights": "signed_int8_symmetric_power_of_two",
+    "bias_accumulator": "signed_int32",
+    "activation": "relu_then_unsigned_range_0_127_stored_in_int8",
+    "l1_shift": 8,
+    "l2_shift": 7,
+    "out_shift": 1,
+    "l1_weight_fraction_bits": 13,
+    "l1_activation_fraction_bits": 5,
+    "l2_weight_fraction_bits": 7,
+    "l2_activation_fraction_bits": 5,
+    "out_weight_fraction_bits": -4
+  },
+  "source_archives": {
+    "SP2_0C_BJDST.zip": "4527DE6936F8DFDD3A22064F3AD5C6BDA00EE7C5C7E79C9B192A6D5889F0710D",
+    "SP2_0C_DST.zip": "0364DA89C4DF59B7D886ABA367F9DF5AF20218AFB7A9125893FFCF782A5078A0",
+    "SP2_0C_FUDS.zip": "991874428CA56D37D6575869F55154B7ADD45AF6B3A7183C9AD27E4EEF9C81C1",
+    "SP2_0C_US06.zip": "6AEB39CC018E0A71EBFBE7C9E2086A321A82D947965CE7515EE2ED40D847427B",
+    "SP2_25C_BJDST.zip": "DF372646A75F495186A58C3F549BAECF86E70E0478BF55A97E122BAB10F5BF21",
+    "SP2_25C_DST.zip": "3D3A90A67574C336ECA9D097A5F139AAAD70E7FA3106078079DA9CD11D1B3661",
+    "SP2_25C_FUDS.zip": "E2CE8E4626C4263CB8758C9488CEC66D31C04A9D11465C14E668428CEAD1E053",
+    "SP2_25C_US06.zip": "CEDF99281BAD6C1F17A879D614F867451CF5994BAD0F66D30C56290C1F6BB3FB",
+    "SP2_45C_BJDST.zip": "AB25E87C42A51F7A5DEF4BADED07D40BCEB35DFB7D3ECC8551330FBB999FDC60",
+    "SP2_45C_DST.zip": "B8ED594453817552FA962DEB1BDBB3B002AC6DE7EFCFDB9B6CC8AE4CC6F58A9F",
+    "SP2_45C_FUDS.zip": "17E796F6EE7C42DCA1E3B38EAFA9EFC7A736512B19A88D0EBAF78BD37011CBD2",
+    "SP2_45C_US06.zip": "471F4CDB4431E13C56CC2A4EFD7565339713D9B816113AD094A1B72132071648"
+  },
+  "series": [
+    {
+      "archive": "SP2_0C_BJDST.zip",
+      "member": "02_27_2016_SP20-2_0C_BJDST_80SOC.xls",
+      "profile": "BJDST",
+      "ambient_c": 0,
+      "initial_soc": 80,
+      "measured_capacity_ah": 1.887365298087057,
+      "raw_rows": 10178,
+      "resampled_rows": 1028,
+      "soc_min": 0.009683318436145782,
+      "soc_max": 79.9285888671875
+    },
+    {
+      "archive": "SP2_0C_BJDST.zip",
+      "member": "02_29_2016_SP20-2_0C_BJDST_50SOC.xls",
+      "profile": "BJDST",
+      "ambient_c": 0,
+      "initial_soc": 50,
+      "measured_capacity_ah": 1.8106712878540967,
+      "raw_rows": 6022,
+      "resampled_rows": 608,
+      "soc_min": 0.1933039903640747,
+      "soc_max": 49.97566223144531
+    },
+    {
+      "archive": "SP2_0C_DST.zip",
+      "member": "02_24_2016_SP20-2_0C_DST_50SOC.xls",
+      "profile": "DST",
+      "ambient_c": 0,
+      "initial_soc": 50,
+      "measured_capacity_ah": 1.777168751076039,
+      "raw_rows": 5968,
+      "resampled_rows": 601,
+      "soc_min": 0.29933321475982666,
+      "soc_max": 49.999993896484376
+    },
+    {
+      "archive": "SP2_0C_DST.zip",
+      "member": "02_24_2016_SP20-2_0C_DST_80SOC.xls",
+      "profile": "DST",
+      "ambient_c": 0,
+      "initial_soc": 80,
+      "measured_capacity_ah": 1.7824685256628503,
+      "raw_rows": 9552,
+      "resampled_rows": 961,
+      "soc_min": 0.4285470962524414,
+      "soc_max": 79.99999389648437
+    },
+    {
+      "archive": "SP2_0C_FUDS.zip",
+      "member": "02_25_2016_SP20-2_0C_FUDS_50SOC.xls",
+      "profile": "FUDS",
+      "ambient_c": 0,
+      "initial_soc": 50,
+      "measured_capacity_ah": 1.9794051268811068,
+      "raw_rows": 6965,
+      "resampled_rows": 703,
+      "soc_min": 0.026612186431884767,
+      "soc_max": 49.99998168945312
+    },
+    {
+      "archive": "SP2_0C_FUDS.zip",
+      "member": "02_25_2016_SP20-2_0C_FUDS_80SOC.xls",
+      "profile": "FUDS",
+      "ambient_c": 0,
+      "initial_soc": 80,
+      "measured_capacity_ah": 1.74076550614432,
+      "raw_rows": 9713,
+      "resampled_rows": 981,
+      "soc_min": 0.10816800594329834,
+      "soc_max": 79.99999389648437
+    },
+    {
+      "archive": "SP2_0C_US06.zip",
+      "member": "02_26_2016_SP20-2_0C_US06_50SOC.xls",
+      "profile": "US06",
+      "ambient_c": 0,
+      "initial_soc": 50,
+      "measured_capacity_ah": 1.832444273685173,
+      "raw_rows": 5924,
+      "resampled_rows": 597,
+      "soc_min": 0.2987703323364258,
+      "soc_max": 49.99961547851562
+    },
+    {
+      "archive": "SP2_0C_US06.zip",
+      "member": "02_26_2016_SP20-2_0C_US06_80SOC.xls",
+      "profile": "US06",
+      "ambient_c": 0,
+      "initial_soc": 80,
+      "measured_capacity_ah": 1.8359075757654526,
+      "raw_rows": 9493,
+      "resampled_rows": 958,
+      "soc_min": 0.2140960931777954,
+      "soc_max": 79.99999389648437
+    },
+    {
+      "archive": "SP2_25C_BJDST.zip",
+      "member": "11_12_2015_SP20-2_BJDST_80SOC.xls",
+      "profile": "BJDST",
+      "ambient_c": 25,
+      "initial_soc": 80,
+      "measured_capacity_ah": 2.066899423059663,
+      "raw_rows": 11214,
+      "resampled_rows": 1123,
+      "soc_min": 0.05392795205116272,
+      "soc_max": 79.98880615234376
+    },
+    {
+      "archive": "SP2_25C_BJDST.zip",
+      "member": "11_13_2015_SP20-2_BJDST_50SOC.xls",
+      "profile": "BJDST",
+      "ambient_c": 25,
+      "initial_soc": 50,
+      "measured_capacity_ah": 2.089258046014646,
+      "raw_rows": 6946,
+      "resampled_rows": 700,
+      "soc_min": 0.17011420726776122,
+      "soc_max": 49.93224182128906
+    },
+    {
+      "archive": "SP2_25C_DST.zip",
+      "member": "11_05_2015_SP20-2_DST_50SOC.xls",
+      "profile": "DST",
+      "ambient_c": 25,
+      "initial_soc": 50,
+      "measured_capacity_ah": 2.0133951518483997,
+      "raw_rows": 6698,
+      "resampled_rows": 674,
+      "soc_min": 0.21016650199890136,
+      "soc_max": 50.0
+    },
+    {
+      "archive": "SP2_25C_DST.zip",
+      "member": "11_05_2015_SP20-2_DST_80SOC.xls",
+      "profile": "DST",
+      "ambient_c": 25,
+      "initial_soc": 80,
+      "measured_capacity_ah": 1.9988580995426422,
+      "raw_rows": 10645,
+      "resampled_rows": 1071,
+      "soc_min": 0.16245808601379394,
+      "soc_max": 79.99999389648437
+    },
+    {
+      "archive": "SP2_25C_FUDS.zip",
+      "member": "11_06_2015_SP20-2_FUDS_80SOC.xls",
+      "profile": "FUDS",
+      "ambient_c": 25,
+      "initial_soc": 80,
+      "measured_capacity_ah": 1.9967830178397805,
+      "raw_rows": 11098,
+      "resampled_rows": 1120,
+      "soc_min": 0.03491871654987335,
+      "soc_max": 80.0
+    },
+    {
+      "archive": "SP2_25C_FUDS.zip",
+      "member": "11_09_2015_SP20-2_FUDS_50SOC.xls",
+      "profile": "FUDS",
+      "ambient_c": 25,
+      "initial_soc": 50,
+      "measured_capacity_ah": 2.010612764838591,
+      "raw_rows": 6999,
+      "resampled_rows": 706,
+      "soc_min": 0.41048054695129393,
+      "soc_max": 50.0
+    },
+    {
+      "archive": "SP2_25C_US06.zip",
+      "member": "11_11_2015_SP20-2_US06_50SOC.xls",
+      "profile": "US06",
+      "ambient_c": 25,
+      "initial_soc": 50,
+      "measured_capacity_ah": 2.111336649586706,
+      "raw_rows": 6883,
+      "resampled_rows": 689,
+      "soc_min": 0.13150750398635863,
+      "soc_max": 49.998876953125
+    },
+    {
+      "archive": "SP2_25C_US06.zip",
+      "member": "11_11_2015_SP20-2_US06_80SOC.xls",
+      "profile": "US06",
+      "ambient_c": 25,
+      "initial_soc": 80,
+      "measured_capacity_ah": 2.0682893045896646,
+      "raw_rows": 10694,
+      "resampled_rows": 1078,
+      "soc_min": 0.10534101724624634,
+      "soc_max": 80.0
+    },
+    {
+      "archive": "SP2_45C_BJDST.zip",
+      "member": "12_17_2015_SP20-2_45C_BJDST_50SOC.xls",
+      "profile": "BJDST",
+      "ambient_c": 45,
+      "initial_soc": 50,
+      "measured_capacity_ah": 2.1755601905203155,
+      "raw_rows": 7331,
+      "resampled_rows": 740,
+      "soc_min": 0.05190524458885193,
+      "soc_max": 49.997430419921876
+    },
+    {
+      "archive": "SP2_45C_BJDST.zip",
+      "member": "12_17_2015_SP20-2_45C_BJDST_80SOC.xls",
+      "profile": "BJDST",
+      "ambient_c": 45,
+      "initial_soc": 80,
+      "measured_capacity_ah": 2.1067233094192113,
+      "raw_rows": 11402,
+      "resampled_rows": 1151,
+      "soc_min": 0.010741730779409408,
+      "soc_max": 79.99960327148438
+    },
+    {
+      "archive": "SP2_45C_DST.zip",
+      "member": "12_11_2015_SP20-2_45C_DST_50SOC.xls",
+      "profile": "DST",
+      "ambient_c": 45,
+      "initial_soc": 50,
+      "measured_capacity_ah": 2.1254638613217347,
+      "raw_rows": 7060,
+      "resampled_rows": 711,
+      "soc_min": 0.19197044372558594,
+      "soc_max": 49.999993896484376
+    },
+    {
+      "archive": "SP2_45C_DST.zip",
+      "member": "12_11_2015_SP20-2_45C_DST_80SOC.xls",
+      "profile": "DST",
+      "ambient_c": 45,
+      "initial_soc": 80,
+      "measured_capacity_ah": 2.1111115240913043,
+      "raw_rows": 11325,
+      "resampled_rows": 1140,
+      "soc_min": 0.060046762228012085,
+      "soc_max": 79.99999389648437
+    },
+    {
+      "archive": "SP2_45C_FUDS.zip",
+      "member": "12_15_2015_SP20-2_45C_FUDS_50SOC.xls",
+      "profile": "FUDS",
+      "ambient_c": 45,
+      "initial_soc": 50,
+      "measured_capacity_ah": 2.1745947531166383,
+      "raw_rows": 7489,
+      "resampled_rows": 756,
+      "soc_min": 0.03865413963794708,
+      "soc_max": 49.99998474121094
+    },
+    {
+      "archive": "SP2_45C_FUDS.zip",
+      "member": "12_15_2015_SP20-2_45C_FUDS_80SOC.xls",
+      "profile": "FUDS",
+      "ambient_c": 45,
+      "initial_soc": 80,
+      "measured_capacity_ah": 2.098852490627702,
+      "raw_rows": 11632,
+      "resampled_rows": 1175,
+      "soc_min": 0.009168776869773864,
+      "soc_max": 79.99998779296875
+    },
+    {
+      "archive": "SP2_45C_US06.zip",
+      "member": "12_16_2015_SP20-2_45C_US06_50SOC.xls",
+      "profile": "US06",
+      "ambient_c": 45,
+      "initial_soc": 50,
+      "measured_capacity_ah": 2.1817476211582028,
+      "raw_rows": 7003,
+      "resampled_rows": 706,
+      "soc_min": 0.056964552402496337,
+      "soc_max": 49.999853515625
+    },
+    {
+      "archive": "SP2_45C_US06.zip",
+      "member": "12_16_2015_SP20-2_45C_US06_80SOC.xls",
+      "profile": "US06",
+      "ambient_c": 45,
+      "initial_soc": 80,
+      "measured_capacity_ah": 2.102173893451756,
+      "raw_rows": 10900,
+      "resampled_rows": 1100,
+      "soc_min": 0.003682661056518555,
+      "soc_max": 79.99999389648437
+    }
+  ],
+  "metrics": {
+    "train": {
+      "float": {
+        "mae_percent": 1.2575778502590538,
+        "rmse_percent": 1.6765919113759162,
+        "max_abs_error_percent": 8.84510498046875,
+        "bias_percent": 0.25808026849370075
+      },
+      "quantized_bitexact": {
+        "mae_percent": 1.9289507235158903,
+        "rmse_percent": 2.4305753385913262,
+        "max_abs_error_percent": 10.09327392578125,
+        "bias_percent": -0.2429586720768632
+      },
+      "quantization_delta": {
+        "mae_percent": 1.5825631329436483,
+        "rmse_percent": 1.9439803059642025,
+        "max_abs_error_percent": 6.937640380859375,
+        "bias_percent": -0.501038940570564
+      }
+    },
+    "validation": {
+      "float": {
+        "mae_percent": 1.51301220155447,
+        "rmse_percent": 1.9346140938046013,
+        "max_abs_error_percent": 8.93399658203125,
+        "bias_percent": -0.7282286510673899
+      },
+      "quantized_bitexact": {
+        "mae_percent": 2.553377604862585,
+        "rmse_percent": 3.1298209714138174,
+        "max_abs_error_percent": 10.205224609375,
+        "bias_percent": -1.2789833834530777
+      },
+      "quantization_delta": {
+        "mae_percent": 1.5340555063889805,
+        "rmse_percent": 1.8761426771723113,
+        "max_abs_error_percent": 7.334246826171875,
+        "bias_percent": -0.550754732385688
+      }
+    },
+    "test": {
+      "float": {
+        "mae_percent": 1.6397749031062194,
+        "rmse_percent": 2.157684502864776,
+        "max_abs_error_percent": 12.787472152709961,
+        "bias_percent": -1.1249467110594293
+      },
+      "quantized_bitexact": {
+        "mae_percent": 2.773836216888183,
+        "rmse_percent": 3.382349110397298,
+        "max_abs_error_percent": 12.218781661987304,
+        "bias_percent": -1.6874013437194404
+      },
+      "quantization_delta": {
+        "mae_percent": 1.5233455936083637,
+        "rmse_percent": 1.8618050840604912,
+        "max_abs_error_percent": 6.34051513671875,
+        "bias_percent": -0.5624546326600113
+      }
+    }
+  },
+  "verification": {
+    "target_soc_tenths": 316.04144287109375,
+    "expected_rtl_soc_tenths": 328,
+    "feature_vector_order": "20 samples, each [voltage,current,temperature,delta_t]"
+  }
+}

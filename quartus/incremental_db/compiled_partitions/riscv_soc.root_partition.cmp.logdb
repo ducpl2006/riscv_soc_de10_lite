@@ -1,0 +1,5 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,rv32_soc:u_soc|qnn_soc_accelerator:u_qnn|lpm_mult:Mult2|mult_tds:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,rv32_soc:u_soc|qnn_soc_accelerator:u_qnn|lpm_mult:Mult1|mult_tds:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,rv32_soc:u_soc|qnn_soc_accelerator:u_qnn|lpm_mult:Mult0|mult_tds:auto_generated|mac_out2,
+PORT_SWAPPING,PORT_SWAPPING_FINISHED,rv32_soc:u_soc|qnn_soc_accelerator:u_qnn|lpm_mult:Mult0|mult_tds:auto_generated|mac_mult1,

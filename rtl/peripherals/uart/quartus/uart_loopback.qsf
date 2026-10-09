@@ -1,0 +1,26 @@
+# Project Quartus cho demo loopback trên DE10-Lite.
+#
+# Các gán chân vật lý được đặt trong pins.qsf. Chọn đúng chân header GPIO mà
+# dây nối thực tế sử dụng và đối chiếu mọi vị trí với schematic DE10-Lite chính
+# thức trước khi chạy fitter hoặc nạp FPGA.
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF484C7G
+set_global_assignment -name TOP_LEVEL_ENTITY uart_loopback_top
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
+
+set_global_assignment -name VERILOG_INPUT_VERSION VERILOG_2001
+set_global_assignment -name VERILOG_FILE ../rtl/reset_sync.v
+set_global_assignment -name VERILOG_FILE ../rtl/uart_rx_sync.v
+set_global_assignment -name VERILOG_FILE ../rtl/uart_baud_gen.v
+set_global_assignment -name VERILOG_FILE ../rtl/sync_fifo.v
+set_global_assignment -name VERILOG_FILE ../rtl/uart_tx.v
+set_global_assignment -name VERILOG_FILE ../rtl/uart_rx.v
+set_global_assignment -name VERILOG_FILE ../rtl/uart_top.v
+set_global_assignment -name VERILOG_FILE ../rtl/uart_loopback_top.v
+
+set_global_assignment -name SDC_FILE uart_loopback.sdc
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+
+source "pins.qsf"

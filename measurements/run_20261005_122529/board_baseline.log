@@ -1,0 +1,4 @@
+PASS board baseline boot 1: 50MHz, UART=OK, QNN=12, LED=20c, EBREAK@0x48
+PASS board baseline boot 2: 50MHz, UART=OK, QNN=12, LED=20c, EBREAK@0x48
+RESULT: PASS board baseline POR + KEY reset (behavioral RTL)
+/mnt/c/FPGA/riscv_soc_de10_lite/measurements/run_20261005_122529/tb_board_baseline.sv:44: $finish called at 475240000 (1ps)

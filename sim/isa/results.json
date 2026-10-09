@@ -1,0 +1,1765 @@
+{
+  "upstream_commit": "bcffa2b3188b040c611f90dc0b6e422f54775a09",
+  "compiler": "riscv64-unknown-elf-gcc (14.2.0+19) 14.2.0",
+  "excluded": {
+    "fence_i": "Zifencei is not implemented; illegal encoding tested locally",
+    "ma_data": "EEI traps misaligned data instead of emulating it; local trap cases replace this test"
+  },
+  "results": [
+    {
+      "name": "add",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 37,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=425 transactions=0 cycles=479\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 4910000 (1ps)",
+      "sha256": "3c862a931e4b966b4a8d254e8c261fd46e4642d02ecced3df9fb2b3ecabd8b04"
+    },
+    {
+      "name": "add",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 37,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=425 transactions=0 cycles=534\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5460000 (1ps)",
+      "sha256": "3c862a931e4b966b4a8d254e8c261fd46e4642d02ecced3df9fb2b3ecabd8b04"
+    },
+    {
+      "name": "add",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 37,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=425 transactions=0 cycles=519\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5310000 (1ps)",
+      "sha256": "3c862a931e4b966b4a8d254e8c261fd46e4642d02ecced3df9fb2b3ecabd8b04"
+    },
+    {
+      "name": "addi",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=202 transactions=0 cycles=229\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2410000 (1ps)",
+      "sha256": "d8a4d94c78ea101328a8b3c8e059ae955def292c6356ba03ce6ea7abffed3742"
+    },
+    {
+      "name": "addi",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=202 transactions=0 cycles=250\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2620000 (1ps)",
+      "sha256": "d8a4d94c78ea101328a8b3c8e059ae955def292c6356ba03ce6ea7abffed3742"
+    },
+    {
+      "name": "addi",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=202 transactions=0 cycles=247\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2590000 (1ps)",
+      "sha256": "d8a4d94c78ea101328a8b3c8e059ae955def292c6356ba03ce6ea7abffed3742"
+    },
+    {
+      "name": "and",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 26,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=445 transactions=0 cycles=499\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5110000 (1ps)",
+      "sha256": "878c6cbbf5e3ae34117e94d0a454ab69815378cb90c30b364d5a403609511944"
+    },
+    {
+      "name": "and",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 26,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=445 transactions=0 cycles=559\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5710000 (1ps)",
+      "sha256": "878c6cbbf5e3ae34117e94d0a454ab69815378cb90c30b364d5a403609511944"
+    },
+    {
+      "name": "and",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 26,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=445 transactions=0 cycles=541\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5530000 (1ps)",
+      "sha256": "878c6cbbf5e3ae34117e94d0a454ab69815378cb90c30b364d5a403609511944"
+    },
+    {
+      "name": "andi",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 13,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=158 transactions=0 cycles=185\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 1970000 (1ps)",
+      "sha256": "5d097811b7120cc081f6b2a5399aba583add10643097630dfff8cd94b24317d2"
+    },
+    {
+      "name": "andi",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 13,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=158 transactions=0 cycles=204\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2160000 (1ps)",
+      "sha256": "5d097811b7120cc081f6b2a5399aba583add10643097630dfff8cd94b24317d2"
+    },
+    {
+      "name": "andi",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 13,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=158 transactions=0 cycles=196\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2080000 (1ps)",
+      "sha256": "5d097811b7120cc081f6b2a5399aba583add10643097630dfff8cd94b24317d2"
+    },
+    {
+      "name": "auipc",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 2,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=19 transactions=0 cycles=34\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 460000 (1ps)",
+      "sha256": "ab79dc7662c353ed329b5b8af6bf859568708e1703e578b39eaafc009cd2374f"
+    },
+    {
+      "name": "auipc",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 2,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=19 transactions=0 cycles=37\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 490000 (1ps)",
+      "sha256": "ab79dc7662c353ed329b5b8af6bf859568708e1703e578b39eaafc009cd2374f"
+    },
+    {
+      "name": "auipc",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 2,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=19 transactions=0 cycles=34\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 460000 (1ps)",
+      "sha256": "ab79dc7662c353ed329b5b8af6bf859568708e1703e578b39eaafc009cd2374f"
+    },
+    {
+      "name": "beq",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 20,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=251 transactions=0 cycles=338\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 3500000 (1ps)",
+      "sha256": "c7d4ba7b7ecaf40e0fe51821b2e728569be356943d8c2c105d4be75f1097dfef"
+    },
+    {
+      "name": "beq",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 20,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=251 transactions=0 cycles=372\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 3840000 (1ps)",
+      "sha256": "c7d4ba7b7ecaf40e0fe51821b2e728569be356943d8c2c105d4be75f1097dfef"
+    },
+    {
+      "name": "beq",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 20,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=251 transactions=0 cycles=365\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 3770000 (1ps)",
+      "sha256": "c7d4ba7b7ecaf40e0fe51821b2e728569be356943d8c2c105d4be75f1097dfef"
+    },
+    {
+      "name": "bge",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 23,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=269 transactions=0 cycles=383\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 3950000 (1ps)",
+      "sha256": "081c5d014e22e4d017864130c7007adfc07b25a01aaa3c30b047a470b00b8aa8"
+    },
+    {
+      "name": "bge",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 23,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=269 transactions=0 cycles=419\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 4310000 (1ps)",
+      "sha256": "081c5d014e22e4d017864130c7007adfc07b25a01aaa3c30b047a470b00b8aa8"
+    },
+    {
+      "name": "bge",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 23,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=269 transactions=0 cycles=412\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 4240000 (1ps)",
+      "sha256": "081c5d014e22e4d017864130c7007adfc07b25a01aaa3c30b047a470b00b8aa8"
+    },
+    {
+      "name": "bgeu",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 23,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=294 transactions=0 cycles=408\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 4200000 (1ps)",
+      "sha256": "1754a64310d7298153ea33696c7c2b4857c6e5507278cd22e3805b978c626671"
+    },
+    {
+      "name": "bgeu",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 23,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=294 transactions=0 cycles=446\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 4580000 (1ps)",
+      "sha256": "1754a64310d7298153ea33696c7c2b4857c6e5507278cd22e3805b978c626671"
+    },
+    {
+      "name": "bgeu",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 23,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=294 transactions=0 cycles=437\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 4490000 (1ps)",
+      "sha256": "1754a64310d7298153ea33696c7c2b4857c6e5507278cd22e3805b978c626671"
+    },
+    {
+      "name": "blt",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 20,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=251 transactions=0 cycles=338\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 3500000 (1ps)",
+      "sha256": "0fd7db26e273bde145766d5cd84ee301bb1914f31cc3ceb09a2a85d8e2420cfc"
+    },
+    {
+      "name": "blt",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 20,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=251 transactions=0 cycles=372\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 3840000 (1ps)",
+      "sha256": "0fd7db26e273bde145766d5cd84ee301bb1914f31cc3ceb09a2a85d8e2420cfc"
+    },
+    {
+      "name": "blt",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 20,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=251 transactions=0 cycles=365\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 3770000 (1ps)",
+      "sha256": "0fd7db26e273bde145766d5cd84ee301bb1914f31cc3ceb09a2a85d8e2420cfc"
+    },
+    {
+      "name": "bltu",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 20,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=276 transactions=0 cycles=363\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 3750000 (1ps)",
+      "sha256": "35648046b44c87548a0cdc0ee493ea79275e81c77ce910d5aeeb3c1adbfb6f73"
+    },
+    {
+      "name": "bltu",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 20,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=276 transactions=0 cycles=396\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 4080000 (1ps)",
+      "sha256": "35648046b44c87548a0cdc0ee493ea79275e81c77ce910d5aeeb3c1adbfb6f73"
+    },
+    {
+      "name": "bltu",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 20,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=276 transactions=0 cycles=393\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 4050000 (1ps)",
+      "sha256": "35648046b44c87548a0cdc0ee493ea79275e81c77ce910d5aeeb3c1adbfb6f73"
+    },
+    {
+      "name": "bne",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 20,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=251 transactions=0 cycles=344\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 3560000 (1ps)",
+      "sha256": "8a4abd2d6d8d923670fe0cf8dbf91b87d53b55085d42b3e2ea2fa759bad10efc"
+    },
+    {
+      "name": "bne",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 20,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=251 transactions=0 cycles=377\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 3890000 (1ps)",
+      "sha256": "8a4abd2d6d8d923670fe0cf8dbf91b87d53b55085d42b3e2ea2fa759bad10efc"
+    },
+    {
+      "name": "bne",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 20,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=251 transactions=0 cycles=374\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 3860000 (1ps)",
+      "sha256": "8a4abd2d6d8d923670fe0cf8dbf91b87d53b55085d42b3e2ea2fa759bad10efc"
+    },
+    {
+      "name": "jal",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 2,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=15 transactions=0 cycles=30\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 420000 (1ps)",
+      "sha256": "62813896714bcb545c7ad498b9cd320fa9d96ccfa090f5a65b8c0967634e421c"
+    },
+    {
+      "name": "jal",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 2,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=15 transactions=0 cycles=35\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 470000 (1ps)",
+      "sha256": "62813896714bcb545c7ad498b9cd320fa9d96ccfa090f5a65b8c0967634e421c"
+    },
+    {
+      "name": "jal",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 2,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=15 transactions=0 cycles=30\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 420000 (1ps)",
+      "sha256": "62813896714bcb545c7ad498b9cd320fa9d96ccfa090f5a65b8c0967634e421c"
+    },
+    {
+      "name": "jalr",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 6,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=75 transactions=0 cycles=120\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 1320000 (1ps)",
+      "sha256": "8edf15717016629bcb1ae7540ab465c2ae9a803a6eafb19686e8692c9290a46d"
+    },
+    {
+      "name": "jalr",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 6,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=75 transactions=0 cycles=133\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 1450000 (1ps)",
+      "sha256": "8edf15717016629bcb1ae7540ab465c2ae9a803a6eafb19686e8692c9290a46d"
+    },
+    {
+      "name": "jalr",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 6,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=75 transactions=0 cycles=122\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 1340000 (1ps)",
+      "sha256": "8edf15717016629bcb1ae7540ab465c2ae9a803a6eafb19686e8692c9290a46d"
+    },
+    {
+      "name": "lb",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 18,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=213 transactions=24 cycles=242\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2540000 (1ps)",
+      "sha256": "487ee071924409717b09320d751bbcc1391e2d1e9ba5e59848ea40a195199aed"
+    },
+    {
+      "name": "lb",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 18,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=213 transactions=24 cycles=842\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 8540000 (1ps)",
+      "sha256": "487ee071924409717b09320d751bbcc1391e2d1e9ba5e59848ea40a195199aed"
+    },
+    {
+      "name": "lb",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 18,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=213 transactions=24 cycles=1175\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 11870000 (1ps)",
+      "sha256": "487ee071924409717b09320d751bbcc1391e2d1e9ba5e59848ea40a195199aed"
+    },
+    {
+      "name": "lbu",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 18,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=213 transactions=24 cycles=242\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2540000 (1ps)",
+      "sha256": "84bbb5da035b927e17b7b5d0824823f1d4b70c221be5d2eef8503f38bf4045ef"
+    },
+    {
+      "name": "lbu",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 18,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=213 transactions=24 cycles=842\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 8540000 (1ps)",
+      "sha256": "84bbb5da035b927e17b7b5d0824823f1d4b70c221be5d2eef8503f38bf4045ef"
+    },
+    {
+      "name": "lbu",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 18,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=213 transactions=24 cycles=1175\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 11870000 (1ps)",
+      "sha256": "84bbb5da035b927e17b7b5d0824823f1d4b70c221be5d2eef8503f38bf4045ef"
+    },
+    {
+      "name": "ld_st",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 48,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=923 transactions=386 cycles=1076\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 10880000 (1ps)",
+      "sha256": "448ad04bbce7512300f8fa390a0d24e464674fbca1faeb007e8322f2243d8d81"
+    },
+    {
+      "name": "ld_st",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 48,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=923 transactions=386 cycles=9470\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 94820000 (1ps)",
+      "sha256": "448ad04bbce7512300f8fa390a0d24e464674fbca1faeb007e8322f2243d8d81"
+    },
+    {
+      "name": "ld_st",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 48,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=923 transactions=386 cycles=9105\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 91170000 (1ps)",
+      "sha256": "448ad04bbce7512300f8fa390a0d24e464674fbca1faeb007e8322f2243d8d81"
+    },
+    {
+      "name": "lh",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 18,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=229 transactions=24 cycles=258\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2700000 (1ps)",
+      "sha256": "707533343677406d4274076d39ab32c95f35b375505e02d73f9ec563bcb0417d"
+    },
+    {
+      "name": "lh",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 18,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=229 transactions=24 cycles=842\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 8540000 (1ps)",
+      "sha256": "707533343677406d4274076d39ab32c95f35b375505e02d73f9ec563bcb0417d"
+    },
+    {
+      "name": "lh",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 18,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=229 transactions=24 cycles=1175\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 11870000 (1ps)",
+      "sha256": "707533343677406d4274076d39ab32c95f35b375505e02d73f9ec563bcb0417d"
+    },
+    {
+      "name": "lhu",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 18,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=238 transactions=24 cycles=267\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2790000 (1ps)",
+      "sha256": "3ab70af8240d322070d6ea7d279cf734abdd2c51015fefac4db48381993d3019"
+    },
+    {
+      "name": "lhu",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 18,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=238 transactions=24 cycles=909\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 9210000 (1ps)",
+      "sha256": "3ab70af8240d322070d6ea7d279cf734abdd2c51015fefac4db48381993d3019"
+    },
+    {
+      "name": "lhu",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 18,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=238 transactions=24 cycles=1175\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 11870000 (1ps)",
+      "sha256": "3ab70af8240d322070d6ea7d279cf734abdd2c51015fefac4db48381993d3019"
+    },
+    {
+      "name": "lui",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 5,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=25 transactions=0 cycles=34\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 460000 (1ps)",
+      "sha256": "a41bc74d0c2fe077781971960faca6e74841b71be5ff45e97b898a272b1fc87c"
+    },
+    {
+      "name": "lui",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 5,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=25 transactions=0 cycles=37\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 490000 (1ps)",
+      "sha256": "a41bc74d0c2fe077781971960faca6e74841b71be5ff45e97b898a272b1fc87c"
+    },
+    {
+      "name": "lui",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 5,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=25 transactions=0 cycles=35\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 470000 (1ps)",
+      "sha256": "a41bc74d0c2fe077781971960faca6e74841b71be5ff45e97b898a272b1fc87c"
+    },
+    {
+      "name": "lw",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 18,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=243 transactions=24 cycles=272\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2840000 (1ps)",
+      "sha256": "cdf2310ee5d17aa199d7955e77985db0ae3e52fba6562ab0b73383884fd12414"
+    },
+    {
+      "name": "lw",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 18,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=243 transactions=24 cycles=909\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 9210000 (1ps)",
+      "sha256": "cdf2310ee5d17aa199d7955e77985db0ae3e52fba6562ab0b73383884fd12414"
+    },
+    {
+      "name": "lw",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 18,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=243 transactions=24 cycles=1175\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 11870000 (1ps)",
+      "sha256": "cdf2310ee5d17aa199d7955e77985db0ae3e52fba6562ab0b73383884fd12414"
+    },
+    {
+      "name": "or",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 26,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=448 transactions=0 cycles=502\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5140000 (1ps)",
+      "sha256": "4e81ae5bae220d22ab7494e1ea9ad91e3e5b2a10bea9394ed457862233f1cfd2"
+    },
+    {
+      "name": "or",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 26,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=448 transactions=0 cycles=561\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5730000 (1ps)",
+      "sha256": "4e81ae5bae220d22ab7494e1ea9ad91e3e5b2a10bea9394ed457862233f1cfd2"
+    },
+    {
+      "name": "or",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 26,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=448 transactions=0 cycles=544\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5560000 (1ps)",
+      "sha256": "4e81ae5bae220d22ab7494e1ea9ad91e3e5b2a10bea9394ed457862233f1cfd2"
+    },
+    {
+      "name": "ori",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 13,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=165 transactions=0 cycles=192\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2040000 (1ps)",
+      "sha256": "561e694496a53207c18413915cb1df9e1e89344e8555910dfa66ea3cd1065387"
+    },
+    {
+      "name": "ori",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 13,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=165 transactions=0 cycles=212\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2240000 (1ps)",
+      "sha256": "561e694496a53207c18413915cb1df9e1e89344e8555910dfa66ea3cd1065387"
+    },
+    {
+      "name": "ori",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 13,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=165 transactions=0 cycles=205\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2170000 (1ps)",
+      "sha256": "561e694496a53207c18413915cb1df9e1e89344e8555910dfa66ea3cd1065387"
+    },
+    {
+      "name": "sb",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 22,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=414 transactions=69 cycles=483\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 4950000 (1ps)",
+      "sha256": "f228579070f9823e89baa2e9862ec2c96861d484d9365a35318600074dee59ed"
+    },
+    {
+      "name": "sb",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 22,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=414 transactions=69 cycles=1909\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 19210000 (1ps)",
+      "sha256": "f228579070f9823e89baa2e9862ec2c96861d484d9365a35318600074dee59ed"
+    },
+    {
+      "name": "sb",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 22,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=414 transactions=69 cycles=2165\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 21770000 (1ps)",
+      "sha256": "f228579070f9823e89baa2e9862ec2c96861d484d9365a35318600074dee59ed"
+    },
+    {
+      "name": "sh",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 22,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=467 transactions=69 cycles=536\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5480000 (1ps)",
+      "sha256": "8e5637644ae565f48d4f91cdde219ecd857c05bd2a104bcbb70a38d840075992"
+    },
+    {
+      "name": "sh",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 22,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=467 transactions=69 cycles=2085\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 20970000 (1ps)",
+      "sha256": "8e5637644ae565f48d4f91cdde219ecd857c05bd2a104bcbb70a38d840075992"
+    },
+    {
+      "name": "sh",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 22,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=467 transactions=69 cycles=2319\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 23310000 (1ps)",
+      "sha256": "8e5637644ae565f48d4f91cdde219ecd857c05bd2a104bcbb70a38d840075992"
+    },
+    {
+      "name": "simple",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 0,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=1 transactions=0 cycles=7\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 190000 (1ps)",
+      "sha256": "ad8d3d3fe1cc115521378f42b9808b74a6324e807d6805b7578a62f38ca9b89d"
+    },
+    {
+      "name": "simple",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 0,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=1 transactions=0 cycles=7\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 190000 (1ps)",
+      "sha256": "ad8d3d3fe1cc115521378f42b9808b74a6324e807d6805b7578a62f38ca9b89d"
+    },
+    {
+      "name": "simple",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 0,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=1 transactions=0 cycles=7\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 190000 (1ps)",
+      "sha256": "ad8d3d3fe1cc115521378f42b9808b74a6324e807d6805b7578a62f38ca9b89d"
+    },
+    {
+      "name": "sll",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 41,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=453 transactions=0 cycles=507\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5190000 (1ps)",
+      "sha256": "133e47c6be8b2ec67d8d6b8aa4bdef383ced9c48e869f2782f0f39291ce392e7"
+    },
+    {
+      "name": "sll",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 41,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=453 transactions=0 cycles=566\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5780000 (1ps)",
+      "sha256": "133e47c6be8b2ec67d8d6b8aa4bdef383ced9c48e869f2782f0f39291ce392e7"
+    },
+    {
+      "name": "sll",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 41,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=453 transactions=0 cycles=547\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5590000 (1ps)",
+      "sha256": "133e47c6be8b2ec67d8d6b8aa4bdef383ced9c48e869f2782f0f39291ce392e7"
+    },
+    {
+      "name": "slli",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=201 transactions=0 cycles=228\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2400000 (1ps)",
+      "sha256": "c923f8c91437bc911a760cf01c7b217ee1d74ff84a5ede5b9501443202dbe9ec"
+    },
+    {
+      "name": "slli",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=201 transactions=0 cycles=249\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2610000 (1ps)",
+      "sha256": "c923f8c91437bc911a760cf01c7b217ee1d74ff84a5ede5b9501443202dbe9ec"
+    },
+    {
+      "name": "slli",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=201 transactions=0 cycles=247\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2590000 (1ps)",
+      "sha256": "c923f8c91437bc911a760cf01c7b217ee1d74ff84a5ede5b9501443202dbe9ec"
+    },
+    {
+      "name": "slt",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 37,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=419 transactions=0 cycles=473\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 4850000 (1ps)",
+      "sha256": "3bd52211b9d06f508df168e3f9ddaaba94dad883b6eb353bbc0d0308fa039ea5"
+    },
+    {
+      "name": "slt",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 37,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=419 transactions=0 cycles=527\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5390000 (1ps)",
+      "sha256": "3bd52211b9d06f508df168e3f9ddaaba94dad883b6eb353bbc0d0308fa039ea5"
+    },
+    {
+      "name": "slt",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 37,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=419 transactions=0 cycles=511\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5230000 (1ps)",
+      "sha256": "3bd52211b9d06f508df168e3f9ddaaba94dad883b6eb353bbc0d0308fa039ea5"
+    },
+    {
+      "name": "slti",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=197 transactions=0 cycles=224\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2360000 (1ps)",
+      "sha256": "37520bf7fdd97f733127803f93aeae4eb9dec51f998668c46f4c447ed6bec836"
+    },
+    {
+      "name": "slti",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=197 transactions=0 cycles=243\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2550000 (1ps)",
+      "sha256": "37520bf7fdd97f733127803f93aeae4eb9dec51f998668c46f4c447ed6bec836"
+    },
+    {
+      "name": "slti",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=197 transactions=0 cycles=245\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2570000 (1ps)",
+      "sha256": "37520bf7fdd97f733127803f93aeae4eb9dec51f998668c46f4c447ed6bec836"
+    },
+    {
+      "name": "sltiu",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=197 transactions=0 cycles=224\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2360000 (1ps)",
+      "sha256": "08f13cdb9eccaae8730810271d8583054c41a168f3f9767195b16a5d0fc7ad80"
+    },
+    {
+      "name": "sltiu",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=197 transactions=0 cycles=243\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2550000 (1ps)",
+      "sha256": "08f13cdb9eccaae8730810271d8583054c41a168f3f9767195b16a5d0fc7ad80"
+    },
+    {
+      "name": "sltiu",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=197 transactions=0 cycles=245\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2570000 (1ps)",
+      "sha256": "08f13cdb9eccaae8730810271d8583054c41a168f3f9767195b16a5d0fc7ad80"
+    },
+    {
+      "name": "sltu",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 37,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=419 transactions=0 cycles=473\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 4850000 (1ps)",
+      "sha256": "be7d3c027ec37e34910212d24c27161dc5b58f939cc92d1fb78876cb7ecc94c8"
+    },
+    {
+      "name": "sltu",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 37,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=419 transactions=0 cycles=527\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5390000 (1ps)",
+      "sha256": "be7d3c027ec37e34910212d24c27161dc5b58f939cc92d1fb78876cb7ecc94c8"
+    },
+    {
+      "name": "sltu",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 37,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=419 transactions=0 cycles=511\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5230000 (1ps)",
+      "sha256": "be7d3c027ec37e34910212d24c27161dc5b58f939cc92d1fb78876cb7ecc94c8"
+    },
+    {
+      "name": "sra",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 42,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=472 transactions=0 cycles=526\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5380000 (1ps)",
+      "sha256": "b4e215ddc579626e6dab24290f9a63d0c328ef764a9eaaf920a939bb48943d22"
+    },
+    {
+      "name": "sra",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 42,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=472 transactions=0 cycles=591\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 6030000 (1ps)",
+      "sha256": "b4e215ddc579626e6dab24290f9a63d0c328ef764a9eaaf920a939bb48943d22"
+    },
+    {
+      "name": "sra",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 42,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=472 transactions=0 cycles=566\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5780000 (1ps)",
+      "sha256": "b4e215ddc579626e6dab24290f9a63d0c328ef764a9eaaf920a939bb48943d22"
+    },
+    {
+      "name": "srai",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=216 transactions=0 cycles=243\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2550000 (1ps)",
+      "sha256": "bd08677fc9548f88ee4ce457752274e823babdd28fb68d21e4855f4d5ef2053e"
+    },
+    {
+      "name": "srai",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=216 transactions=0 cycles=266\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2780000 (1ps)",
+      "sha256": "bd08677fc9548f88ee4ce457752274e823babdd28fb68d21e4855f4d5ef2053e"
+    },
+    {
+      "name": "srai",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=216 transactions=0 cycles=262\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2740000 (1ps)",
+      "sha256": "bd08677fc9548f88ee4ce457752274e823babdd28fb68d21e4855f4d5ef2053e"
+    },
+    {
+      "name": "srl",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 42,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=466 transactions=0 cycles=520\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5320000 (1ps)",
+      "sha256": "43d8f9f588ea875b4fa44c63747c657a3693d99b1571e1c47645028b270cd7e7"
+    },
+    {
+      "name": "srl",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 42,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=466 transactions=0 cycles=579\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5910000 (1ps)",
+      "sha256": "43d8f9f588ea875b4fa44c63747c657a3693d99b1571e1c47645028b270cd7e7"
+    },
+    {
+      "name": "srl",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 42,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=466 transactions=0 cycles=562\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5740000 (1ps)",
+      "sha256": "43d8f9f588ea875b4fa44c63747c657a3693d99b1571e1c47645028b270cd7e7"
+    },
+    {
+      "name": "srli",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=210 transactions=0 cycles=237\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2490000 (1ps)",
+      "sha256": "f67966de950a82e556db46db8ddb6b6dadb83118f80206c88a0bfa8ad89e799a"
+    },
+    {
+      "name": "srli",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=210 transactions=0 cycles=258\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2700000 (1ps)",
+      "sha256": "f67966de950a82e556db46db8ddb6b6dadb83118f80206c88a0bfa8ad89e799a"
+    },
+    {
+      "name": "srli",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 24,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=210 transactions=0 cycles=255\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2670000 (1ps)",
+      "sha256": "f67966de950a82e556db46db8ddb6b6dadb83118f80206c88a0bfa8ad89e799a"
+    },
+    {
+      "name": "st_ld",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 48,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=443 transactions=98 cycles=452\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 4640000 (1ps)",
+      "sha256": "f446b28047e81caba894b0d6079773d1ff1fb34867395d35847554a1bec41c29"
+    },
+    {
+      "name": "st_ld",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 48,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=443 transactions=98 cycles=2494\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 25060000 (1ps)",
+      "sha256": "f446b28047e81caba894b0d6079773d1ff1fb34867395d35847554a1bec41c29"
+    },
+    {
+      "name": "st_ld",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 48,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=443 transactions=98 cycles=2789\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 28010000 (1ps)",
+      "sha256": "f446b28047e81caba894b0d6079773d1ff1fb34867395d35847554a1bec41c29"
+    },
+    {
+      "name": "sub",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 36,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=417 transactions=0 cycles=471\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 4830000 (1ps)",
+      "sha256": "b3b663cda6417d4baffc2442115595782e9d5eddd68dbbb42d5e5f4cd0eea0bf"
+    },
+    {
+      "name": "sub",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 36,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=417 transactions=0 cycles=518\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5300000 (1ps)",
+      "sha256": "b3b663cda6417d4baffc2442115595782e9d5eddd68dbbb42d5e5f4cd0eea0bf"
+    },
+    {
+      "name": "sub",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 36,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=417 transactions=0 cycles=510\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5220000 (1ps)",
+      "sha256": "b3b663cda6417d4baffc2442115595782e9d5eddd68dbbb42d5e5f4cd0eea0bf"
+    },
+    {
+      "name": "sw",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 22,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=474 transactions=68 cycles=543\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5550000 (1ps)",
+      "sha256": "cd8b5a71d67cd7a229abd44f360ad649d78dc14fc516c1099edda519506b6e03"
+    },
+    {
+      "name": "sw",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 22,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=474 transactions=68 cycles=2065\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 20770000 (1ps)",
+      "sha256": "cd8b5a71d67cd7a229abd44f360ad649d78dc14fc516c1099edda519506b6e03"
+    },
+    {
+      "name": "sw",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 22,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=474 transactions=68 cycles=2289\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 23010000 (1ps)",
+      "sha256": "cd8b5a71d67cd7a229abd44f360ad649d78dc14fc516c1099edda519506b6e03"
+    },
+    {
+      "name": "xor",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 26,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=447 transactions=0 cycles=501\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5130000 (1ps)",
+      "sha256": "8a7fbf69ebdd746848e1384bcc900a6ce7f5631fa1cb43fcf6efe47967141e37"
+    },
+    {
+      "name": "xor",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 26,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=447 transactions=0 cycles=561\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5730000 (1ps)",
+      "sha256": "8a7fbf69ebdd746848e1384bcc900a6ce7f5631fa1cb43fcf6efe47967141e37"
+    },
+    {
+      "name": "xor",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 26,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=447 transactions=0 cycles=544\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 5560000 (1ps)",
+      "sha256": "8a7fbf69ebdd746848e1384bcc900a6ce7f5631fa1cb43fcf6efe47967141e37"
+    },
+    {
+      "name": "xori",
+      "origin": "upstream",
+      "seed": 0,
+      "cases": 13,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=167 transactions=0 cycles=194\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2060000 (1ps)",
+      "sha256": "3dd8a9e27e9a2556916582c687baafce840e0bf656571011a2f600548e392a84"
+    },
+    {
+      "name": "xori",
+      "origin": "upstream",
+      "seed": 17,
+      "cases": 13,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=167 transactions=0 cycles=214\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2260000 (1ps)",
+      "sha256": "3dd8a9e27e9a2556916582c687baafce840e0bf656571011a2f600548e392a84"
+    },
+    {
+      "name": "xori",
+      "origin": "upstream",
+      "seed": 20260927,
+      "cases": 13,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=167 transactions=0 cycles=209\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2210000 (1ps)",
+      "sha256": "3dd8a9e27e9a2556916582c687baafce840e0bf656571011a2f600548e392a84"
+    },
+    {
+      "name": "ecall",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "cf28ff3756d61627b814dc96b9e8f549b22ad890224da7ea31cf362278da4be6"
+    },
+    {
+      "name": "ecall",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "cf28ff3756d61627b814dc96b9e8f549b22ad890224da7ea31cf362278da4be6"
+    },
+    {
+      "name": "ecall",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "cf28ff3756d61627b814dc96b9e8f549b22ad890224da7ea31cf362278da4be6"
+    },
+    {
+      "name": "ebreak",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "a94f71f1c3381846d63404612000348d70a21ca0f3316d2553181f64e0444809"
+    },
+    {
+      "name": "ebreak",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "a94f71f1c3381846d63404612000348d70a21ca0f3316d2553181f64e0444809"
+    },
+    {
+      "name": "ebreak",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "a94f71f1c3381846d63404612000348d70a21ca0f3316d2553181f64e0444809"
+    },
+    {
+      "name": "illegal_zero",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "dc705c64a97a352801817dd1e6d747b883e524e0dec490381e0f9ab56cd9de30"
+    },
+    {
+      "name": "illegal_zero",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "dc705c64a97a352801817dd1e6d747b883e524e0dec490381e0f9ab56cd9de30"
+    },
+    {
+      "name": "illegal_zero",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "dc705c64a97a352801817dd1e6d747b883e524e0dec490381e0f9ab56cd9de30"
+    },
+    {
+      "name": "illegal_m",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "d3e0134de16e2d1df811a73b8c5b57764742511a02aad24a2afe648d111b6763"
+    },
+    {
+      "name": "illegal_m",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "d3e0134de16e2d1df811a73b8c5b57764742511a02aad24a2afe648d111b6763"
+    },
+    {
+      "name": "illegal_m",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "d3e0134de16e2d1df811a73b8c5b57764742511a02aad24a2afe648d111b6763"
+    },
+    {
+      "name": "illegal_c",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "9ee8a20a06b9fec519af5e4fe2d08262a7d858a57e8c566d1583535e897e394c"
+    },
+    {
+      "name": "illegal_c",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "9ee8a20a06b9fec519af5e4fe2d08262a7d858a57e8c566d1583535e897e394c"
+    },
+    {
+      "name": "illegal_c",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "9ee8a20a06b9fec519af5e4fe2d08262a7d858a57e8c566d1583535e897e394c"
+    },
+    {
+      "name": "illegal_csr",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "2e9de69fe4972877e77f83a257b80f87ed97adae0fba00e1f502d6cc3e32fa3b"
+    },
+    {
+      "name": "illegal_csr",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "2e9de69fe4972877e77f83a257b80f87ed97adae0fba00e1f502d6cc3e32fa3b"
+    },
+    {
+      "name": "illegal_csr",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "2e9de69fe4972877e77f83a257b80f87ed97adae0fba00e1f502d6cc3e32fa3b"
+    },
+    {
+      "name": "illegal_mret",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "90f0e3fe2420af489c5173237ce4d70ca8071b63402b750e8a13ce46988a2098"
+    },
+    {
+      "name": "illegal_mret",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "90f0e3fe2420af489c5173237ce4d70ca8071b63402b750e8a13ce46988a2098"
+    },
+    {
+      "name": "illegal_mret",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "90f0e3fe2420af489c5173237ce4d70ca8071b63402b750e8a13ce46988a2098"
+    },
+    {
+      "name": "illegal_fence_i",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "a3ef83e140de2e8c2cd1faccd8ed3081bd40c3460cab983ae762bd94d68b97f1"
+    },
+    {
+      "name": "illegal_fence_i",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "a3ef83e140de2e8c2cd1faccd8ed3081bd40c3460cab983ae762bd94d68b97f1"
+    },
+    {
+      "name": "illegal_fence_i",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "a3ef83e140de2e8c2cd1faccd8ed3081bd40c3460cab983ae762bd94d68b97f1"
+    },
+    {
+      "name": "jal_misaligned",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "ae6e4a4e419f0e58ae2d74d622b1a0b2b6c06ba2a91a20b442f284cd88b6565b"
+    },
+    {
+      "name": "jal_misaligned",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "ae6e4a4e419f0e58ae2d74d622b1a0b2b6c06ba2a91a20b442f284cd88b6565b"
+    },
+    {
+      "name": "jal_misaligned",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "ae6e4a4e419f0e58ae2d74d622b1a0b2b6c06ba2a91a20b442f284cd88b6565b"
+    },
+    {
+      "name": "jalr_misaligned",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "1d1a588d459e963e23782403a1f7055ba9607b0730c9eb61f92ed171c4b2a46d"
+    },
+    {
+      "name": "jalr_misaligned",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "1d1a588d459e963e23782403a1f7055ba9607b0730c9eb61f92ed171c4b2a46d"
+    },
+    {
+      "name": "jalr_misaligned",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "1d1a588d459e963e23782403a1f7055ba9607b0730c9eb61f92ed171c4b2a46d"
+    },
+    {
+      "name": "branch_misaligned",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "1b1943b2d94677770a5c02de6e50f247fcfbf45b5ba588b9cdf04e4400e721a5"
+    },
+    {
+      "name": "branch_misaligned",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "1b1943b2d94677770a5c02de6e50f247fcfbf45b5ba588b9cdf04e4400e721a5"
+    },
+    {
+      "name": "branch_misaligned",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "1b1943b2d94677770a5c02de6e50f247fcfbf45b5ba588b9cdf04e4400e721a5"
+    },
+    {
+      "name": "lh_misaligned",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "c2dc5110e694f2b995212a785b8090ae06130b887e6d327570b11c784f62faec"
+    },
+    {
+      "name": "lh_misaligned",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "c2dc5110e694f2b995212a785b8090ae06130b887e6d327570b11c784f62faec"
+    },
+    {
+      "name": "lh_misaligned",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "c2dc5110e694f2b995212a785b8090ae06130b887e6d327570b11c784f62faec"
+    },
+    {
+      "name": "lhu_misaligned",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "c9240bead87fd4031109dbf8868f055a702eb49997c3324f9d3a4420edccccb5"
+    },
+    {
+      "name": "lhu_misaligned",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "c9240bead87fd4031109dbf8868f055a702eb49997c3324f9d3a4420edccccb5"
+    },
+    {
+      "name": "lhu_misaligned",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "c9240bead87fd4031109dbf8868f055a702eb49997c3324f9d3a4420edccccb5"
+    },
+    {
+      "name": "lw_misaligned_1",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "862332f525b843361110906d2d0ac9e3461667d34aa61fbd23242ace8dd24f55"
+    },
+    {
+      "name": "lw_misaligned_1",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "862332f525b843361110906d2d0ac9e3461667d34aa61fbd23242ace8dd24f55"
+    },
+    {
+      "name": "lw_misaligned_1",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "862332f525b843361110906d2d0ac9e3461667d34aa61fbd23242ace8dd24f55"
+    },
+    {
+      "name": "lw_misaligned_2",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "0c7a8bed90f457d3b5e68733d0c1a9bdb0c07bca640af4d7149fde7ff17ea141"
+    },
+    {
+      "name": "lw_misaligned_2",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "0c7a8bed90f457d3b5e68733d0c1a9bdb0c07bca640af4d7149fde7ff17ea141"
+    },
+    {
+      "name": "lw_misaligned_2",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "0c7a8bed90f457d3b5e68733d0c1a9bdb0c07bca640af4d7149fde7ff17ea141"
+    },
+    {
+      "name": "lw_misaligned_3",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "d962b14fbe655ed02a3b95f12a500ab18fb707b78d8742ac35af9e1363ccf0d6"
+    },
+    {
+      "name": "lw_misaligned_3",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "d962b14fbe655ed02a3b95f12a500ab18fb707b78d8742ac35af9e1363ccf0d6"
+    },
+    {
+      "name": "lw_misaligned_3",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "d962b14fbe655ed02a3b95f12a500ab18fb707b78d8742ac35af9e1363ccf0d6"
+    },
+    {
+      "name": "sh_misaligned",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "bd00c3322c44e390b691d761e7caaa7dc876491b7221403f05ea0ba9ed59e36d"
+    },
+    {
+      "name": "sh_misaligned",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "bd00c3322c44e390b691d761e7caaa7dc876491b7221403f05ea0ba9ed59e36d"
+    },
+    {
+      "name": "sh_misaligned",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "bd00c3322c44e390b691d761e7caaa7dc876491b7221403f05ea0ba9ed59e36d"
+    },
+    {
+      "name": "sw_misaligned_1",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "bf0ec2e229da9141f9bcc6ac0ebfba71ed3c5938ef9c5570777c73538cfc3a0a"
+    },
+    {
+      "name": "sw_misaligned_1",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "bf0ec2e229da9141f9bcc6ac0ebfba71ed3c5938ef9c5570777c73538cfc3a0a"
+    },
+    {
+      "name": "sw_misaligned_1",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "bf0ec2e229da9141f9bcc6ac0ebfba71ed3c5938ef9c5570777c73538cfc3a0a"
+    },
+    {
+      "name": "sw_misaligned_2",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "10a1636753702aac16a78b5cbd7b6dfb940fed26955646ee4a9d2d3ce1080dee"
+    },
+    {
+      "name": "sw_misaligned_2",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "10a1636753702aac16a78b5cbd7b6dfb940fed26955646ee4a9d2d3ce1080dee"
+    },
+    {
+      "name": "sw_misaligned_2",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "10a1636753702aac16a78b5cbd7b6dfb940fed26955646ee4a9d2d3ce1080dee"
+    },
+    {
+      "name": "sw_misaligned_3",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "044d9dc9547048edd84b9587ae94bdc98e9625ca3994aa588584dcf0444a3a97"
+    },
+    {
+      "name": "sw_misaligned_3",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=0 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "044d9dc9547048edd84b9587ae94bdc98e9625ca3994aa588584dcf0444a3a97"
+    },
+    {
+      "name": "sw_misaligned_3",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "044d9dc9547048edd84b9587ae94bdc98e9625ca3994aa588584dcf0444a3a97"
+    },
+    {
+      "name": "load_access",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=1 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "41d1ebdd6b2bf285a6dc53677abfc6345a399230955c5dbfecde554ada099d37"
+    },
+    {
+      "name": "load_access",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=1 cycles=25\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 370000 (1ps)",
+      "sha256": "41d1ebdd6b2bf285a6dc53677abfc6345a399230955c5dbfecde554ada099d37"
+    },
+    {
+      "name": "load_access",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=1 cycles=83\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 950000 (1ps)",
+      "sha256": "41d1ebdd6b2bf285a6dc53677abfc6345a399230955c5dbfecde554ada099d37"
+    },
+    {
+      "name": "store_access",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=1 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "270ac64a61bf44f4b974bf1f4af86cdfae9d3691c5d8f6a50da2a3d5ad2b4fb1"
+    },
+    {
+      "name": "store_access",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=1 cycles=25\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 370000 (1ps)",
+      "sha256": "270ac64a61bf44f4b974bf1f4af86cdfae9d3691c5d8f6a50da2a3d5ad2b4fb1"
+    },
+    {
+      "name": "store_access",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=1 cycles=83\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 950000 (1ps)",
+      "sha256": "270ac64a61bf44f4b974bf1f4af86cdfae9d3691c5d8f6a50da2a3d5ad2b4fb1"
+    },
+    {
+      "name": "load_x0_access",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=5 transactions=1 cycles=11\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 230000 (1ps)",
+      "sha256": "9bd8d28618da757e6cf066f195433686bc26deba08e42bb33b618ec176402362"
+    },
+    {
+      "name": "load_x0_access",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=5 transactions=1 cycles=25\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 370000 (1ps)",
+      "sha256": "9bd8d28618da757e6cf066f195433686bc26deba08e42bb33b618ec176402362"
+    },
+    {
+      "name": "load_x0_access",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=5 transactions=1 cycles=83\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 950000 (1ps)",
+      "sha256": "9bd8d28618da757e6cf066f195433686bc26deba08e42bb33b618ec176402362"
+    },
+    {
+      "name": "instruction_access",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=3 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "b8f7d72bf3ce81679a1c6c75b1a0b534e7fec6853f3841639000e5ec99956971"
+    },
+    {
+      "name": "instruction_access",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=3 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "b8f7d72bf3ce81679a1c6c75b1a0b534e7fec6853f3841639000e5ec99956971"
+    },
+    {
+      "name": "instruction_access",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=3 transactions=0 cycles=12\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)",
+      "sha256": "b8f7d72bf3ce81679a1c6c75b1a0b534e7fec6853f3841639000e5ec99956971"
+    },
+    {
+      "name": "jalr_bit0_fence",
+      "origin": "local",
+      "seed": 0,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=0 retired=18 transactions=2 cycles=28\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 400000 (1ps)",
+      "sha256": "491b4ee6a56da73577dd6988241d343a03c2fa6e7f40e2475bbbffacdea33a05"
+    },
+    {
+      "name": "jalr_bit0_fence",
+      "origin": "local",
+      "seed": 17,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=17 retired=18 transactions=2 cycles=39\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 510000 (1ps)",
+      "sha256": "491b4ee6a56da73577dd6988241d343a03c2fa6e7f40e2475bbbffacdea33a05"
+    },
+    {
+      "name": "jalr_bit0_fence",
+      "origin": "local",
+      "seed": 20260927,
+      "cases": 1,
+      "status": "PASS",
+      "detail": "PASS ISA seed=20260927 retired=18 transactions=2 cycles=199\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 2110000 (1ps)",
+      "sha256": "491b4ee6a56da73577dd6988241d343a03c2fa6e7f40e2475bbbffacdea33a05"
+    }
+  ]
+}

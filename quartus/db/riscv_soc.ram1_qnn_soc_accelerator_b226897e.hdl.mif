@@ -1,0 +1,38 @@
+-- begin_signature
+-- qnn_soc_accelerator(USE_INIT_FILES
+-- 1
+-- L1_SHIFT
+-- 8
+-- L2_SHIFT
+-- 7
+-- OUT_SHIFT
+-- 1
+-- L1_WEIGHT_FILE
+-- "../firmware/model/l1_weights.mif"
+-- L1_BIAS_FILE
+-- "../firmware/model/l1_biases.hex"
+-- L2_WEIGHT_FILE
+-- "../firmware/model/l2_weights.mif"
+-- L2_BIAS_FILE
+-- "../firmware/model/l2_biases.hex"
+-- OUT_WEIGHT_FILE
+-- "../firmware/model/out_weights.hex"
+-- OUT_BIAS_FILE
+-- "../firmware/model/out_bias.hex")
+-- end_signature
+WIDTH=32;
+DEPTH=8;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	7 :	11111111111111111111110110100111;
+	6 :	00000000000000000000000000101000;
+	5 :	00000000000000000000000010001100;
+	4 :	00000000000000000000000000001110;
+	3 :	00000000000000000000000001000101;
+	2 :	11111111111111111111111111010100;
+	1 :	11111111111111111111111011101001;
+	0 :	11111111111111111111010011001110;
+END;

@@ -1,0 +1,5 @@
+{
+  "target_soc_tenths": 316.04144287109375,
+  "expected_rtl_soc_tenths": 328,
+  "feature_vector_order": "20 samples, each [voltage,current,temperature,delta_t]"
+}

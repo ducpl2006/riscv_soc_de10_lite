@@ -1,0 +1,26 @@
+{
+  "status": "CORE BASELINE FROZEN",
+  "date": "2026-09-27",
+  "evidence": {
+    "regression": "69/69",
+    "isa": "195/195",
+    "quartus": "0 errors, 14 warnings; 54.86 MHz; hold +0.097 ns"
+  },
+  "files": {
+    "rtl/core/common/rv32_lsu.v": "4c450cbafae4c98482920b9fec536ca714c10d7dff760742e442a632709603b1",
+    "rtl/core/control/rv32_hazard_unit.v": "15582b50eb967a0360f42024d3d47fedada1c9ee6fde6e771e5d14587c04246c",
+    "rtl/core/control/rv32_pipeline_control.v": "22970367c277ce9e459567aab16ffdcee480986c71d800a6d7f9f380cc906c1e",
+    "rtl/core/ex/rv32_alu.v": "89ce113c395754e1a4d633cfc882d0b01bd88b9175e53815e4f351330e745d89",
+    "rtl/core/ex/rv32_branch_unit.v": "b83fb76f58ef9b30c0f721dec5f7ad42dc00d5f082954b24802a7d3423eacc62",
+    "rtl/core/ex/rv32_ex_stage.v": "635e41a9c23018c134b0c50bee3930a4286c80fd0dd6eddad7a0ecd4f5b1793a",
+    "rtl/core/id/rv32_decoder.v": "76ee535ebcc980b3776ce07626f957f205b604cd0cc92856d082ddcd58a51210",
+    "rtl/core/id/rv32_id_stage.v": "21bdb692801175e0f2ab38efc11ff983a1e5e03941dba12b2f6262ce2fee8c78",
+    "rtl/core/id/rv32_imm_gen.v": "fd06508ac120689e6e0b90cc8909bca4a3326d00351908af47b04b57674125f4",
+    "rtl/core/id/rv32_regfile.v": "b9e003b755b3627df697a001ec825b2f02115b6d729ab39c3572f68c43db31fe",
+    "rtl/core/if/rv32_if_stage.v": "abbeaf13f0b275cf423d41f4d3776175263122281fb69d95f65e53d8fe25a5a4",
+    "rtl/core/mem/rv32_mem_stage.v": "05330bd5a03037cab952f57fdf7e031e1fdd9af54e29f7ff0a59668edc2d5d2e",
+    "rtl/core/rv32_core.v": "8d74f57ec5a4015d0117902159642230f1a4949a2d299139f3a2c89be9bcd340",
+    "rtl/core/rv32_defs.vh": "fc36c7958466ae4b2d5c352243fdc1556037f1bcf4505e6940a1bab521668b11",
+    "rtl/core/wb/rv32_wb_stage.v": "07a900a3b32ff245577561f4ed1b9bdfdfb8ac4e058c0f3751e707a9eabb8b68"
+  }
+}

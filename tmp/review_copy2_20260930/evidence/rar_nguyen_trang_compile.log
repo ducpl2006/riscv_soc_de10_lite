@@ -1,0 +1,9 @@
+/mnt/c/FPGA/riscv_soc_de10_lite/tmp/review_copy2_20260930/riscv_soc_de10_lite - Copy/rtl/core/rv32_core.v:444: error: Unknown module type: rv32_idex_reg
+/mnt/c/FPGA/riscv_soc_de10_lite/tmp/review_copy2_20260930/riscv_soc_de10_lite - Copy/rtl/core/rv32_core.v:500: error: Unknown module type: rv32_exmem_reg
+/mnt/c/FPGA/riscv_soc_de10_lite/tmp/review_copy2_20260930/riscv_soc_de10_lite - Copy/rtl/core/rv32_core.v:538: error: Unknown module type: rv32_memwb_reg
+4 error(s) during elaboration.
+*** These modules were missing:
+        rv32_exmem_reg referenced 1 times.
+        rv32_idex_reg referenced 1 times.
+        rv32_memwb_reg referenced 1 times.
+***

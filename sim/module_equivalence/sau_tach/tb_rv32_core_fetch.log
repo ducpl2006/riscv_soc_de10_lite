@@ -1,0 +1,3 @@
+PASS tb_rv32_core_fetch: 32 consecutive retirements, ROM latency=1, CPI=1 in steady state
+/mnt/c/FPGA/riscv_soc_de10_lite/sim/module_equivalence/sau_tach/benches/tb/core/tb_rv32_core_fetch.v:51: $finish called at 410000 (1ps)
+DOI_CHIEU tb_rv32_core_fetch.dut: 81 lần

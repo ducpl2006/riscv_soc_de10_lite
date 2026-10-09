@@ -1,0 +1,28 @@
+# vsim -c -lib refwork tb_reference_apb_strobe -l tb_reference_apb_strobe.log -do "run -all; quit -force -code 0" 
+# Start time: 13:28:41 on Sep 25,2026
+# Loading sv_std.std
+# Loading refwork.tb_reference_apb_strobe
+# Loading refwork.APB4_I2C_Slave
+# Loading refwork.I2C_Register_IF
+# Loading refwork.I2C_Master
+# Loading refwork.I2C_Clock_Divider
+# Loading refwork.I2C_Input_Filter
+# Loading refwork.I2C_SCL_Controller
+# Loading refwork.I2C_SDA_Controller
+# Loading refwork.I2C_Bit_Controller
+# Loading refwork.I2C_Byte_Controller
+# Loading refwork.I2C_Shift_Register
+# Loading refwork.I2C_Transaction_Engine
+# Loading refwork.I2C_FIFO_Controller
+# Loading refwork.FIFO
+# Loading refwork.I2C_Timeout
+# Loading refwork.I2C_Bus_Recovery
+# Loading refwork.I2C_IRQ_Status
+# run -all
+# VIOLATION partial write: expected 001234ab, actual 000000ab
+# VIOLATION zero strobe: expected 00123456, actual 00000000
+# REVIEW: 2 byte-strobe violations observed
+# ** Note: $finish    : C:/FPGA/riscv_soc_de10_lite/tmp/reference_soc_cnn/tb_reference_review.v(45)
+#    Time: 151 ns  Iteration: 0  Instance: /tb_reference_apb_strobe
+# End time: 13:28:41 on Sep 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

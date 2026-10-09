@@ -1,0 +1,83 @@
+{
+  "images": [
+    {
+      "name": "fake",
+      "bytes": 2216,
+      "sha256": "879080a9f61f143557a10a4fb0a791982eed7a56b51095cb6482e6bdca60ab45"
+    },
+    {
+      "name": "ina228",
+      "bytes": 8160,
+      "sha256": "ff8d0a11e61ce23ca94b24c93dd603e9816e5c1aae95ef04fbbbbb1a722265bb"
+    },
+    {
+      "name": "board",
+      "bytes": 8144,
+      "sha256": "2c0174f9979e6664966ec10ee5399c686fcab03120b90c1491868131119e5c04"
+    }
+  ],
+  "sources": {
+    "firmware/ina228.c": "528b074e40e91e0e7d6c2514da58dada1cd452fbe5ea7eaba70ba46d47dc039b",
+    "firmware/linker.ld": "2860c0faf56885ca6ae43f5014040f0bc0ca7baa8448902a04a95a8c57cb3ce2",
+    "firmware/main.c": "dcd319f2b1d5ea0fc9aa59ee1ebea726391e9a38fe37db994a6f11d00339baab",
+    "firmware/runtime.c": "abca17599658c2b6dbd4d7c83db12fa74784e9db46a498d9002663c49fc4b9f9",
+    "firmware/sample_pipeline.c": "4f76e09854e71ab67c847afb19d751fa93bb488ba9ca75ecc96cacaf9d8b082e",
+    "firmware/soc_platform.c": "48bd7ef439131e6a83c0545e027cfc3b8752255572edb893a4c243b0386e3d4d",
+    "firmware/start.S": "8cbddea81d24e0447ecac76d7de0729bb24a0cd42dc58ac67555fef92e41470d",
+    "firmware/include/board_config.h": "95944ca501fc974a6152c375510e99026808aea7c666925f8635828811edba83",
+    "firmware/include/ina228.h": "8e83f5127817a2958070961f4d8e554224e894db1b4caeb2affe8f5d22b2ce8f",
+    "firmware/include/model_config.h": "271fc31d53e2a223788d82f313db416489c60bc65d5db9396f765bf160956c01",
+    "firmware/include/sample_pipeline.h": "cf779504ccbeab5f111102ee135a88ee65e04674a87599a3acd423b302dbd3ac",
+    "firmware/include/soc_map.h": "e32602caa996188d855da19e65e2f8ce06fc054d9e4e8ddbc45e01e01b8ad8f9",
+    "firmware/include/soc_platform.h": "e98d5616d02f3d5b7928bbcc3f73e346a5e0633d7ea876eb6fc0ef173282b3b6",
+    "tb/firmware/test_pipeline_ina228.c": "e4e317f750e79f2a6ac2990e200db0ff2afd2c871bd0ea8bc0d49626380dc392"
+  },
+  "host_groups": 2,
+  "results": [
+    {
+      "name": "sensor1_fault0",
+      "status": "PASS",
+      "detail": "PASS tb_rv32_firmware_e2e sensor=1 fault=0 cycles=130877 features=480 results=6 UART=63\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/soc/tb_rv32_firmware_e2e.sv:81: $finish called at 1309020000 (1ps)"
+    },
+    {
+      "name": "sensor2_fault0",
+      "status": "PASS",
+      "detail": "PASS tb_rv32_firmware_e2e sensor=2 fault=0 cycles=499787 features=480 results=6 UART=63\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/soc/tb_rv32_firmware_e2e.sv:81: $finish called at 4998120000 (1ps)"
+    },
+    {
+      "name": "sensor2_fault1",
+      "status": "PASS",
+      "detail": "PASS tb_rv32_firmware_e2e sensor=2 fault=1 cycles=6442 features=0 results=0 UART=22\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/soc/tb_rv32_firmware_e2e.sv:81: $finish called at 64670000 (1ps)"
+    },
+    {
+      "name": "sensor2_fault2",
+      "status": "PASS",
+      "detail": "PASS tb_rv32_firmware_e2e sensor=2 fault=2 cycles=26281 features=0 results=0 UART=22\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/soc/tb_rv32_firmware_e2e.sv:81: $finish called at 263060000 (1ps)"
+    },
+    {
+      "name": "sensor2_fault3",
+      "status": "PASS",
+      "detail": "PASS tb_rv32_firmware_e2e sensor=2 fault=3 cycles=7338 features=0 results=0 UART=22\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/soc/tb_rv32_firmware_e2e.sv:81: $finish called at 73630000 (1ps)"
+    },
+    {
+      "name": "sensor2_fault4",
+      "status": "PASS",
+      "detail": "PASS tb_rv32_firmware_e2e sensor=2 fault=4 cycles=192586 features=0 results=0 UART=17\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/soc/tb_rv32_firmware_e2e.sv:81: $finish called at 1926110000 (1ps)"
+    },
+    {
+      "name": "sensor2_fault5",
+      "status": "PASS",
+      "detail": "PASS tb_rv32_firmware_e2e sensor=2 fault=5 cycles=21008 features=0 results=0 UART=17\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/soc/tb_rv32_firmware_e2e.sv:81: $finish called at 210330000 (1ps)"
+    },
+    {
+      "name": "sensor2_fault6",
+      "status": "PASS",
+      "detail": "PASS tb_rv32_firmware_e2e sensor=2 fault=6 cycles=23068 features=0 results=0 UART=17\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/soc/tb_rv32_firmware_e2e.sv:81: $finish called at 230930000 (1ps)"
+    },
+    {
+      "name": "sensor2_fault7",
+      "status": "PASS",
+      "detail": "PASS tb_rv32_firmware_e2e sensor=2 fault=7 cycles=17171 features=0 results=0 UART=17\n/mnt/c/FPGA/riscv_soc_de10_lite/tb/soc/tb_rv32_firmware_e2e.sv:81: $finish called at 171960000 (1ps)"
+    }
+  ]
+}

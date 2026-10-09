@@ -1,0 +1,11 @@
+.tools/
+ml/data/raw/
+ml/artifacts/
+ml/__pycache__/
+*.pyc
+__pycache__/
+sim/iverilog/
+firmware/build/*.elf
+firmware/build/*.bin
+firmware/build/*.map
+firmware/build/*.disasm

@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri Jul 17 20:48:21 2026
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : soc_cnn
+Top-level Entity Name : DE10_CORE
+Family : MAX 10
+Total logic elements : 11,099
+    Total combinational functions : 9,125
+    Dedicated logic registers : 3,605
+Total registers : 3605
+Total pins : 83
+Total virtual pins : 0
+Total memory bits : 104,448
+Embedded Multiplier 9-bit elements : 8
+Total PLLs : 1
+UFM blocks : 0
+ADC blocks : 0

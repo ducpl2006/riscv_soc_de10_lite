@@ -1,0 +1,158 @@
+{
+  "rtl/accelerator/qnn_soc_accelerator.v": {
+    "status": "modified",
+    "sha256": "85770d4d97ea1668328197d7fe69083b67d67573c1e7a600a2f120108fc6ec05"
+  },
+  "rtl/board/de10_lite_top.v": {
+    "status": "modified",
+    "sha256": "d113a97ce5acf4d2c53af5c75c1cd410fe9c53075329ef06a3d115cd81b076cb"
+  },
+  "rtl/board/reset_controller.v": {
+    "status": "added",
+    "sha256": "c3df6df87aab5ed45d526585b1576be2c88a6154796c5a4ba1d8cc993bbb8bee"
+  },
+  "rtl/bus/soc_bus.v": {
+    "status": "modified",
+    "sha256": "3d6b86b017dc6081e8872c04b78941df99d37bcd333e658ade6186dba9cdf586"
+  },
+  "rtl/bus/soc_map.vh": {
+    "status": "modified",
+    "sha256": "65485ddc5fa3a11435c1217984a03dacc7a63764d933f02057f8b2d92a32d251"
+  },
+  "rtl/peripherals/soc_gpio.v": {
+    "status": "modified",
+    "sha256": "8f5c86b71203c8c02a40eef13dcd42074f4baa3d3e2744046bac6fcf5efe1ddc"
+  },
+  "rtl/peripherals/soc_i2c_master.v": {
+    "status": "modified",
+    "sha256": "bc6c1392f8db14fefb19324c99b29ce8ffb3509afb1813ca302be8512e2afd36"
+  },
+  "rtl/peripherals/soc_timer.v": {
+    "status": "modified",
+    "sha256": "f94cb9559385788882df727da3de524dd1f67b3a31c252ee13ee85c5f6e1cb56"
+  },
+  "rtl/peripherals/uart/soc_uart.v": {
+    "status": "added",
+    "sha256": "4fd7603bb33fd8ae6ab1ef8eec1840d987bdb46267db0114abf410770a8153c7"
+  },
+  "rtl/peripherals/uart/uart_rx.v": {
+    "status": "added",
+    "sha256": "a805896f4d7182f030e0335e64541d6842d63b80866bdc34e1f3918446c39194"
+  },
+  "rtl/peripherals/uart/uart_rx_fifo.v": {
+    "status": "added",
+    "sha256": "bc464df2d7cedb22ee10952b0f73f4ba1766f6b28fb0899bfdb0407262140cdf"
+  },
+  "rtl/soc/rv32_soc.v": {
+    "status": "modified",
+    "sha256": "9a89fff80dcd2a89d473d5a1107be46f43463625e8280e1d7ce02a0ff9c1e0ce"
+  },
+  "tb/accelerator/tb_rv32_qnn_soc_accelerator.v": {
+    "status": "modified",
+    "sha256": "052f7768aae1bd38b918cae1298dc23c5e73220e4a012ae5bfa981c49ea3abf3"
+  },
+  "tb/bus/tb_rv32_soc_bus.v": {
+    "status": "modified",
+    "sha256": "0e1f972899c4ad9194dc595815670a91b3838782fe5c56704a3cf025327b9f46"
+  },
+  "tb/peripherals/tb_rv32_gpio.v": {
+    "status": "modified",
+    "sha256": "cf438e2702e9dc29badf0ece729382ec174af3f91e8c189ba3ec55f446614169"
+  },
+  "tb/peripherals/tb_rv32_i2c_master.v": {
+    "status": "modified",
+    "sha256": "90ad6614f2819878636d7bc1f5ec8cd87eeffed7b2564df837bda303cd21b849"
+  },
+  "tb/peripherals/tb_rv32_i2c_recovery.v": {
+    "status": "modified",
+    "sha256": "bbca7b8ab28d6d34f58aea48f92dff0de7a21ed329dfaba1628842dd005bb111"
+  },
+  "tb/peripherals/tb_rv32_i2c_transactions.v": {
+    "status": "modified",
+    "sha256": "2fe1371df64c290a3ed5afcb9d630b5fd3d0878e50e10cf9f1e5c3d67b4127d1"
+  },
+  "tb/peripherals/tb_rv32_timer.v": {
+    "status": "modified",
+    "sha256": "cfa5cd49f484fe57248ff282d19073cb9f5b623a9c4639b1ae689891224dbbbe"
+  },
+  "tb/peripherals/tb_rv32_uart_rx.v": {
+    "status": "added",
+    "sha256": "b8682b6ef4e9202d9d72ee9ea9963b077b084c4d285abeb57d36c296c9e67429"
+  },
+  "tb/peripherals/tb_rv32_uart_rx_fifo.v": {
+    "status": "added",
+    "sha256": "b91fbc28903052f65e4364100cdf9b869d059ce68996ea9dcae1483bde8a2811"
+  },
+  "tb/soc/tb_rv32_core_bus_wait.v": {
+    "status": "added",
+    "sha256": "af5ee1c98b77569f4a7764e033970bded5e5e6e1f8a583ba20f14cfc29d7bcb2"
+  },
+  "tb/soc/tb_rv32_reset_controller.v": {
+    "status": "added",
+    "sha256": "6caf9b8cef32e3e045a74383dc2bdf12631276901ad7f7705e6427394407da70"
+  },
+  "tb/soc/tb_rv32_soc.v": {
+    "status": "modified",
+    "sha256": "467c199eccd2f37501dd4131f1e3df8e47436f461acd710998ea7a871f3c66af"
+  },
+  "tb/soc/tb_rv32_soc_mmio.v": {
+    "status": "modified",
+    "sha256": "3e73e8723ac39853888387929306941aee0c1da757c6e5938560b40ef8122a79"
+  },
+  "tb/soc/tb_rv32_soc_uart_rx.v": {
+    "status": "added",
+    "sha256": "6faf1b49925c9ed4b14c5172cdc6a3dbf98f4333ad6fccfb4f4f4476b0449c8d"
+  },
+  "scripts/report_bus_timing.tcl": {
+    "status": "added",
+    "sha256": "65b405de5b47a0e5fc36493532ba5a81d73f1654505a27ff53cc500a772e0eaa"
+  },
+  "scripts/run_tests.ps1": {
+    "status": "modified",
+    "sha256": "c9196ffb86b430d609f79f49a637257b493711f76ac59224ff3e7f111851fe47"
+  },
+  "docs/bao_cao_kien_truc_p0_p1_vi.md": {
+    "status": "added",
+    "sha256": "f59e9a5ecb0c3c78ddb2e1169c2a6b52ace01476d5cb9b4cdc939c9f2a17fd1c"
+  },
+  "docs/bao_cao_xac_minh_vi.md": {
+    "status": "modified",
+    "sha256": "5362ab5244e524e258ddc0b45143b6cd0ddb8b4acd1ada49496fb668dda46cec"
+  },
+  "docs/dac_ta_core_bus_ngoai_vi.md": {
+    "status": "modified",
+    "sha256": "c751004abe50120f92468e3b95d4daf58fa1c3c0f6094edfffcfff5cf7c50811"
+  },
+  "docs/giao_tiep_rtl_vi.md": {
+    "status": "modified",
+    "sha256": "a2e151131930fcb2555b6692749555f080f19c012e9ed19f814ec5a2d541315c"
+  },
+  "docs/hoc_hoi_soc_cnn_driver_vi.md": {
+    "status": "modified",
+    "sha256": "5895585696ce541f285f53efd593116c22e1fc990ca9f0b16dc2f72ad9357610"
+  },
+  "docs/module_va_testbench_vi.md": {
+    "status": "modified",
+    "sha256": "5ab5cd9c5e0b1792a191d728dff5b9e254ce100fb00adb6a8815250036eca1f7"
+  },
+  "docs/soc_qnn_de10_lite_vi.md": {
+    "status": "modified",
+    "sha256": "a355043f374b23cdd8d548713066056554e13ab64be1c970c483c5002ac4d29b"
+  },
+  "firmware/include/soc_map.h": {
+    "status": "modified",
+    "sha256": "e32602caa996188d855da19e65e2f8ce06fc054d9e4e8ddbc45e01e01b8ad8f9"
+  },
+  "README.md": {
+    "status": "modified",
+    "sha256": "2cfb1c50e8b3627396369583a033c56058ab3d92ad98bbc9e3192dd34b78ef6a"
+  },
+  "quartus/riscv_soc.qsf": {
+    "status": "modified",
+    "sha256": "3a0867fe1c92c5f77ae9d04b4199b691c1ca59920d8843ee12835706c3d0ae51"
+  },
+  "quartus/riscv_soc.sdc": {
+    "status": "modified",
+    "sha256": "107a323901edc0ee0b20b3585c3e497b054468d5901fc2d40b2cc451d5282d76"
+  }
+}

@@ -1,0 +1,10 @@
+﻿[
+    {
+        "Path":  "C:\\FPGA\\riscv_soc_de10_lite\\firmware\\build\\boot.hex",
+        "Hash":  "AFAD780B60CEEAD4ED4D91627A7910997436FEBB565E92712D5B8FEF370519F6"
+    },
+    {
+        "Path":  "C:\\FPGA\\riscv_soc_de10_lite\\firmware\\build\\boot.mif",
+        "Hash":  "963C1BBA77669878AC8C08B6114781E1DA42B80E3E4E84CE5C302B31914D213D"
+    }
+]

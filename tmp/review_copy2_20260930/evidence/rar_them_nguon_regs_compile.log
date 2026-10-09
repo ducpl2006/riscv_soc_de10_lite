@@ -1,0 +1,8 @@
+/mnt/c/FPGA/riscv_soc_de10_lite/tmp/review_copy2_20260930/riscv_soc_de10_lite - Copy/rtl/core/rv32_core.v:254: error: port ``ifid_consumed_i'' is not a port of u_if_stage.
+/mnt/c/FPGA/riscv_soc_de10_lite/tmp/review_copy2_20260930/riscv_soc_de10_lite - Copy/rtl/core/rv32_core.v:280: error: port ``rd_addr_wb_i'' is not a port of u_id_stage.
+/mnt/c/FPGA/riscv_soc_de10_lite/tmp/review_copy2_20260930/riscv_soc_de10_lite - Copy/rtl/core/rv32_core.v:280: error: port ``wb_data_wb_i'' is not a port of u_id_stage.
+/mnt/c/FPGA/riscv_soc_de10_lite/tmp/review_copy2_20260930/riscv_soc_de10_lite - Copy/rtl/core/rv32_core.v:314: error: port ``wb_sel_mem_i'' is not a port of u_ex_stage.
+/mnt/c/FPGA/riscv_soc_de10_lite/tmp/review_copy2_20260930/riscv_soc_de10_lite - Copy/rtl/core/rv32_core.v:314: error: port ``pc4_mem_i'' is not a port of u_ex_stage.
+/mnt/c/FPGA/riscv_soc_de10_lite/tmp/review_copy2_20260930/riscv_soc_de10_lite - Copy/rtl/core/rv32_core.v:314: error: port ``alu_result_mem_i'' is not a port of u_ex_stage.
+/mnt/c/FPGA/riscv_soc_de10_lite/tmp/review_copy2_20260930/riscv_soc_de10_lite - Copy/rtl/core/rv32_core.v:314: error: port ``wb_data_wb_i'' is not a port of u_ex_stage.
+7 error(s) during elaboration.

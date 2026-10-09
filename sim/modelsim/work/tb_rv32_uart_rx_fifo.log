@@ -1,0 +1,15 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -L rtl_work work.tb_rv32_uart_rx_fifo -do "C:\FPGA\riscv_soc_de10_lite\sim\modelsim\work\run_test.do" 
+# Start time: 12:26:59 on Oct 05,2026
+# Loading sv_std.std
+# Loading work.tb_rv32_uart_rx_fifo
+# Loading work.uart_rx_fifo
+# do {C:\FPGA\riscv_soc_de10_lite\sim\modelsim\work\run_test.do}
+# PASS tb_rv32_uart_rx_fifo: depth=3 full/empty simultaneous push/pop
+# ** Note: $finish    : C:/FPGA/riscv_soc_de10_lite/tb/peripherals/tb_rv32_uart_rx_fifo.v(35)
+#    Time: 130 ns  Iteration: 1  Instance: /tb_rv32_uart_rx_fifo
+# End time: 12:26:59 on Oct 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

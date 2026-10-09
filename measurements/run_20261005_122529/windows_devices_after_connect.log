@@ -1,0 +1,16 @@
+
+
+Name     : Intel(R) Serial IO GPIO Host Controller - INT34C6
+Status   : OK
+DeviceID : ACPI\INT34C6\2&DABA3FF&1
+
+Name     : Intel(R) Active Management Technology - SOL (COM3)
+Status   : OK
+DeviceID : PCI\VEN_8086&DEV_43E3&SUBSYS_22E417AA&REV_11\3&11583659&0&B3
+
+Name     : Intel(R) Serial IO I2C Host Controller - 43E8
+Status   : OK
+DeviceID : PCI\VEN_8086&DEV_43E8&SUBSYS_22E417AA&REV_11\3&11583659&0&A8
+
+
+

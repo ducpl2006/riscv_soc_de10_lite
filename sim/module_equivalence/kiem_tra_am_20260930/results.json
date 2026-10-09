@@ -1,0 +1,6 @@
+{
+  "trang_thai": "PASS",
+  "kiem_tra": "Đổi retire_pc reset từ 0 thành 4 chỉ trên bản sao; bộ đối chiếu phát hiện sai khác dù retire_valid=0.",
+  "ma_thoat_du_kien_khac_0": 1,
+  "rtl_hien_tai_bi_sua": false
+}

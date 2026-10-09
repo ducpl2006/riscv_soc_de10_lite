@@ -1,0 +1,16 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -L rtl_work work.tb_rv32_qnn_model -do "C:\FPGA\riscv_soc_de10_lite\sim\modelsim\work\run_test.do" 
+# Start time: 12:26:48 on Oct 05,2026
+# Loading sv_std.std
+# Loading work.tb_rv32_qnn_model
+# Loading work.qnn_soc_accelerator
+# Loading work.intel_sync_rom_1p
+# do {C:\FPGA\riscv_soc_de10_lite\sim\modelsim\work\run_test.do}
+# PASS tb_rv32_qnn_model: 85 checks, model=beede8e56d64ba8c, result=328
+# ** Note: $finish    : C:/FPGA/riscv_soc_de10_lite/tb/accelerator/tb_rv32_qnn_model.v(130)
+#    Time: 30135 ns  Iteration: 1  Instance: /tb_rv32_qnn_model
+# End time: 12:26:48 on Oct 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

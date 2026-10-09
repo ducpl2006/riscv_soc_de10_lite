@@ -1,0 +1,18 @@
+Fitter Status : Successful - Mon Sep 21 14:21:53 2026
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : riscv_soc
+Top-level Entity Name : de10_lite_top
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 5,954 / 49,760 ( 12 % )
+    Total combinational functions : 5,613 / 49,760 ( 11 % )
+    Dedicated logic registers : 2,749 / 49,760 ( 6 % )
+Total registers : 2749
+Total pins : 26 / 360 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 338,944 / 1,677,312 ( 20 % )
+Embedded Multiplier 9-bit elements : 3 / 288 ( 1 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

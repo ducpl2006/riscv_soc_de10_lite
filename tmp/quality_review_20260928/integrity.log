@@ -1,0 +1,10 @@
+PASS identical RTL tokens: rtl/board/de10_lite_top.v
+PASS identical RTL tokens: rtl/peripherals/soc_gpio.v
+PASS identical RTL tokens: rtl/peripherals/soc_i2c_master.v
+PASS identical RTL tokens: rtl/peripherals/soc_timer.v
+PASS identical RTL tokens: rtl/peripherals/uart/soc_uart.v
+PASS identical RTL tokens: rtl/peripherals/uart/uart_rx.v
+PASS identical RTL tokens: rtl/peripherals/uart/uart_rx_fifo.v
+PASS unchanged board image: boot.hex
+PASS unchanged board image: boot.mif
+PASS CORE BASELINE FROZEN: 15 files unchanged

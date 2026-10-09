@@ -1,0 +1,4 @@
+QUARTUS_VERSION = "20.1"
+DATE = "13:00:00 September 18, 2026"
+PROJECT_REVISION = "uart_loopback"
+

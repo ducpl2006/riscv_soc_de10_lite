@@ -1,0 +1,2 @@
+PASS ISA seed=20260927 retired=5 transactions=0 cycles=12
+/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/isa/isa_core_harness.sv:78: $finish called at 240000 (1ps)

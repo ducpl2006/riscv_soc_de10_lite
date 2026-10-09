@@ -1,0 +1,9 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 12:26:26 on Oct 05,2026
+vlog -sv -work rtl_work "+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core" "+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus" "+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator" C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_i2c_master.v 
+-- Compiling module soc_i2c_master
+
+Top level modules:
+	soc_i2c_master
+End time: 12:26:26 on Oct 05,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

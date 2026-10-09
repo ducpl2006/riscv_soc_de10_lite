@@ -1,0 +1,38 @@
+{
+  "time_local": "2026-10-05T12:32:11.301902+07:00",
+  "core_freeze": "PASS 20/20 unchanged",
+  "boot_baseline_unchanged": true,
+  "source_unchanged": true,
+  "iverilog": "PASS 32/32",
+  "modelsim_stress": "PASS 78/78",
+  "isa": "PASS 195/195",
+  "firmware_rtl": "PASS 9/9",
+  "firmware_host": "PASS 2/2 groups",
+  "core_equivalence": "PASS 22/22, 36545 comparisons",
+  "board_baseline_simulation": "PASS POR + KEY reset, 50MHz, actual MIF contents, UART OK, QNN 12, LED 0x20C",
+  "quartus": "PASS 0 errors, 14 warnings",
+  "timing_ns": {
+    "setup": 1.687,
+    "hold": 0.112,
+    "recovery": 17.162,
+    "removal": 1.03,
+    "minimum_pulse_width": 9.264
+  },
+  "fmax_slow_85c_mhz": 54.61,
+  "sof_sha256": "6c9d103d173a53ec0135bedd85e385543094c9ee7234e4837f6b3f996587b934",
+  "programming": "PASS: Configuration succeeded, 1 device configured, 0 errors, 0 warnings",
+  "uart_hardware": "PASS: COM7 at 115200 8N1, received 4F 4B (OK) after FPGA reload",
+  "ina228_hardware": "NOT RUN: board calibration/address/cell temperature pending",
+  "jtag_cable": "USB-Blaster [USB-0]",
+  "jtag_device": "10M50DAF484@1",
+  "jtag_id": "0x031050DD",
+  "board_led_reset": "PASS user-observed: LEDR[2], LEDR[3], LEDR[9] on, LEDR[8] off; KEY[0] restart works",
+  "uart_adapter": {
+    "name": "USB-SERIAL CH340",
+    "port": "COM7",
+    "device_id": "USB\\VID_1A86&PID_7523\\5&C207DD3&0&6",
+    "status": "OK"
+  },
+  "latest_reload": "reload_20261005_125728",
+  "serial_port_state": "Closed after capture; available to user for PuTTY"
+}

@@ -1,0 +1,279 @@
+Info: Start Nativelink Simulation process
+Info: NativeLink has detected Verilog design -- Verilog simulation models will be used
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  RTL
+Family                :  max10
+Quartus root          :  c:/intelfpga_lite/20.1/quartus/bin64/
+Quartus sim root      :  c:/intelfpga_lite/20.1/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  verilog
+Simulation Mode       :  Command Line
+Sim Output File       :  
+Sim SDF file          :  
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script c:/intelfpga_lite/20.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File riscv_soc_run_msim_rtl_verilog.do already exists - backing up current file as riscv_soc_run_msim_rtl_verilog.do.bak9
+Probing transcript
+ModelSim-Altera Info: # do riscv_soc_run_msim_rtl_verilog.do
+ModelSim-Altera Info: # if {[file exists rtl_work]} {
+ModelSim-Altera Info: # 	vdel -lib rtl_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib rtl_work
+ModelSim-Altera Info: # vmap work rtl_work
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+ModelSim-Altera Info: # vmap work rtl_work 
+ModelSim-Altera Info: # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_branch_unit.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:19 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core" C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_branch_unit.v 
+ModelSim-Altera Info: # -- Compiling module rv32_branch_unit
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	rv32_branch_unit
+ModelSim-Altera Info: # End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_hazard_unit.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:19 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core" C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_hazard_unit.v 
+ModelSim-Altera Info: # -- Compiling module rv32_hazard_unit
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	rv32_hazard_unit
+ModelSim-Altera Info: # End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_lsu.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:19 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core" C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_lsu.v 
+ModelSim-Altera Info: # -- Compiling module rv32_lsu
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	rv32_lsu
+ModelSim-Altera Info: # End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_regfile.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:19 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core" C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_regfile.v 
+ModelSim-Altera Info: # -- Compiling module rv32_regfile
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	rv32_regfile
+ModelSim-Altera Info: # End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory {C:/FPGA/riscv_soc_de10_lite/rtl/memory/intel_sync_rom_1p.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:19 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory" C:/FPGA/riscv_soc_de10_lite/rtl/memory/intel_sync_rom_1p.v 
+ModelSim-Altera Info: # -- Compiling module intel_sync_rom_1p
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	intel_sync_rom_1p
+ModelSim-Altera Info: # End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory {C:/FPGA/riscv_soc_de10_lite/rtl/memory/intel_sync_rom_2p.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:19 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory" C:/FPGA/riscv_soc_de10_lite/rtl/memory/intel_sync_rom_2p.v 
+ModelSim-Altera Info: # -- Compiling module intel_sync_rom_2p
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	intel_sync_rom_2p
+ModelSim-Altera Info: # End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory {C:/FPGA/riscv_soc_de10_lite/rtl/memory/intel_sync_ram_1p.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:19 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory" C:/FPGA/riscv_soc_de10_lite/rtl/memory/intel_sync_ram_1p.v 
+ModelSim-Altera Info: # -- Compiling module intel_sync_ram_1p
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	intel_sync_ram_1p
+ModelSim-Altera Info: # End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory {C:/FPGA/riscv_soc_de10_lite/rtl/memory/soc_rom_dp.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:19 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory" C:/FPGA/riscv_soc_de10_lite/rtl/memory/soc_rom_dp.v 
+ModelSim-Altera Info: # -- Compiling module soc_rom_dp
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	soc_rom_dp
+ModelSim-Altera Info: # End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory {C:/FPGA/riscv_soc_de10_lite/rtl/memory/soc_ram.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:19 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory" C:/FPGA/riscv_soc_de10_lite/rtl/memory/soc_ram.v 
+ModelSim-Altera Info: # -- Compiling module soc_ram
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	soc_ram
+ModelSim-Altera Info: # End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals {C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_gpio.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:19 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals" C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_gpio.v 
+ModelSim-Altera Info: # -- Compiling module soc_gpio
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	soc_gpio
+ModelSim-Altera Info: # End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:01
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals {C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_uart_tx.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:20 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals" C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_uart_tx.v 
+ModelSim-Altera Info: # -- Compiling module soc_uart_tx
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	soc_uart_tx
+ModelSim-Altera Info: # End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals {C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_i2c_master.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:20 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals" C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_i2c_master.v 
+ModelSim-Altera Info: # -- Compiling module soc_i2c_master
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	soc_i2c_master
+ModelSim-Altera Info: # End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals {C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_timer.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:20 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals" C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_timer.v 
+ModelSim-Altera Info: # -- Compiling module soc_timer
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	soc_timer
+ModelSim-Altera Info: # End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/accelerator {C:/FPGA/riscv_soc_de10_lite/rtl/accelerator/qnn_soc_accelerator.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:20 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/accelerator" C:/FPGA/riscv_soc_de10_lite/rtl/accelerator/qnn_soc_accelerator.v 
+ModelSim-Altera Info: # -- Compiling module qnn_soc_accelerator
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	qnn_soc_accelerator
+ModelSim-Altera Info: # End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/soc {C:/FPGA/riscv_soc_de10_lite/rtl/soc/rv32_soc.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:20 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/soc" C:/FPGA/riscv_soc_de10_lite/rtl/soc/rv32_soc.v 
+ModelSim-Altera Info: # -- Compiling module rv32_soc
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	rv32_soc
+ModelSim-Altera Info: # End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_alu.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:20 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core" C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_alu.v 
+ModelSim-Altera Info: # -- Compiling module rv32_alu
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	rv32_alu
+ModelSim-Altera Info: # End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_decoder.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:20 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core" C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_decoder.v 
+ModelSim-Altera Info: # -- Compiling module rv32_decoder
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	rv32_decoder
+ModelSim-Altera Info: # End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_imm_gen.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:20 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core" C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_imm_gen.v 
+ModelSim-Altera Info: # -- Compiling module rv32_imm_gen
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	rv32_imm_gen
+ModelSim-Altera Info: # End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_core.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:20 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core" C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_core.v 
+ModelSim-Altera Info: # -- Compiling module rv32_core
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	rv32_core
+ModelSim-Altera Info: # End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/board {C:/FPGA/riscv_soc_de10_lite/rtl/board/de10_lite_top.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:20 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/board" C:/FPGA/riscv_soc_de10_lite/rtl/board/de10_lite_top.v 
+ModelSim-Altera Info: # -- Compiling module de10_lite_top
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	de10_lite_top
+ModelSim-Altera Info: # End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/quartus/../tb/soc {C:/FPGA/riscv_soc_de10_lite/quartus/../tb/soc/tb_rv32_soc.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 06:45:20 on Sep 20,2026
+ModelSim-Altera Info: # vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/quartus/../tb/soc" C:/FPGA/riscv_soc_de10_lite/quartus/../tb/soc/tb_rv32_soc.v 
+ModelSim-Altera Info: # -- Compiling module tb_rv32_soc
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	tb_rv32_soc
+ModelSim-Altera Info: # End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_rv32_soc
+ModelSim-Altera Info: # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_rv32_soc 
+ModelSim-Altera Info: # Start time: 06:45:20 on Sep 20,2026
+ModelSim-Altera Info: # Loading work.tb_rv32_soc
+ModelSim-Altera Info: # Loading work.rv32_soc
+ModelSim-Altera Info: # Loading work.rv32_core
+ModelSim-Altera Info: # Loading work.rv32_decoder
+ModelSim-Altera Info: # Loading work.rv32_imm_gen
+ModelSim-Altera Info: # Loading work.rv32_regfile
+ModelSim-Altera Info: # Loading work.rv32_hazard_unit
+ModelSim-Altera Info: # Loading work.rv32_alu
+ModelSim-Altera Info: # Loading work.rv32_branch_unit
+ModelSim-Altera Info: # Loading work.rv32_lsu
+ModelSim-Altera Info: # Loading work.soc_rom_dp
+ModelSim-Altera Info: # Loading work.intel_sync_rom_2p
+ModelSim-Altera Info: # Loading work.soc_ram
+ModelSim-Altera Info: # Loading work.intel_sync_ram_1p
+ModelSim-Altera Info: # Loading work.soc_gpio
+ModelSim-Altera Info: # Loading work.soc_uart_tx
+ModelSim-Altera Info: # Loading work.soc_i2c_master
+ModelSim-Altera Info: # Loading work.qnn_soc_accelerator
+ModelSim-Altera Info: # Loading work.intel_sync_rom_1p
+ModelSim-Altera Info: # Loading work.soc_timer
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: #add wave *
+ModelSim-Altera Info: #view structure
+ModelSim-Altera Info: #view signals
+ModelSim-Altera Info: # run -all
+ModelSim-Altera Info: # PASS tb_rv32_soc: 10 checks, cycles=3002
+ModelSim-Altera Info: # ** Note: $finish    : C:/FPGA/riscv_soc_de10_lite/quartus/../tb/soc/tb_rv32_soc.v(142)
+ModelSim-Altera Info: #    Time: 30865 ns  Iteration: 1  Instance: /tb_rv32_soc
+ModelSim-Altera Info: # End time: 06:45:21 on Sep 20,2026, Elapsed time: 0:00:01
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+Info: NativeLink simulation flow was successful

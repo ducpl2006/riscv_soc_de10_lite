@@ -1,0 +1,16 @@
+# vsim -c -lib refwork tb_reference_mem_mdu_stall -do "onerror {quit -force -code 2}; run -all; quit -force -code 0" 
+# Start time: 13:26:03 on Sep 25,2026
+# Loading sv_std.std
+# Loading refwork.tb_reference_mem_mdu_stall
+# Loading refwork.Memory_Cycle
+# Loading refwork.Hazard_Unit
+# Loading refwork.Forwarding_Unit
+# Loading refwork.Stall_Unit
+# onerror {quit -force -code 2}
+#  Warning: onerror command for use within macro
+#  run -all
+# VIOLATION: MDU idle, memory completion latched, but StallM=1 and bus request=0; no progress
+# ** Note: $finish    : C:/FPGA/riscv_soc_de10_lite/tmp/reference_soc_cnn/tb_reference_review.v(82)
+#    Time: 110 ns  Iteration: 1  Instance: /tb_reference_mem_mdu_stall
+# End time: 13:26:04 on Sep 25,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

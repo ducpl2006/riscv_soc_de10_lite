@@ -1,0 +1,4 @@
+FATAL: /mnt/c/FPGA/riscv_soc_de10_lite/sim/module_equivalence/truoc_tach/rv32_core_wrapper.sv:161: Sai khác tb_rv32_core.dut.retire_pc_o lúc 6000: mới=00000004 gốc=00000000
+       Time: 6000  Scope: tb_rv32_core.dut
+FATAL: /mnt/c/FPGA/riscv_soc_de10_lite/sim/module_equivalence/truoc_tach/rv32_core_wrapper.sv:183: Không có lần đối chiếu nào tại tb_rv32_core.dut
+       Time: 6000  Scope: tb_rv32_core.dut

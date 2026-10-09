@@ -1,0 +1,144 @@
+Flow report for riscv_soc
+Mon Oct 05 12:27:24 2026
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Mon Oct 05 12:27:24 2026       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                      ; riscv_soc                                   ;
+; Top-level Entity Name              ; de10_lite_top                               ;
+; Family                             ; MAX 10                                      ;
+; Device                             ; 10M50DAF484C7G                              ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 6,338 / 49,760 ( 13 % )                     ;
+;     Total combinational functions  ; 5,989 / 49,760 ( 12 % )                     ;
+;     Dedicated logic registers      ; 3,184 / 49,760 ( 6 % )                      ;
+; Total registers                    ; 3184                                        ;
+; Total pins                         ; 27 / 360 ( 8 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 338,944 / 1,677,312 ( 20 % )                ;
+; Embedded Multiplier 9-bit elements ; 3 / 288 ( 1 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
+; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 10/05/2026 12:26:23 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; riscv_soc           ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                               ;
++--------------------------------------+----------------------------------------+---------------+---------------+----------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name   ; Section Id     ;
++--------------------------------------+----------------------------------------+---------------+---------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 268809279798192.179117798318928        ; --            ; --            ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --            ; tb_rv32_soc    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_rv32_soc                            ; --            ; --            ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR        ; riscv_soc_de10_lite/sim/modelsim       ; --            ; --            ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --            ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --            ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --            ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/soc/tb_rv32_soc.v                ; --            ; --            ; tb_rv32_soc    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_rv32_soc                            ; --            ; --            ; tb_rv32_soc    ;
+; EDA_TEST_BENCH_NAME                  ; tb_rv32_soc                            ; --            ; --            ; eda_simulation ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --            ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --            ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --            ; --             ;
+; NUM_PARALLEL_PROCESSORS              ; All                                    ; --            ; --            ; --             ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; de10_lite_top ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; de10_lite_top ; Top            ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; de10_lite_top ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --            ; --             ;
+; SEARCH_PATH                          ; ../rtl/core                            ; --            ; --            ; --             ;
+; SEARCH_PATH                          ; ../rtl/bus                             ; --            ; --            ; --             ;
+; SEARCH_PATH                          ; ../rtl/accelerator                     ; --            ; --            ; --             ;
+; TOP_LEVEL_ENTITY                     ; de10_lite_top                          ; riscv_soc     ; --            ; --             ;
+; VERILOG_MACRO                        ; FPGA_SYNTHESIS=1                       ; --            ; --            ; --             ;
++--------------------------------------+----------------------------------------+---------------+---------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:26     ; 1.0                     ; 4881 MB             ; 00:00:17                           ;
+; Fitter               ; 00:00:23     ; 1.9                     ; 6034 MB             ; 00:00:30                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4718 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:03     ; 3.2                     ; 4952 MB             ; 00:00:09                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4693 MB             ; 00:00:01                           ;
+; Total                ; 00:00:56     ; --                      ; --                  ; 00:00:59                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-97H5KJ9  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-97H5KJ9  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-97H5KJ9  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-97H5KJ9  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-97H5KJ9  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off riscv_soc -c riscv_soc
+quartus_fit --read_settings_files=off --write_settings_files=off riscv_soc -c riscv_soc
+quartus_asm --read_settings_files=off --write_settings_files=off riscv_soc -c riscv_soc
+quartus_sta riscv_soc -c riscv_soc
+quartus_eda --read_settings_files=off --write_settings_files=off riscv_soc -c riscv_soc
+
+
+

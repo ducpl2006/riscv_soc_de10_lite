@@ -1,0 +1,413 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA/riscv_soc_de10_lite
+vrv32_alu
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1789745076
+!i10b 1
+!s100 <fgh:ZhBHL?ZJ?7[N0]o^3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IcDDjkBE0VV>NGP3^HNn?W3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1789744565
+8rtl/core/rv32_alu.v
+Frtl/core/rv32_alu.v
+!i122 4
+L0 24 70
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1789745076.000000
+Z7 !s107 rtl/core/rv32_defs.vh|tb/core/tb_rv32_core.v|rtl/core/rv32_core.v|rtl/core/rv32_hazard_unit.v|rtl/core/rv32_lsu.v|rtl/core/rv32_branch_unit.v|rtl/core/rv32_decoder.v|rtl/core/rv32_regfile.v|rtl/core/rv32_imm_gen.v|rtl/core/rv32_alu.v|
+Z8 !s90 -work|sim\modelsim\work_core_check_01|-sv|-lint|+incdir+rtl/core|rtl/core/rv32_alu.v|rtl/core/rv32_imm_gen.v|rtl/core/rv32_regfile.v|rtl/core/rv32_decoder.v|rtl/core/rv32_branch_unit.v|rtl/core/rv32_lsu.v|rtl/core/rv32_hazard_unit.v|rtl/core/rv32_core.v|tb/core/tb_rv32_core.v|
+!i113 1
+Z9 o-work {sim\modelsim\work_core_check_01} -sv -lint
+Z10 !s92 -work {sim\modelsim\work_core_check_01} -sv -lint +incdir+rtl/core
+Z11 tCvgOpt 0
+vrv32_branch_unit
+R1
+R2
+!i10b 1
+!s100 DS_RW3LRz6JkH=Pf6E^L?3
+R3
+INYVoIE`:Nk_EzLn2N_zoj2
+R4
+S1
+R0
+Z12 w1789743940
+8rtl/core/rv32_branch_unit.v
+Frtl/core/rv32_branch_unit.v
+!i122 4
+L0 23 54
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vrv32_core
+R1
+Z13 !s110 1789745177
+!i10b 1
+!s100 ?6HlEPiPFjKV:>bWgd23?2
+R3
+I7n`<ZXL5<_D38;[7JVRe01
+R4
+S1
+R0
+w1789744915
+8rtl/core/rv32_core.v
+Frtl/core/rv32_core.v
+!i122 5
+L0 38 813
+R5
+r1
+!s85 0
+31
+Z14 !s108 1789745177.000000
+!s107 rtl/core/rv32_defs.vh|tb/core/tb_rv32_core.v|rtl/core/rv32_core.v|
+Z15 !s90 -work|sim\modelsim\work_core_check_01|-sv|-lint|+incdir+rtl/core|rtl/core/rv32_core.v|tb/core/tb_rv32_core.v|
+!i113 1
+R9
+R10
+R11
+vrv32_decoder
+R1
+R2
+!i10b 1
+!s100 ``^F;`JPIWH]zmD[JKRFN1
+R3
+Ib86<>>g0CR86EO@lIk6_j0
+R4
+S1
+R0
+w1789744313
+8rtl/core/rv32_decoder.v
+Frtl/core/rv32_decoder.v
+!i122 4
+L0 31 310
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vrv32_hazard_unit
+R1
+R2
+!i10b 1
+!s100 5c6;OzhAM?:iZCGV_FgdJ3
+R3
+IUUS<8m<^Y8E74o[C6OTDQ1
+R4
+S1
+R0
+Z16 w1789743943
+8rtl/core/rv32_hazard_unit.v
+Frtl/core/rv32_hazard_unit.v
+!i122 4
+L0 29 67
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vrv32_imm_gen
+R1
+R2
+!i10b 1
+!s100 ??dK6Ibn8hBZ8R::Y>;E33
+R3
+IAPYHHYidLmjo_;h_2l05g2
+R4
+S1
+R0
+w1789744575
+8rtl/core/rv32_imm_gen.v
+Frtl/core/rv32_imm_gen.v
+!i122 4
+L0 25 59
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vrv32_lsu
+R1
+R2
+!i10b 1
+!s100 K@SJblC0:0I;2C7i[E=Sd3
+R3
+IGe2ST<on6@]`CbVOIQlY32
+R4
+S1
+R0
+R12
+8rtl/core/rv32_lsu.v
+Frtl/core/rv32_lsu.v
+!i122 4
+L0 32 127
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vrv32_regfile
+R1
+R2
+!i10b 1
+!s100 hn]W5Q^lFCY3KNUeK_o?m3
+R3
+IaRGV>8oo1<<DQh?;e:Q6n0
+R4
+S1
+R0
+w1789743985
+8rtl/core/rv32_regfile.v
+Frtl/core/rv32_regfile.v
+!i122 4
+L0 26 64
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vtb_rv32_alu
+Z17 !s110 1789744767
+!i10b 1
+!s100 0Ub?FllYBB_O_jYIR_LY00
+R3
+ITmlK36l<58a@9aWf=3QF=1
+R4
+R0
+w1789744148
+8tb/core/tb_rv32_alu.v
+Ftb/core/tb_rv32_alu.v
+!i122 3
+L0 16 227
+R5
+r1
+!s85 0
+31
+Z18 !s108 1789744767.000000
+Z19 !s107 rtl/core/rv32_defs.vh|tb/core/tb_rv32_hazard_unit.v|tb/core/tb_rv32_lsu.v|tb/core/tb_rv32_branch_unit.v|tb/core/tb_rv32_decoder.v|tb/core/tb_rv32_regfile.v|tb/core/tb_rv32_imm_gen.v|tb/core/tb_rv32_alu.v|
+Z20 !s90 -work|sim\modelsim\work_core_check_01|-vlog01compat|-lint|+incdir+rtl/core|tb/core/tb_rv32_alu.v|tb/core/tb_rv32_imm_gen.v|tb/core/tb_rv32_regfile.v|tb/core/tb_rv32_decoder.v|tb/core/tb_rv32_branch_unit.v|tb/core/tb_rv32_lsu.v|tb/core/tb_rv32_hazard_unit.v|
+!i113 1
+Z21 o-work {sim\modelsim\work_core_check_01} -vlog01compat -lint
+Z22 !s92 -work {sim\modelsim\work_core_check_01} -vlog01compat -lint +incdir+rtl/core
+R11
+vtb_rv32_branch_unit
+R17
+!i10b 1
+!s100 ]d;A8<knWC^EmLYgEN=m_2
+R3
+I;c^ohYnab10=B<8Y<M8A83
+R4
+R0
+Z23 w1789744268
+8tb/core/tb_rv32_branch_unit.v
+Ftb/core/tb_rv32_branch_unit.v
+!i122 3
+L0 14 120
+R5
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R21
+R22
+R11
+vtb_rv32_core
+R1
+R13
+!i10b 1
+!s100 iFgHk3R>4F<N>YQWeKTiG0
+R3
+IWDhl7R0L:QS9=[YPkM`BJ3
+R4
+S1
+R0
+w1789745144
+8tb/core/tb_rv32_core.v
+Ftb/core/tb_rv32_core.v
+!i122 5
+L0 29 1027
+R5
+r1
+!s85 0
+31
+R14
+Z24 !s107 rtl/core/rv32_defs.vh|tb/core/tb_rv32_core.v|rtl/core/rv32_core.v|
+R15
+!i113 1
+R9
+R10
+R11
+vtb_rv32_decoder
+R17
+!i10b 1
+!s100 Wba1<n;K>4WP0N7GmnnEX2
+R3
+IS1ME9gF^heKUcXV]33cDj0
+R4
+R0
+Z25 w1789744314
+8tb/core/tb_rv32_decoder.v
+Ftb/core/tb_rv32_decoder.v
+!i122 3
+L0 26 372
+R5
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R21
+R22
+R11
+vtb_rv32_hazard_unit
+R17
+!i10b 1
+!s100 jVk2VTZ<oi;mHCOdY1]S[0
+R3
+I>gfVnk0jDNhF3UNZhIPCW3
+R4
+R0
+R16
+8tb/core/tb_rv32_hazard_unit.v
+Ftb/core/tb_rv32_hazard_unit.v
+!i122 3
+L0 12 160
+R5
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R21
+R22
+R11
+vtb_rv32_imm_gen
+R17
+!i10b 1
+!s100 J0dTUT^cXS8Qk7?I2OEdc0
+R3
+I0PO>L6`PICPQcgHP1SZ>j2
+R4
+R0
+w1789744267
+8tb/core/tb_rv32_imm_gen.v
+Ftb/core/tb_rv32_imm_gen.v
+!i122 3
+L0 16 165
+R5
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R21
+R22
+R11
+vtb_rv32_lsu
+R17
+!i10b 1
+!s100 06<8T2lUB^mQhDck;OQ<a3
+R3
+IZP>G1of@1gIMiZ[n54oQ12
+R4
+R0
+R23
+8tb/core/tb_rv32_lsu.v
+Ftb/core/tb_rv32_lsu.v
+!i122 3
+L0 17 270
+R5
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R21
+R22
+R11
+vtb_rv32_regfile
+R17
+!i10b 1
+!s100 UKP_1KI5:<j9SD_O?AkgI1
+R3
+IhB`emBV=n7EYV[c^0oBCk0
+R4
+R0
+R25
+8tb/core/tb_rv32_regfile.v
+Ftb/core/tb_rv32_regfile.v
+!i122 3
+L0 21 395
+R5
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R21
+R22
+R11

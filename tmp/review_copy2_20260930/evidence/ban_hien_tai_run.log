@@ -1,0 +1,2 @@
+PASS tb_rv32_core_traps: 44 checks, 9 causes
+/mnt/c/FPGA/riscv_soc_de10_lite/tb/core/tb_rv32_core_traps.v:163: $finish called at 1325000 (1ps)

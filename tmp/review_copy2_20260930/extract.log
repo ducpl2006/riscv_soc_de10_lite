@@ -1,0 +1,22 @@
+
+7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20
+
+Scanning the drive for archives:
+1 file, 117294587 bytes (112 MiB)
+
+Extracting archive: C:\FPGA\riscv_soc_de10_lite - Copy2.rar
+--
+Path = C:\FPGA\riscv_soc_de10_lite - Copy2.rar
+Type = Rar5
+Physical Size = 117294587
+Solid = -
+Blocks = 10386
+Encrypted = -
+Multivolume = -
+Volumes = 1
+
+Everything is Ok
+
+Files: 1623
+Size:       47078388
+Compressed: 117294587

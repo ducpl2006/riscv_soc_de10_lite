@@ -1,0 +1,2 @@
+PASS firmware pipeline: warmup, ring order, signed truncation, saturation, gaps, missing temperature
+PASS firmware INA228: widths, identity, calibration/ranges, signed units, bounded conversion, invalid output protection

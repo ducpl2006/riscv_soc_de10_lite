@@ -1,0 +1,2 @@
+FATAL: /mnt/c/FPGA/riscv_soc_de10_lite/tmp/review_copy2_20260930/riscv_soc_de10_lite - Copy/tb/core/tb_rv32_core_traps.v:121: Timeout trap:                      illegal instruction
+       Time: 665000  Scope: tb_rv32_core_traps.run_trap_case

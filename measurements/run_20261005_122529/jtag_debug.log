@@ -1,0 +1,9 @@
+1) USB-Blaster [USB-0]
+   (JTAG Server Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition)
+  031050DD   10M50DA(.|ES)/10M50DC (IR=10)
+
+  Captured DR after reset = (031050DD) [32]
+  Captured IR after reset = (155) [10]
+  Captured Bypass after reset = (0) [1]
+  Captured Bypass chain = (0) [1]
+

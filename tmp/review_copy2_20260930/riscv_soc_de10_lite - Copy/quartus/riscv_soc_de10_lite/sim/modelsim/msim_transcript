@@ -1,0 +1,256 @@
+# do riscv_soc_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_branch_unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:19 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core" C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_branch_unit.v 
+# -- Compiling module rv32_branch_unit
+# 
+# Top level modules:
+# 	rv32_branch_unit
+# End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_hazard_unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:19 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core" C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_hazard_unit.v 
+# -- Compiling module rv32_hazard_unit
+# 
+# Top level modules:
+# 	rv32_hazard_unit
+# End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_lsu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:19 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core" C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_lsu.v 
+# -- Compiling module rv32_lsu
+# 
+# Top level modules:
+# 	rv32_lsu
+# End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_regfile.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:19 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core" C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_regfile.v 
+# -- Compiling module rv32_regfile
+# 
+# Top level modules:
+# 	rv32_regfile
+# End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory {C:/FPGA/riscv_soc_de10_lite/rtl/memory/intel_sync_rom_1p.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:19 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory" C:/FPGA/riscv_soc_de10_lite/rtl/memory/intel_sync_rom_1p.v 
+# -- Compiling module intel_sync_rom_1p
+# 
+# Top level modules:
+# 	intel_sync_rom_1p
+# End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory {C:/FPGA/riscv_soc_de10_lite/rtl/memory/intel_sync_rom_2p.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:19 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory" C:/FPGA/riscv_soc_de10_lite/rtl/memory/intel_sync_rom_2p.v 
+# -- Compiling module intel_sync_rom_2p
+# 
+# Top level modules:
+# 	intel_sync_rom_2p
+# End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory {C:/FPGA/riscv_soc_de10_lite/rtl/memory/intel_sync_ram_1p.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:19 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory" C:/FPGA/riscv_soc_de10_lite/rtl/memory/intel_sync_ram_1p.v 
+# -- Compiling module intel_sync_ram_1p
+# 
+# Top level modules:
+# 	intel_sync_ram_1p
+# End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory {C:/FPGA/riscv_soc_de10_lite/rtl/memory/soc_rom_dp.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:19 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory" C:/FPGA/riscv_soc_de10_lite/rtl/memory/soc_rom_dp.v 
+# -- Compiling module soc_rom_dp
+# 
+# Top level modules:
+# 	soc_rom_dp
+# End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory {C:/FPGA/riscv_soc_de10_lite/rtl/memory/soc_ram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:19 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/memory" C:/FPGA/riscv_soc_de10_lite/rtl/memory/soc_ram.v 
+# -- Compiling module soc_ram
+# 
+# Top level modules:
+# 	soc_ram
+# End time: 06:45:19 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals {C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_gpio.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:19 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals" C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_gpio.v 
+# -- Compiling module soc_gpio
+# 
+# Top level modules:
+# 	soc_gpio
+# End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals {C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_uart_tx.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:20 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals" C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_uart_tx.v 
+# -- Compiling module soc_uart_tx
+# 
+# Top level modules:
+# 	soc_uart_tx
+# End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals {C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_i2c_master.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:20 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals" C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_i2c_master.v 
+# -- Compiling module soc_i2c_master
+# 
+# Top level modules:
+# 	soc_i2c_master
+# End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals {C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_timer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:20 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/peripherals" C:/FPGA/riscv_soc_de10_lite/rtl/peripherals/soc_timer.v 
+# -- Compiling module soc_timer
+# 
+# Top level modules:
+# 	soc_timer
+# End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/accelerator {C:/FPGA/riscv_soc_de10_lite/rtl/accelerator/qnn_soc_accelerator.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:20 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/accelerator" C:/FPGA/riscv_soc_de10_lite/rtl/accelerator/qnn_soc_accelerator.v 
+# -- Compiling module qnn_soc_accelerator
+# 
+# Top level modules:
+# 	qnn_soc_accelerator
+# End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/soc {C:/FPGA/riscv_soc_de10_lite/rtl/soc/rv32_soc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:20 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/soc" C:/FPGA/riscv_soc_de10_lite/rtl/soc/rv32_soc.v 
+# -- Compiling module rv32_soc
+# 
+# Top level modules:
+# 	rv32_soc
+# End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_alu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:20 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core" C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_alu.v 
+# -- Compiling module rv32_alu
+# 
+# Top level modules:
+# 	rv32_alu
+# End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_decoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:20 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core" C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_decoder.v 
+# -- Compiling module rv32_decoder
+# 
+# Top level modules:
+# 	rv32_decoder
+# End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_imm_gen.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:20 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core" C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_imm_gen.v 
+# -- Compiling module rv32_imm_gen
+# 
+# Top level modules:
+# 	rv32_imm_gen
+# End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core {C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_core.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:20 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/core" C:/FPGA/riscv_soc_de10_lite/rtl/core/rv32_core.v 
+# -- Compiling module rv32_core
+# 
+# Top level modules:
+# 	rv32_core
+# End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/rtl/board {C:/FPGA/riscv_soc_de10_lite/rtl/board/de10_lite_top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:20 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/rtl/board" C:/FPGA/riscv_soc_de10_lite/rtl/board/de10_lite_top.v 
+# -- Compiling module de10_lite_top
+# 
+# Top level modules:
+# 	de10_lite_top
+# End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/FPGA/riscv_soc_de10_lite/quartus/../tb/soc {C:/FPGA/riscv_soc_de10_lite/quartus/../tb/soc/tb_rv32_soc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 06:45:20 on Sep 20,2026
+# vlog -vlog01compat -work work "+incdir+C:/FPGA/riscv_soc_de10_lite/quartus/../tb/soc" C:/FPGA/riscv_soc_de10_lite/quartus/../tb/soc/tb_rv32_soc.v 
+# -- Compiling module tb_rv32_soc
+# 
+# Top level modules:
+# 	tb_rv32_soc
+# End time: 06:45:20 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_rv32_soc
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_rv32_soc 
+# Start time: 06:45:20 on Sep 20,2026
+# Loading work.tb_rv32_soc
+# Loading work.rv32_soc
+# Loading work.rv32_core
+# Loading work.rv32_decoder
+# Loading work.rv32_imm_gen
+# Loading work.rv32_regfile
+# Loading work.rv32_hazard_unit
+# Loading work.rv32_alu
+# Loading work.rv32_branch_unit
+# Loading work.rv32_lsu
+# Loading work.soc_rom_dp
+# Loading work.intel_sync_rom_2p
+# Loading work.soc_ram
+# Loading work.intel_sync_ram_1p
+# Loading work.soc_gpio
+# Loading work.soc_uart_tx
+# Loading work.soc_i2c_master
+# Loading work.qnn_soc_accelerator
+# Loading work.intel_sync_rom_1p
+# Loading work.soc_timer
+# 
+#add wave *
+#view structure
+#view signals
+# run -all
+# PASS tb_rv32_soc: 10 checks, cycles=3002
+# ** Note: $finish    : C:/FPGA/riscv_soc_de10_lite/quartus/../tb/soc/tb_rv32_soc.v(142)
+#    Time: 30865 ns  Iteration: 1  Instance: /tb_rv32_soc
+# End time: 06:45:21 on Sep 20,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

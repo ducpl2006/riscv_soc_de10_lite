@@ -1,0 +1,119 @@
+# =============================================================================
+# Quartus Prime Lite 20.1 project - RV32I QNN SoC cho DE10-Lite.
+# Pinout theo DE10-Lite Golden Top/System Builder; chỉ khai báo các chân dùng.
+# =============================================================================
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF484C7G
+set_global_assignment -name TOP_LEVEL_ENTITY de10_lite_top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name VERILOG_MACRO "FPGA_SYNTHESIS=1"
+set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE IMAGE WITH ERAM"
+
+set_global_assignment -name SDC_FILE riscv_soc.sdc
+
+set_global_assignment -name SEARCH_PATH ../rtl/core
+set_global_assignment -name SEARCH_PATH ../rtl/bus
+set_global_assignment -name SEARCH_PATH ../rtl/accelerator
+set_global_assignment -name VERILOG_FILE ../rtl/core/ex/rv32_alu.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/ex/rv32_branch_unit.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/id/rv32_decoder.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/control/rv32_hazard_unit.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/control/rv32_pipeline_control.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/id/rv32_imm_gen.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/common/rv32_lsu.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/id/rv32_regfile.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/if/rv32_if_request_queue.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/if/rv32_if_fifo.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/if/rv32_if_stage.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/id/rv32_id_stage.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/ex/rv32_ex_stage.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/mem/rv32_mem_stage.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/wb/rv32_wb_stage.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/pipeline/rv32_id_ex_reg.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/pipeline/rv32_ex_mem_reg.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/pipeline/rv32_mem_wb_reg.v
+set_global_assignment -name VERILOG_FILE ../rtl/core/rv32_core.v
+set_global_assignment -name VERILOG_FILE ../rtl/memory/intel_sync_rom_1p.v
+set_global_assignment -name VERILOG_FILE ../rtl/memory/intel_sync_rom_2p.v
+set_global_assignment -name VERILOG_FILE ../rtl/memory/intel_sync_ram_1p.v
+set_global_assignment -name VERILOG_FILE ../rtl/memory/soc_rom_dp.v
+set_global_assignment -name VERILOG_FILE ../rtl/memory/soc_ram.v
+set_global_assignment -name VERILOG_FILE ../rtl/peripherals/soc_gpio.v
+set_global_assignment -name VERILOG_FILE ../rtl/peripherals/soc_uart_tx.v
+set_global_assignment -name VERILOG_FILE ../rtl/peripherals/uart/uart_rx.v
+set_global_assignment -name VERILOG_FILE ../rtl/peripherals/uart/uart_rx_fifo.v
+set_global_assignment -name VERILOG_FILE ../rtl/peripherals/uart/soc_uart.v
+set_global_assignment -name VERILOG_FILE ../rtl/peripherals/soc_i2c_master.v
+set_global_assignment -name VERILOG_FILE ../rtl/peripherals/soc_timer.v
+set_global_assignment -name VERILOG_FILE ../rtl/accelerator/qnn_soc_accelerator.v
+set_global_assignment -name VERILOG_FILE ../rtl/bus/soc_bus.v
+set_global_assignment -name VERILOG_FILE ../rtl/soc/rv32_soc.v
+set_global_assignment -name VERILOG_FILE ../rtl/board/de10_lite_top.v
+set_global_assignment -name VERILOG_FILE ../rtl/board/reset_controller.v
+
+# NativeLink ModelSim-Altera RTL simulation. Testbench tự nạp boot/model vàng.
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_rv32_soc -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_rv32_soc -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_rv32_soc -section_id tb_rv32_soc
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_rv32_soc
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/soc/tb_rv32_soc.v -section_id tb_rv32_soc
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR riscv_soc_de10_lite/sim/modelsim -section_id eda_simulation
+
+set_location_assignment PIN_P11 -to MAX10_CLK1_50
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MAX10_CLK1_50
+
+set_location_assignment PIN_B8 -to KEY[0]
+set_location_assignment PIN_A7 -to KEY[1]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to KEY[0]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to KEY[1]
+
+set_location_assignment PIN_C10 -to SW[0]
+set_location_assignment PIN_C11 -to SW[1]
+set_location_assignment PIN_D12 -to SW[2]
+set_location_assignment PIN_C12 -to SW[3]
+set_location_assignment PIN_A12 -to SW[4]
+set_location_assignment PIN_B12 -to SW[5]
+set_location_assignment PIN_A13 -to SW[6]
+set_location_assignment PIN_A14 -to SW[7]
+set_location_assignment PIN_B14 -to SW[8]
+set_location_assignment PIN_F15 -to SW[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[*]
+
+set_location_assignment PIN_A8 -to LEDR[0]
+set_location_assignment PIN_A9 -to LEDR[1]
+set_location_assignment PIN_A10 -to LEDR[2]
+set_location_assignment PIN_B10 -to LEDR[3]
+set_location_assignment PIN_D13 -to LEDR[4]
+set_location_assignment PIN_C13 -to LEDR[5]
+set_location_assignment PIN_E14 -to LEDR[6]
+set_location_assignment PIN_D14 -to LEDR[7]
+set_location_assignment PIN_A11 -to LEDR[8]
+set_location_assignment PIN_B11 -to LEDR[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[*]
+
+set_location_assignment PIN_V10 -to GPIO[0]
+set_location_assignment PIN_W10 -to GPIO[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[*]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to GPIO[0]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to GPIO[1]
+set_location_assignment PIN_V9 -to UART_TX
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_TX
+set_location_assignment PIN_W9 -to UART_RX
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_RX
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to UART_RX
+
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
+
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

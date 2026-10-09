@@ -1,0 +1,11 @@
+{
+  "qnn_result": 12,
+  "ledr_7_0": 12,
+  "ledr_9_0": 524,
+  "uart": "OK",
+  "clock_hz": 50000000,
+  "baud_div": 434,
+  "trap_cause": 3,
+  "trap_pc": 72,
+  "mif_hex_verified": true
+}

@@ -1,0 +1,39 @@
+COM7 opened at 115200 8N1 before FPGA configuration.
+1) USB-Blaster [USB-0]
+  031050DD   10M50DA(.|ES)/10M50DC
+
+Info: *******************************************************************
+Info: Running Quartus Prime Programmer
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Mon Oct 05 12:57:35 2026
+Info: Command: quartus_pgm -c "USB-Blaster [USB-0]" -m JTAG -o p;C:\FPGA\riscv_soc_de10_lite\measurements\run_20261005_122529\reload_20261005_125728\riscv_soc.sof
+Info (213045): Using programming cable "USB-Blaster [USB-0]"
+Info (213011): Using programming file C:/FPGA/riscv_soc_de10_lite/measurements/run_20261005_122529/reload_20261005_125728/riscv_soc.sof with checksum 0x007DFB2B for device 10M50DAF484@1
+Info (209060): Started Programmer operation at Mon Oct 05 12:57:36 2026
+Info (209016): Configuring device index 1
+Info (209017): Device 1 contains JTAG ID code 0x031050DD
+Info (209007): Configuration succeeded -- 1 device(s) configured
+Info (209011): Successfully performed operation(s)
+Info (209061): Ended Programmer operation at Mon Oct 05 12:57:38 2026
+Info: Quartus Prime Programmer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4437 megabytes
+    Info: Processing ended: Mon Oct 05 12:57:38 2026
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:00
+Programming succeeded: True
+UART bytes: 4F 4B
+UART PASS: True

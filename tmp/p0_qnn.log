@@ -1,0 +1,12 @@
+# vsim -c -L rtl_work work.tb_rv32_qnn_soc_accelerator -do "run_test.do" -l ../../../tmp/p0_qnn.log 
+# Start time: 23:34:16 on Sep 26,2026
+# Loading sv_std.std
+# Loading work.tb_rv32_qnn_soc_accelerator
+# Loading work.qnn_soc_accelerator
+# Loading work.intel_sync_rom_1p
+# do run_test.do
+# PASS tb_rv32_qnn_soc_accelerator: 2866 checks
+# ** Note: $finish    : ../../../tb/accelerator/tb_rv32_qnn_soc_accelerator.v(152)
+#    Time: 28651 ns  Iteration: 0  Instance: /tb_rv32_qnn_soc_accelerator
+# End time: 23:34:16 on Sep 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

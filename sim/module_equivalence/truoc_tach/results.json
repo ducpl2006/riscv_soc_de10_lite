@@ -1,0 +1,189 @@
+{
+  "trang_thai": "PASS",
+  "thoi_diem_utc": "2026-09-29T08:30:27.963602+00:00",
+  "baseline": "docs/core_module_baseline_20260929.zip",
+  "baseline_sha256": "30f7d0a4b68999a298f14f172bdcff8d99b6fc18059ee0695fbdbdbae811d3c9",
+  "pham_vi": "Tất cả output, cả payload invalid; sau hai cạnh clock kể từ reset.",
+  "gioi_han": "Kiểm thử vi sai hữu hạn, không phải chứng minh hình thức.",
+  "ca_kiem_thu": [
+    {
+      "ten": "tb_rv32_core",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 883
+    },
+    {
+      "ten": "tb_rv32_core_fetch",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 81
+    },
+    {
+      "ten": "tb_rv32_core_ordering",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 281
+    },
+    {
+      "ten": "tb_rv32_core_traps",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 264
+    },
+    {
+      "ten": "tb_rv32_core_bus_wait",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 429
+    },
+    {
+      "ten": "tb_rv32_if_stage",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 193
+    },
+    {
+      "ten": "tb_rv32_core_seed_1",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 2187
+    },
+    {
+      "ten": "tb_rv32_core_seed_2",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 2115
+    },
+    {
+      "ten": "tb_rv32_core_seed_3",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 2147
+    },
+    {
+      "ten": "tb_rv32_core_seed_4",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 2287
+    },
+    {
+      "ten": "tb_rv32_core_seed_5",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 2081
+    },
+    {
+      "ten": "tb_rv32_core_seed_6",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 2115
+    },
+    {
+      "ten": "tb_rv32_core_seed_7",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 2175
+    },
+    {
+      "ten": "tb_rv32_core_seed_8",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 2021
+    },
+    {
+      "ten": "tb_rv32_core_seed_9",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 2065
+    },
+    {
+      "ten": "tb_rv32_core_seed_10",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 1953
+    },
+    {
+      "ten": "tb_rv32_core_seed_11",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 2375
+    },
+    {
+      "ten": "tb_rv32_core_seed_12",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 2141
+    },
+    {
+      "ten": "tb_rv32_core_seed_13",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 2203
+    },
+    {
+      "ten": "tb_rv32_core_seed_14",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 2269
+    },
+    {
+      "ten": "tb_rv32_core_seed_15",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 2131
+    },
+    {
+      "ten": "tb_rv32_core_seed_16",
+      "trang_thai": "PASS",
+      "so_instance": 1,
+      "so_lan_doi_chieu": 2149
+    }
+  ],
+  "sha256_nguon": {
+    "rtl/core/ex/rv32_alu.v": "89ce113c395754e1a4d633cfc882d0b01bd88b9175e53815e4f351330e745d89",
+    "rtl/core/ex/rv32_branch_unit.v": "b83fb76f58ef9b30c0f721dec5f7ad42dc00d5f082954b24802a7d3423eacc62",
+    "rtl/core/id/rv32_decoder.v": "76ee535ebcc980b3776ce07626f957f205b604cd0cc92856d082ddcd58a51210",
+    "rtl/core/control/rv32_hazard_unit.v": "c6670edf23480f45374f652e51ddf93047a4613d6f2d53a6226bd1fb98775990",
+    "rtl/core/control/rv32_pipeline_control.v": "9de1dd4e7b680a7cb9815d93f9ba9140d3a27e15c49a66ed4a164071db9afc11",
+    "rtl/core/id/rv32_imm_gen.v": "fd06508ac120689e6e0b90cc8909bca4a3326d00351908af47b04b57674125f4",
+    "rtl/core/common/rv32_lsu.v": "4c450cbafae4c98482920b9fec536ca714c10d7dff760742e442a632709603b1",
+    "rtl/core/id/rv32_regfile.v": "b9e003b755b3627df697a001ec825b2f02115b6d729ab39c3572f68c43db31fe",
+    "rtl/core/if/rv32_if_stage.v": "4f098c7cbb1c3aeb849c37dd5dbbfe9bd794cd0121e1d8ea57beb48204e1af50",
+    "rtl/core/id/rv32_id_stage.v": "1074088082167bf41677c94b989c25966d6df1184a043a3d8dfe1707fa91cf95",
+    "rtl/core/ex/rv32_ex_stage.v": "79fd7933f5af4d7970f6ea6808c18ee5d42fdf53ae8d456039b4f4a06da15889",
+    "rtl/core/mem/rv32_mem_stage.v": "8fdbac154da4f6c2c9ab5d219f76bfd6412a2127c3828157e980abb6d85ac4b3",
+    "rtl/core/wb/rv32_wb_stage.v": "696bfbd7164ecd84b15f2be9815edcbb7c22bd61fca58d052784dc37bbd78d85",
+    "rtl/core/rv32_core.v": "5d19c74dce3af05cbe28d44f29b5a6f94c3ec557908a75fa71542c2c0198454b",
+    "rtl/memory/intel_sync_rom_1p.v": "46e78bb3b004f75fb9bfe8bb0429a4dde8a77c2d5fa2ac38a374634652e88225",
+    "rtl/memory/intel_sync_rom_2p.v": "1202b0a36c6a0fed03a698ee1b9e1a3b9be899460e96830cf420be8f66115fd9",
+    "rtl/memory/intel_sync_ram_1p.v": "ea4ee8c6d21d10b9a55ed7d3e019bd51f96a94a7fd4ea5293efc9005fe5305ef",
+    "rtl/memory/soc_rom_dp.v": "b2a7861c87c679a24d9233b04db90a5492581a1904f2b4a4ecc2bc674ce1167e",
+    "rtl/memory/soc_ram.v": "dd8ca2216af6cabcac7de3d0818fbc31d696c0f634ecc2e62eef7c4a84e8f4dd",
+    "rtl/peripherals/soc_gpio.v": "3eb5b62f32e234466463973a612db279fdac5bdf537093e38893124db76ca57f",
+    "rtl/peripherals/soc_uart_tx.v": "25918fd8574ffc9a72b9b8c6569b4221b022c1a029c7b7bc2810f87b43eafcd8",
+    "rtl/peripherals/uart/uart_rx.v": "d5630ac7c63a4b146e7093f9a743e9af3aced23160669a5ebad55b8bd2d42c2e",
+    "rtl/peripherals/uart/uart_rx_fifo.v": "c64c50c87df245e4125ad245d573a366c052891c4dc9e646fce620db5d55eb73",
+    "rtl/peripherals/uart/soc_uart.v": "9246d0e9c443ca1a0903314a61b835ac5b9a9e0f36c8cdfd7e40857894950ce1",
+    "rtl/peripherals/soc_i2c_master.v": "811d12e1111d10c085a10e32623cfee7e0e493229ef496797c255ae5c28fca54",
+    "rtl/peripherals/soc_timer.v": "1364cd0ea22aa95cda00484e6485dc91b8f7541a34cf28c6e10cebfe02801888",
+    "rtl/accelerator/qnn_soc_accelerator.v": "85770d4d97ea1668328197d7fe69083b67d67573c1e7a600a2f120108fc6ec05",
+    "rtl/bus/soc_bus.v": "3d6b86b017dc6081e8872c04b78941df99d37bcd333e658ade6186dba9cdf586",
+    "rtl/soc/rv32_soc.v": "9a89fff80dcd2a89d473d5a1107be46f43463625e8280e1d7ce02a0ff9c1e0ce",
+    "rtl/board/de10_lite_top.v": "e692dc2dc3437189723570f789ce290e0e13bdc45280ea4e41864a6a188ca790",
+    "rtl/board/reset_controller.v": "c3df6df87aab5ed45d526585b1576be2c88a6154796c5a4ba1d8cc993bbb8bee",
+    "rtl/accelerator/qnn_model_config.vh": "2fedf38b8b02e405446cc9d60acf4cc8a3a54a51a1d66223afe65d8b0b3c66bc",
+    "rtl/bus/soc_map.vh": "4f3fa728d4525524d1d7a7b9c98a7dddf85fa02c9f78c1a2ddbeae2a63f5f871",
+    "rtl/core/rv32_defs.vh": "fc36c7958466ae4b2d5c352243fdc1556037f1bcf4505e6940a1bab521668b11"
+  },
+  "sha256_qsf": "3a0867fe1c92c5f77ae9d04b4199b691c1ca59920d8843ee12835706c3d0ae51",
+  "sha256_testbench": {
+    "tb/core/tb_rv32_core.v": "a4fd7cd8d7878f22908c4ab8236ae09765201e3add4c31c04a8e30f864e44ca2",
+    "tb/core/tb_rv32_core_fetch.v": "ff718368dc179b70ff3b8b3a0c93af1d7c47985c790aafd6789c1cdc6725f5ea",
+    "tb/core/tb_rv32_core_ordering.v": "f2efb1d6504d2c60c0bdb114124c656d1fd7693bc307a18a2cd0d42b2df179af",
+    "tb/core/tb_rv32_core_traps.v": "7a8f47bce05fb3722dd8798ea953a65c7c88766a366517083a1333a620f1807d",
+    "tb/soc/tb_rv32_core_bus_wait.v": "af5ee1c98b77569f4a7764e033970bded5e5e6e1f8a583ba20f14cfc29d7bcb2",
+    "tb/core/if/tb_rv32_if_stage.v": "cc9b6835e82eb7c1156054b14fec4af885b9eb4daf87c9fb70aa59d72a5f999a"
+  },
+  "tong_ca": 22,
+  "tong_lan_doi_chieu": 36545
+}

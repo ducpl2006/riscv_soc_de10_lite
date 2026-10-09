@@ -1,0 +1,15 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -L rtl_work work.tb_rv32_i2c_master -do "C:\FPGA\riscv_soc_de10_lite\sim\modelsim\work\run_test.do" 
+# Start time: 12:26:43 on Oct 05,2026
+# Loading sv_std.std
+# Loading work.tb_rv32_i2c_master
+# Loading work.soc_i2c_master
+# do {C:\FPGA\riscv_soc_de10_lite\sim\modelsim\work\run_test.do}
+# PASS tb_rv32_i2c_master: 11 checks
+# ** Note: $finish    : C:/FPGA/riscv_soc_de10_lite/tb/peripherals/tb_rv32_i2c_master.v(179)
+#    Time: 5071 ns  Iteration: 0  Instance: /tb_rv32_i2c_master
+# End time: 12:26:43 on Oct 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

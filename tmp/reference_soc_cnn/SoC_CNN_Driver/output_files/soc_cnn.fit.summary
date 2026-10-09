@@ -1,0 +1,18 @@
+Fitter Status : Successful - Fri Jul 17 20:49:04 2026
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : soc_cnn
+Top-level Entity Name : DE10_CORE
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 9,856 / 49,760 ( 20 % )
+    Total combinational functions : 9,128 / 49,760 ( 18 % )
+    Dedicated logic registers : 3,605 / 49,760 ( 7 % )
+Total registers : 3605
+Total pins : 83 / 360 ( 23 % )
+Total virtual pins : 0
+Total memory bits : 104,448 / 1,677,312 ( 6 % )
+Embedded Multiplier 9-bit elements : 8 / 288 ( 3 % )
+Total PLLs : 1 / 4 ( 25 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

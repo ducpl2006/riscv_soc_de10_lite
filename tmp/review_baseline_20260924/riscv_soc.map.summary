@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Sep 21 14:21:35 2026
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : riscv_soc
+Top-level Entity Name : de10_lite_top
+Family : MAX 10
+Total logic elements : 7,408
+    Total combinational functions : 5,612
+    Dedicated logic registers : 2,749
+Total registers : 2749
+Total pins : 26
+Total virtual pins : 0
+Total memory bits : 338,944
+Embedded Multiplier 9-bit elements : 3
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

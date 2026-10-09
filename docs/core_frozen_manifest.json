@@ -1,0 +1,48 @@
+{
+  "status": "CORE BASELINE FROZEN",
+  "date": "2026-09-30",
+  "justification": "Ng\u01b0\u1eddi d\u00f9ng y\u00eau c\u1ea7u t\u00e1ch core th\u00e0nh c\u00e1c module nh\u1ecf \u0111\u1ec3 d\u1ec5 \u0111\u1ecdc. T\u00e1ch ba thanh ghi pipeline v\u00e0 hai b\u1ed9 \u0111\u1ec7m IF, gi\u1eef giao ti\u1ebfp, bi\u1ec3u th\u1ee9c, \u01b0u ti\u00ean v\u00e0 th\u1eddi \u0111i\u1ec3m t\u00e1c d\u1ee5ng ph\u1ee5. Ch\u1ed1t sau r\u00e0 so\u00e1t, \u0111\u1ed1i chi\u1ebfu tr\u01b0\u1edbc/sau, regression v\u00e0 Quartus; kh\u00f4ng ph\u1ea3i t\u1ed1i \u01b0u timing.",
+  "report": "docs/bao_cao_tach_module_core_vi.md",
+  "evidence": {
+    "differential": "Tr\u01b0\u1edbc v\u00e0 sau t\u00e1ch: 22/22 ca, 36545 l\u1ea7n so s\u00e1nh \u0111\u1ea7u ra sau hai c\u1ea1nh clock; scripts/check_core_module_equivalence.py",
+    "regression": "ModelSim All + Stress 78/78; Icarus All 32/32",
+    "isa": "195/195; sim/isa/results.json",
+    "quartus": "0 l\u1ed7i, 14 c\u1ea3nh b\u00e1o nh\u01b0 tr\u01b0\u1edbc; Fmax 54.61 MHz (tr\u01b0\u1edbc 54.86 MHz), \u0111\u1ea1t clock 50 MHz",
+    "timing": "Setup +1.687 ns; hold +0.112 ns; recovery +17.162 ns; removal +1.030 ns; c\u1ea3 ba corner \u0111\u1ea1t"
+  },
+  "previous_baseline": {
+    "date": "2026-09-29",
+    "archive": "docs/core_module_baseline_20260929.zip",
+    "sha256": "30f7d0a4b68999a298f14f172bdcff8d99b6fc18059ee0695fbdbdbae811d3c9",
+    "report": "docs/bao_cao_lam_ro_core_20260929_vi.md",
+    "evidence": {
+      "tokens": "15/15 gi\u1eef nguy\u00ean so v\u1edbi b\u1ea3n g\u1ed1c; scripts/check_core_readability.py",
+      "regression": "ModelSim All + Stress 78/78; Icarus All 32/32",
+      "isa": "195/195; sim/isa/results.json",
+      "quartus": "0 l\u1ed7i, 14 c\u1ea3nh b\u00e1o gi\u1ed1ng baseline; 54.86 MHz",
+      "timing": "Setup +1.772 ns; hold +0.097 ns; recovery +17.049 ns; removal +1.069 ns; c\u1ea3 ba corner \u0111\u1ea1t"
+    }
+  },
+  "files": {
+    "rtl/core/common/rv32_lsu.v": "4c450cbafae4c98482920b9fec536ca714c10d7dff760742e442a632709603b1",
+    "rtl/core/control/rv32_hazard_unit.v": "c6670edf23480f45374f652e51ddf93047a4613d6f2d53a6226bd1fb98775990",
+    "rtl/core/control/rv32_pipeline_control.v": "9de1dd4e7b680a7cb9815d93f9ba9140d3a27e15c49a66ed4a164071db9afc11",
+    "rtl/core/ex/rv32_alu.v": "89ce113c395754e1a4d633cfc882d0b01bd88b9175e53815e4f351330e745d89",
+    "rtl/core/ex/rv32_branch_unit.v": "b83fb76f58ef9b30c0f721dec5f7ad42dc00d5f082954b24802a7d3423eacc62",
+    "rtl/core/ex/rv32_ex_stage.v": "79fd7933f5af4d7970f6ea6808c18ee5d42fdf53ae8d456039b4f4a06da15889",
+    "rtl/core/id/rv32_decoder.v": "76ee535ebcc980b3776ce07626f957f205b604cd0cc92856d082ddcd58a51210",
+    "rtl/core/id/rv32_id_stage.v": "1074088082167bf41677c94b989c25966d6df1184a043a3d8dfe1707fa91cf95",
+    "rtl/core/id/rv32_imm_gen.v": "fd06508ac120689e6e0b90cc8909bca4a3326d00351908af47b04b57674125f4",
+    "rtl/core/id/rv32_regfile.v": "b9e003b755b3627df697a001ec825b2f02115b6d729ab39c3572f68c43db31fe",
+    "rtl/core/if/rv32_if_fifo.v": "910c1b2c7c6b9328e2af66675b90d2109a39f50c51488ccd6ac00efc9c0509ff",
+    "rtl/core/if/rv32_if_request_queue.v": "545bb55c2d0e1b32e7d51cc9feb15de952892a18aea8ddb593fc5407fe375582",
+    "rtl/core/if/rv32_if_stage.v": "10d916cccb8f5615f18a530958e9fe1567a0e5efc6e5345efbef90ba3281244e",
+    "rtl/core/mem/rv32_mem_stage.v": "8fdbac154da4f6c2c9ab5d219f76bfd6412a2127c3828157e980abb6d85ac4b3",
+    "rtl/core/pipeline/rv32_ex_mem_reg.v": "3d1c58d99bb822cc4d1de65ce0cb6215dc36d819de61dfb2405405b8ca7ad9eb",
+    "rtl/core/pipeline/rv32_id_ex_reg.v": "b0055ba169a094589772acfcc442ad174ab9f993f71bd1664fd7ef2914e757cf",
+    "rtl/core/pipeline/rv32_mem_wb_reg.v": "9abcb40ea4661fa60096e5e5bb5b81b176c946f56423f013d83bf561613de4bb",
+    "rtl/core/rv32_core.v": "70c29d4dd9074af54fea52d7448dfe1e7adacb455b22506954331fd495ea585d",
+    "rtl/core/rv32_defs.vh": "fc36c7958466ae4b2d5c352243fdc1556037f1bcf4505e6940a1bab521668b11",
+    "rtl/core/wb/rv32_wb_stage.v": "696bfbd7164ecd84b15f2be9815edcbb7c22bd61fca58d052784dc37bbd78d85"
+  }
+}

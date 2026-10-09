@@ -1,0 +1,15 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -L rtl_work work.tb_rv32_branch_unit -do "C:\FPGA\riscv_soc_de10_lite\sim\modelsim\work\run_test.do" 
+# Start time: 12:26:30 on Oct 05,2026
+# Loading sv_std.std
+# Loading work.tb_rv32_branch_unit
+# Loading work.rv32_branch_unit
+# do {C:\FPGA\riscv_soc_de10_lite\sim\modelsim\work\run_test.do}
+# PASS tb_rv32_branch_unit: 21 checks
+# ** Note: $finish    : C:/FPGA/riscv_soc_de10_lite/tb/core/ex/tb_rv32_branch_unit.v(124)
+#    Time: 21 ns  Iteration: 0  Instance: /tb_rv32_branch_unit
+# End time: 12:26:31 on Oct 05,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

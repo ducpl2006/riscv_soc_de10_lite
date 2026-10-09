@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at de10_lite_top.v(42): object "UART_TX" differs only in case from object "uart_tx" in the same scope File: C:/FPGA/riscv_soc_de10_lite/rtl/board/de10_lite_top.v Line: 42

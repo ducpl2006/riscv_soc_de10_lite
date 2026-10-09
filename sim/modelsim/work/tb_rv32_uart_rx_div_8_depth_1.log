@@ -1,0 +1,18 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -L rtl_work work.tb_rv32_uart_rx -do "C:\FPGA\riscv_soc_de10_lite\sim\modelsim\work\run_test.do" -gDEPTH=1 -gDIV=8 
+# Start time: 12:27:33 on Oct 05,2026
+# Loading sv_std.std
+# Loading work.tb_rv32_uart_rx
+# Loading work.soc_uart
+# Loading work.soc_uart_tx
+# Loading work.uart_rx
+# Loading work.uart_rx_fifo
+# do {C:\FPGA\riscv_soc_de10_lite\sim\modelsim\work\run_test.do}
+# PASS tb_rv32_uart_rx: DIV=8 DEPTH=1, 86 MMIO checks, frames/errors/mismatch/reset
+# ** Note: $finish    : C:/FPGA/riscv_soc_de10_lite/tb/peripherals/tb_rv32_uart_rx.v(112)
+#    Time: 61910 ns  Iteration: 1  Instance: /tb_rv32_uart_rx
+# End time: 12:27:33 on Oct 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

@@ -1,0 +1,3 @@
+PASS tb_rv32_core_bus_wait: 0/1/2/random wait, WB operand retention, forwarding/load-use, RAM/MMIO
+/mnt/c/FPGA/riscv_soc_de10_lite/sim/module_equivalence/sau_tach/benches/tb/soc/tb_rv32_core_bus_wait.v:94: $finish called at 2150000 (1ps)
+DOI_CHIEU tb_rv32_core_bus_wait.core: 429 lần

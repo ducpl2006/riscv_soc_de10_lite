@@ -1,0 +1,2 @@
+PASS tb_rv32_firmware_e2e sensor=1 fault=0 cycles=130877 features=480 results=6 UART=63
+/mnt/c/FPGA/riscv_soc_de10_lite/tb/soc/tb_rv32_firmware_e2e.sv:81: $finish called at 1309020000 (1ps)

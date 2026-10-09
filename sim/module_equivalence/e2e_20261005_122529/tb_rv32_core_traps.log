@@ -1,0 +1,3 @@
+PASS tb_rv32_core_traps: 44 checks, 9 causes
+/mnt/c/FPGA/riscv_soc_de10_lite/sim/module_equivalence/e2e_20261005_122529/benches/tb/core/tb_rv32_core_traps.v:163: $finish called at 1325000 (1ps)
+DOI_CHIEU tb_rv32_core_traps.dut: 264 lần

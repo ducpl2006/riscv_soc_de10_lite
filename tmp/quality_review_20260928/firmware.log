@@ -1,0 +1,12 @@
+PASS firmware pipeline: warmup, ring order, signed truncation, saturation, gaps, missing temperature
+PASS firmware INA228: widths, identity, calibration/ranges, signed units, bounded conversion, invalid output protection
+PASS sensor1_fault0
+PASS sensor2_fault0
+PASS sensor2_fault1
+PASS sensor2_fault2
+PASS sensor2_fault3
+PASS sensor2_fault4
+PASS sensor2_fault5
+PASS sensor2_fault6
+PASS sensor2_fault7
+RESULT: PASS 9/9 firmware RTL scenarios + 2 host test groups

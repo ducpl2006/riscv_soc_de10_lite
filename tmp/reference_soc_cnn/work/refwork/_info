@@ -1,0 +1,579 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA/riscv_soc_de10_lite/tmp/reference_soc_cnn/work
+vAPB4_I2C_Slave
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1790317562
+!i10b 1
+!s100 _LTV3HQIKlIm>>2Jkz9Ej2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ii=HW^e@HW:@f>Af>EIVbe2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1790317421
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Bus\APB4\APB4_I2C_Slave.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Bus\APB4\APB4_I2C_Slave.v
+!i122 0
+L0 23 79
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1790317562.000000
+Z8 !s107 C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\tb_reference_review.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\IP_CORE\Stall_Unit.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\IP_CORE\Forwarding_Unit.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\IP_CORE\Hazard_Unit.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\IP_CORE\Memory_Cycle.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Bus\APB4\APB4_I2C_Slave.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Transaction_Engine.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Timeout.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Shift_Register.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_SDA_Controller.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_SCL_Controller.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Register_IF.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Master.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_IRQ_Status.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Input_Filter.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_FIFO_Controller.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Clock_Divider.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Byte_Controller.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Bus_Recovery.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Bit_Controller.v|
+Z9 !s90 -sv|-work|refwork|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Bit_Controller.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Bus_Recovery.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Byte_Controller.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Clock_Divider.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_FIFO_Controller.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Input_Filter.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_IRQ_Status.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Master.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Register_IF.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_SCL_Controller.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_SDA_Controller.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Shift_Register.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Timeout.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Transaction_Engine.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Bus\APB4\APB4_I2C_Slave.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\IP_CORE\Memory_Cycle.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\IP_CORE\Hazard_Unit.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\IP_CORE\Forwarding_Unit.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\IP_CORE\Stall_Unit.v|C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\tb_reference_review.v|
+!i113 1
+Z10 o-sv -work refwork
+Z11 tCvgOpt 0
+n@a@p@b4_@i2@c_@slave
+vFIFO
+!s110 1790317719
+!i10b 1
+!s100 Ai55c?W@TF2:_e31:MzFM2
+R3
+IG@zlh7zZU^I92V9CQbJmR2
+R4
+R0
+R5
+8..\SoC_CNN_Driver\CORE\Peripherals\UART\FIFO.v
+F..\SoC_CNN_Driver\CORE\Peripherals\UART\FIFO.v
+!i122 1
+L0 6 84
+R6
+r1
+!s85 0
+31
+!s108 1790317719.000000
+!s107 ..\SoC_CNN_Driver\CORE\Peripherals\UART\FIFO.v|
+!s90 -work|refwork|..\SoC_CNN_Driver\CORE\Peripherals\UART\FIFO.v|
+!i113 1
+o-work refwork
+R11
+n@f@i@f@o
+vForwarding_Unit
+R1
+R2
+!i10b 1
+!s100 Sjn@Hm^=K;Qm6BbCbD=W<1
+R3
+Ie5I8SOMJcfSYzbCFCVNfn0
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\IP_CORE\Forwarding_Unit.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\IP_CORE\Forwarding_Unit.v
+!i122 0
+L0 5 46
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@forwarding_@unit
+vHazard_Unit
+R1
+R2
+!i10b 1
+!s100 :<BlSI0cB1^n;7X503>4>3
+R3
+I>Xeh]oX4DkT0_Vnf0f6H01
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\IP_CORE\Hazard_Unit.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\IP_CORE\Hazard_Unit.v
+!i122 0
+L0 9 108
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@hazard_@unit
+vI2C_Bit_Controller
+R1
+R2
+!i10b 1
+!s100 Ydcki]O19S=c5I4^9<UmD0
+R3
+IBajMdQ2iB1fY5@H[iC:<W1
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Bit_Controller.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Bit_Controller.v
+!i122 0
+L0 33 176
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@i2@c_@bit_@controller
+vI2C_Bus_Recovery
+R1
+R2
+!i10b 1
+!s100 KNJT1jV7b4oj0UNeY]D_S2
+R3
+IS?^HSMc6UL3?661i:R3<F3
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Bus_Recovery.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Bus_Recovery.v
+!i122 0
+L0 27 126
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@i2@c_@bus_@recovery
+vI2C_Byte_Controller
+R1
+R2
+!i10b 1
+!s100 >NllHQDbV8cUEzda1G_`P1
+R3
+I:c5dJ_c;z8HBXJzkGKc:k3
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Byte_Controller.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Byte_Controller.v
+!i122 0
+L0 25 194
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@i2@c_@byte_@controller
+vI2C_Clock_Divider
+R1
+R2
+!i10b 1
+!s100 fX_eEOg[Qkbn>@kao8o7=3
+R3
+IZHY>62[k2hY]5ML2?:;Tc2
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Clock_Divider.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Clock_Divider.v
+!i122 0
+L0 33 123
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@i2@c_@clock_@divider
+vI2C_FIFO_Controller
+R1
+R2
+!i10b 1
+!s100 [=@Rcng<PPK?[Xn[AAoi=0
+R3
+ID3cCd^o=g<TEo1YYITdKA2
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_FIFO_Controller.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_FIFO_Controller.v
+!i122 0
+L0 26 100
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@i2@c_@f@i@f@o_@controller
+vI2C_Input_Filter
+R1
+R2
+!i10b 1
+!s100 D;iEBm21[kodogZoV>jTW1
+R3
+Im2l^1Q0fV4eVVAESfb8S63
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Input_Filter.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Input_Filter.v
+!i122 0
+L0 20 65
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@i2@c_@input_@filter
+vI2C_IRQ_Status
+R1
+R2
+!i10b 1
+!s100 3]][@HLTf?<31[Pm[LW213
+R3
+I:fdh0e42:G8Ak`hD1l9eY3
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_IRQ_Status.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_IRQ_Status.v
+!i122 0
+L0 19 42
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@i2@c_@i@r@q_@status
+vI2C_Master
+R1
+R2
+!i10b 1
+!s100 aTWC_Sb0G@H3m3ScF9bIH1
+R3
+I<5:z[JiGSKe5b=<RdV0;:3
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Master.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Master.v
+!i122 0
+L0 18 239
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@i2@c_@master
+vI2C_Register_IF
+R1
+R2
+!i10b 1
+!s100 elGR`n9PL@mO27bNH0haS1
+R3
+IcLe<lg:49GlET[WRKG_TW2
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Register_IF.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Register_IF.v
+!i122 0
+L0 26 163
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@i2@c_@register_@i@f
+vI2C_SCL_Controller
+R1
+R2
+!i10b 1
+!s100 Xm9RQGB=_]c:AU8zoSX^J2
+R3
+I8NXBMQ_GaAj7UVWk[A;1z1
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_SCL_Controller.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_SCL_Controller.v
+!i122 0
+L0 21 25
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@i2@c_@s@c@l_@controller
+vI2C_SDA_Controller
+R1
+R2
+!i10b 1
+!s100 ef?fYW4G>JoP^GP?eiKQK0
+R3
+IbJaVDW6BZ954NAE2Sd_]^2
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_SDA_Controller.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_SDA_Controller.v
+!i122 0
+L0 19 25
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@i2@c_@s@d@a_@controller
+vI2C_Shift_Register
+R1
+R2
+!i10b 1
+!s100 [4^VjX:NXn:_0dfL2OT8k1
+R3
+I7S9;QR]`1d1k[Q]G_YP573
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Shift_Register.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Shift_Register.v
+!i122 0
+L0 20 29
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@i2@c_@shift_@register
+vI2C_Timeout
+R1
+R2
+!i10b 1
+!s100 IFD4JVUXnaV8nAoKYacNn1
+R3
+IFKPnTb<K:Ngoi6LiBb4La0
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Timeout.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Timeout.v
+!i122 0
+L0 14 48
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@i2@c_@timeout
+vI2C_Transaction_Engine
+R1
+R2
+!i10b 1
+!s100 EXENPBAU[TliI=503ZbXc3
+R3
+IXdMLjjGUVzA8_nR;kze;Z2
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Transaction_Engine.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\Peripherals\I2C\I2C_Transaction_Engine.v
+!i122 0
+L0 27 287
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@i2@c_@transaction_@engine
+vMemory_Cycle
+R1
+R2
+!i10b 1
+!s100 jn44I_[]4L;f`=I8mj9eP0
+R3
+IWTP[1_k]mMQcZ__2EGi0n0
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\IP_CORE\Memory_Cycle.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\IP_CORE\Memory_Cycle.v
+!i122 0
+L0 8 283
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@memory_@cycle
+vStall_Unit
+R1
+R2
+!i10b 1
+!s100 DHTF^RzMgbzlXV<8YcIUc0
+R3
+IMZ4T8@lT5e6]S=Nf5leRT1
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\IP_CORE\Stall_Unit.v
+FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\SoC_CNN_Driver\CORE\IP_CORE\Stall_Unit.v
+!i122 0
+L0 6 23
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@stall_@unit
+vtb_reference_apb_strobe
+R1
+R2
+!i10b 1
+!s100 ]VaVjUBP=iNeTH3=F_LiN2
+R3
+I;1lEgN[gPoTVe:bJXD35H1
+R4
+S1
+R0
+Z12 w1790317560
+Z13 8C:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\tb_reference_review.v
+Z14 FC:\FPGA\riscv_soc_de10_lite\tmp\reference_soc_cnn\tb_reference_review.v
+!i122 0
+L0 3 46
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vtb_reference_mem_mdu_stall
+R1
+R2
+!i10b 1
+!s100 PkH6RFc03`@EEZijnEl940
+R3
+IC7^B``L_II3WhTQd7ekAc3
+R4
+S1
+R0
+R12
+R13
+R14
+!i122 0
+L0 50 36
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

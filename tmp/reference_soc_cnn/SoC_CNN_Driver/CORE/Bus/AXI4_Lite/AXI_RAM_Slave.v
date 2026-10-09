@@ -1,0 +1,544 @@
+// ============================================================================
+// Module AXI_RAM_Slave
+// ----------------------------------------------------------------------------
+// AXI4-Lite RAM Slave
+//
+// Features
+// ----------------------------------------------------------------------------
+// + AXI4-Lite compliant
+// + Active-LOW reset
+// + External Data_RAM
+// + Full-word write fast path
+// + Partial write RMW support
+// + Clean READY generation (combinational)
+// + Same-cycle AW/W support
+// + Back-to-back transaction safe
+//
+// Memory Map
+// ----------------------------------------------------------------------------
+// 00x0001_0000 ~ 0x0001_0FFF
+//
+// ============================================================================
+
+module AXI_RAM_Slave #(
+
+    parameter ADDR_WIDTH = 32,
+    parameter DATA_WIDTH = 32,
+    parameter MEM_DEPTH  = 1024
+
+)(
+    input                      clk,
+    input                      reset,          // Active LOW
+
+    // =====================================================
+    // WRITE ADDRESS CHANNEL
+    // =====================================================
+    input [ADDR_WIDTH - 1:0]    s_axi_awaddr,
+    input                       s_axi_awvalid,
+    output                      s_axi_awready,
+
+    // =====================================================
+    // WRITE DATA CHANNEL
+    // =====================================================
+    input [DATA_WIDTH - 1:0]    s_axi_wdata,
+    input [DATA_WIDTH/8-1:0]    s_axi_wstrb,
+    input                       s_axi_wvalid,
+    output                      s_axi_wready,
+
+    // =====================================================
+    // WRITE RESPONSE CHANNEL
+    // =====================================================
+    output reg [1:0]            s_axi_bresp,
+    output reg                  s_axi_bvalid,
+    input                       s_axi_bready,
+
+    // =====================================================
+    // READ ADDRESS CHANNEL
+    // =====================================================
+    input [ADDR_WIDTH - 1:0]    s_axi_araddr,
+    input                       s_axi_arvalid,
+    output                      s_axi_arready,
+
+    // =====================================================
+    // READ DATA CHANNEL
+    // =====================================================
+    output reg [DATA_WIDTH - 1:0]   s_axi_rdata,
+    output reg [1:0]                s_axi_rresp,
+    output reg                      s_axi_rvalid,
+    input                           s_axi_rready
+);
+
+    // =====================================================
+    // AXI RESPONSE
+    // =====================================================
+
+    localparam RESP_OKAY   = 2'b00;
+    localparam RESP_SLVERR = 2'b10;
+
+    // =====================================================
+    // WRITE FSM
+    // =====================================================
+
+    localparam WR_IDLE       = 3'd0;
+    localparam WR_FULL_WRITE = 3'd1;
+    localparam WR_RMW_READ   = 3'd2;
+    localparam WR_RMW_MERGE  = 3'd3;
+    localparam WR_RMW_COMMIT = 3'd4;
+    localparam WR_WAIT_RESP  = 3'd5;
+
+    reg [2:0] wr_state;
+
+    // =====================================================
+    // READ FSM
+    // =====================================================
+
+    localparam RD_IDLE   = 2'd0;
+    localparam RD_WAIT   = 2'd1;
+    localparam RD_LATCH  = 2'd2;
+    localparam RD_VALID  = 2'd3;
+
+    reg [1:0] rd_state;
+
+    // =====================================================
+    // WRITE CHANNEL REGISTERS
+    // =====================================================
+
+    reg [31:0] awaddr_reg;
+    reg [31:0] wdata_reg;
+    reg [3:0]  wstrb_reg;
+
+    reg        aw_done;
+    reg        w_done;
+
+    // =====================================================
+    // READ CHANNEL REGISTERS
+    // =====================================================
+
+    reg [31:0] araddr_reg;
+
+    // =====================================================
+    // RAM INTERFACE
+    // =====================================================
+
+    reg  [31:0] ram_addr;
+    reg  [31:0] ram_wdata;
+    reg         ram_we;
+    reg         ram_re;
+
+    wire [31:0] ram_rdata;
+
+    // =====================================================
+    // READY GENERATION
+    // =====================================================
+
+    assign s_axi_awready = (wr_state == WR_IDLE) && !aw_done;
+
+    assign s_axi_wready  = (wr_state == WR_IDLE) && !w_done;
+
+    assign s_axi_arready = (rd_state == RD_IDLE) && (wr_state == WR_IDLE || wr_state == WR_WAIT_RESP);
+
+    // =====================================================
+    // HANDSHAKE DETECT
+    // =====================================================
+
+    wire aw_fire;
+    wire w_fire;
+    wire ar_fire;
+
+    assign aw_fire = s_axi_awvalid && s_axi_awready;
+
+    assign w_fire  = s_axi_wvalid && s_axi_wready;
+
+    assign ar_fire = s_axi_arvalid && s_axi_arready;
+
+    // =====================================================
+    // ADDRESS VALID
+    // =====================================================
+
+    function automatic addr_valid;
+
+        input [31:0] addr;
+
+        begin
+            addr_valid =
+                (addr[31:12] == 20'h00010);
+        end
+
+    endfunction
+
+    // =====================================================
+    // DATA RAM
+    // =====================================================
+
+    Data_RAM data_ram (
+
+        .clk        (clk),
+        .addr       (ram_addr),
+        .write_data (ram_wdata),
+        .read_en    (ram_re),
+        .write_en   (ram_we),
+        .read_data  (ram_rdata)
+
+    );
+
+    // =====================================================
+    // RMW MERGE
+    // =====================================================
+
+    reg [31:0] merged_data;
+
+    always @(*) begin
+
+        merged_data = ram_rdata;
+
+        if (wstrb_reg[0])
+            merged_data[7:0] = wdata_reg[7:0];
+
+        if (wstrb_reg[1])
+            merged_data[15:8] = wdata_reg[15:8];
+
+        if (wstrb_reg[2])
+            merged_data[23:16] = wdata_reg[23:16];
+
+        if (wstrb_reg[3])
+            merged_data[31:24] = wdata_reg[31:24];
+
+    end
+
+    // =====================================================
+    // WRITE FSM
+    // =====================================================
+
+    always @(posedge clk or negedge reset) begin
+
+        if (!reset) begin
+
+            s_axi_bvalid <= 1'b0;
+            s_axi_bresp  <= RESP_OKAY;
+
+            awaddr_reg   <= 32'b0;
+            wdata_reg    <= 32'b0;
+            wstrb_reg    <= 4'b0;
+
+            aw_done      <= 1'b0;
+            w_done       <= 1'b0;
+
+            wr_state     <= WR_IDLE;
+
+        end
+
+        else begin
+
+            // -------------------------------------------------
+            // Capture AW
+            // -------------------------------------------------
+
+            if (aw_fire) begin
+                awaddr_reg <= s_axi_awaddr;
+                aw_done    <= 1'b1;
+            end
+
+            // -------------------------------------------------
+            // Capture W
+            // -------------------------------------------------
+
+            if (w_fire) begin
+                wdata_reg <= s_axi_wdata;
+                wstrb_reg <= s_axi_wstrb;
+                w_done    <= 1'b1;
+            end
+
+            // -------------------------------------------------
+            // FSM
+            // -------------------------------------------------
+
+            case (wr_state)
+
+                // =============================================
+                // IDLE
+                // =============================================
+
+                WR_IDLE: begin
+
+                    if (aw_done && w_done) begin
+
+                        // INVALID ADDRESS
+                        if (!addr_valid(awaddr_reg)) begin
+
+                            s_axi_bresp  <= RESP_SLVERR;
+                            s_axi_bvalid <= 1'b1;
+
+                            wr_state <= WR_WAIT_RESP;
+
+                        end
+
+                        // FULL WRITE
+                        else if (wstrb_reg == 4'b1111) begin
+
+                            wr_state <= WR_FULL_WRITE;
+
+                        end
+
+                        // PARTIAL WRITE
+                        else begin
+
+                            wr_state <= WR_RMW_READ;
+
+                        end
+
+                    end
+
+                end
+
+                // =============================================
+                // FULL WRITE
+                // =============================================
+
+                WR_FULL_WRITE: begin
+
+                    s_axi_bresp  <= RESP_OKAY;
+                    s_axi_bvalid <= 1'b1;
+
+                    wr_state <= WR_WAIT_RESP;
+
+                end
+
+                // =============================================
+                // RMW READ
+                // =============================================
+
+                WR_RMW_READ: begin
+
+                    wr_state <= WR_RMW_MERGE;
+
+                end
+
+                // =============================================
+                // RMW MERGE
+                // =============================================
+
+                WR_RMW_MERGE: begin
+
+                    wr_state <= WR_RMW_COMMIT;
+
+                end
+
+                // =============================================
+                // RMW COMMIT
+                // =============================================
+
+                WR_RMW_COMMIT: begin
+
+                    s_axi_bresp  <= RESP_OKAY;
+                    s_axi_bvalid <= 1'b1;
+
+                    wr_state <= WR_WAIT_RESP;
+
+                end
+
+                // =============================================
+                // WAIT RESPONSE
+                // =============================================
+
+                WR_WAIT_RESP: begin
+
+                    if (s_axi_bvalid && s_axi_bready) begin
+
+                        s_axi_bvalid <= 1'b0;
+
+                        aw_done <= 1'b0;
+                        w_done  <= 1'b0;
+
+                        wr_state <= WR_IDLE;
+
+                    end
+
+                end
+
+                default: begin
+
+                    wr_state <= WR_IDLE;
+
+                end
+
+            endcase
+
+        end
+
+    end
+
+    // =====================================================
+    // READ FSM
+    // =====================================================
+
+    always @(posedge clk or negedge reset) begin
+
+        if (!reset) begin
+
+            s_axi_rvalid <= 1'b0;
+            s_axi_rresp  <= RESP_OKAY;
+            s_axi_rdata  <= 32'b0;
+
+            araddr_reg   <= 32'b0;
+
+            rd_state     <= RD_IDLE;
+
+        end
+
+        else begin
+
+            case (rd_state)
+
+                // =============================================
+                // IDLE
+                // =============================================
+
+                RD_IDLE: begin
+
+                    if (ar_fire) begin
+
+                        araddr_reg <= s_axi_araddr;
+
+                        rd_state <= RD_WAIT;
+
+                    end
+
+                end
+
+                // =============================================
+                // WAIT
+                // =============================================
+
+                RD_WAIT: begin
+
+                    rd_state <= RD_LATCH;
+
+                end
+
+                // =============================================
+                // LATCH
+                // =============================================
+
+                RD_LATCH: begin
+
+                    if (addr_valid(araddr_reg)) begin
+
+                        s_axi_rdata <= ram_rdata;
+                        s_axi_rresp <= RESP_OKAY;
+
+                    end
+
+                    else begin
+
+                        s_axi_rdata <= 32'b0;
+                        s_axi_rresp <= RESP_SLVERR;
+
+                    end
+
+                    s_axi_rvalid <= 1'b1;
+
+                    rd_state <= RD_VALID;
+
+                end
+
+                // =============================================
+                // VALID
+                // =============================================
+
+                RD_VALID: begin
+
+                    if (s_axi_rvalid && s_axi_rready) begin
+
+                        s_axi_rvalid <= 1'b0;
+
+                        rd_state <= RD_IDLE;
+
+                    end
+
+                end
+
+                default: begin
+
+                    rd_state <= RD_IDLE;
+
+                end
+
+            endcase
+
+        end
+
+    end
+
+    // =====================================================
+    // RAM CONTROL
+    // =====================================================
+
+    always @(*) begin
+
+        ram_addr  = 32'b0;
+        ram_wdata = 32'b0;
+
+        ram_we    = 1'b0;
+        ram_re    = 1'b0;
+
+        case (wr_state)
+
+            // =============================================
+            // FULL WRITE
+            // =============================================
+
+            WR_FULL_WRITE: begin
+
+                ram_addr  = awaddr_reg;
+                ram_wdata = wdata_reg;
+
+                ram_we = 1'b1;
+
+            end
+
+            // =============================================
+            // RMW READ
+            // =============================================
+
+            WR_RMW_READ: begin
+
+                ram_addr = awaddr_reg;
+
+                ram_re = 1'b1;
+
+            end
+
+            // =============================================
+            // RMW MERGE
+            // =============================================
+
+            WR_RMW_MERGE: begin
+
+                ram_addr  = awaddr_reg;
+                ram_wdata = merged_data;
+
+                ram_we = 1'b1;
+
+            end
+
+            // =============================================
+            // READ FSM OWNS BUS
+            // =============================================
+
+            default: begin
+
+                if (rd_state == RD_WAIT) begin
+
+                    ram_addr = araddr_reg;
+
+                    ram_re = 1'b1;
+
+                end
+
+            end
+
+        endcase
+
+    end
+
+endmodule

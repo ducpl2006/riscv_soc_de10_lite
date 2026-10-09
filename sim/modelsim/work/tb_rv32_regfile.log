@@ -1,0 +1,15 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -L rtl_work work.tb_rv32_regfile -do "C:\FPGA\riscv_soc_de10_lite\sim\modelsim\work\run_test.do" 
+# Start time: 12:26:50 on Oct 05,2026
+# Loading sv_std.std
+# Loading work.tb_rv32_regfile
+# Loading work.rv32_regfile
+# do {C:\FPGA\riscv_soc_de10_lite\sim\modelsim\work\run_test.do}
+# PASS: 113 register-file checks
+# ** Note: $finish    : C:/FPGA/riscv_soc_de10_lite/tb/core/id/tb_rv32_regfile.v(405)
+#    Time: 1012 ns  Iteration: 0  Instance: /tb_rv32_regfile
+# End time: 12:26:50 on Oct 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

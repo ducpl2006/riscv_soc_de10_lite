@@ -1,0 +1,3 @@
+PASS tb_rv32_core_ordering: precise fault priority, wrong-path drain, reset abort
+/mnt/c/FPGA/riscv_soc_de10_lite/sim/module_equivalence/sau_tach/benches/tb/core/tb_rv32_core_ordering.v:146: $finish called at 1410000 (1ps)
+DOI_CHIEU tb_rv32_core_ordering.dut: 281 lần

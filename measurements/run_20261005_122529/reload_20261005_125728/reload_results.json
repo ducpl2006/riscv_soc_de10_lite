@@ -1,0 +1,8 @@
+﻿{
+    "programming_succeeded":  true,
+    "uart_opened":  true,
+    "port":  "COM7",
+    "baud":  115200,
+    "uart_hex":  "4F 4B",
+    "uart_pass":  true
+}

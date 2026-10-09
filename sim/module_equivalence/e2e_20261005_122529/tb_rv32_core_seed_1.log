@@ -1,0 +1,4 @@
+Stress seed=1: two_pending_cycles=113 simultaneous_grant_response=36
+PASS tb_rv32_core: retired=105, imem_tx=113, dmem_tx=53, imem_wait_cycles=30, dmem_wait_cycles=908
+/mnt/c/FPGA/riscv_soc_de10_lite/sim/module_equivalence/e2e_20261005_122529/benches/tb/core/tb_rv32_core.v:1116: $finish called at 10936000 (1ps)
+DOI_CHIEU tb_rv32_core.dut: 2187 lần

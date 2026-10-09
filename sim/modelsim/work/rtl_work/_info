@@ -1,0 +1,1779 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA/riscv_soc_de10_lite/sim/modelsim/work
+vde10_lite_top
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1791177984
+!i10b 1
+!s100 lK2T:GhIB`_bP3cb3LdEo0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I?zZCVX<ZZ^^mzFE9FV?C43
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1790583425
+8C:\FPGA\riscv_soc_de10_lite\rtl\board\de10_lite_top.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\board\de10_lite_top.v
+!i122 9
+L0 24 109
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1791177984.000000
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core/../accelerator/qnn_model_config.vh|C:\FPGA\riscv_soc_de10_lite\rtl\board\de10_lite_top.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\board\de10_lite_top.v|
+!i113 1
+Z8 o-sv -work rtl_work
+Z9 !s92 -sv -work rtl_work {+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core} {+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus} {+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator}
+Z10 tCvgOpt 0
+vintel_sync_ram_1p
+R1
+Z11 !s110 1791177985
+!i10b 1
+!s100 jQmYgdMRa6F241=7192an2
+R3
+IkmIf_McI3<Gi=ldCDfV^?1
+R4
+S1
+R0
+Z12 w1790315945
+8C:\FPGA\riscv_soc_de10_lite\rtl\memory\intel_sync_ram_1p.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\memory\intel_sync_ram_1p.v
+!i122 23
+L0 11 80
+R6
+r1
+!s85 0
+31
+Z13 !s108 1791177985.000000
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\memory\intel_sync_ram_1p.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\memory\intel_sync_ram_1p.v|
+!i113 1
+R8
+R9
+R10
+vintel_sync_rom_1p
+R1
+R11
+!i10b 1
+!s100 ]T7jK0K^koKU`2ebYL5ZL3
+R3
+IoPUgZDbzDKocQe?Ygj2[Y2
+R4
+S1
+R0
+R12
+8C:\FPGA\riscv_soc_de10_lite\rtl\memory\intel_sync_rom_1p.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\memory\intel_sync_rom_1p.v
+!i122 24
+L0 11 69
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\memory\intel_sync_rom_1p.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\memory\intel_sync_rom_1p.v|
+!i113 1
+R8
+R9
+R10
+vintel_sync_rom_2p
+R1
+Z14 !s110 1791177986
+!i10b 1
+!s100 3?C[M1jEH<FTOonL[KI?U3
+R3
+IiIkia_h^DAzfRbVijkDK`0
+R4
+S1
+R0
+R12
+8C:\FPGA\riscv_soc_de10_lite\rtl\memory\intel_sync_rom_2p.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\memory\intel_sync_rom_2p.v
+!i122 25
+L0 9 82
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\memory\intel_sync_rom_2p.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\memory\intel_sync_rom_2p.v|
+!i113 1
+R8
+R9
+R10
+vqnn_soc_accelerator
+R1
+R2
+!i10b 1
+!s100 LFgOPi0NJn17XV1=Gb]BW0
+R3
+I@H>6@NUj>A[0K4nn2_Gik0
+R4
+S1
+R0
+w1790473043
+8C:\FPGA\riscv_soc_de10_lite\rtl\accelerator\qnn_soc_accelerator.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\accelerator\qnn_soc_accelerator.v
+!i122 8
+L0 35 379
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\accelerator\qnn_soc_accelerator.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\accelerator\qnn_soc_accelerator.v|
+!i113 1
+R8
+R9
+R10
+vreset_controller
+R1
+R2
+!i10b 1
+!s100 760b`XRGCYbNecnIoFLzN3
+R3
+I2KnPjkQiaVmKkeJgC0c6Z3
+R4
+S1
+R0
+w1790441094
+8C:\FPGA\riscv_soc_de10_lite\rtl\board\reset_controller.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\board\reset_controller.v
+!i122 10
+L0 9 32
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\board\reset_controller.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\board\reset_controller.v|
+!i113 1
+R8
+R9
+R10
+vrv32_alu
+R1
+R2
+!i10b 1
+!s100 L82icS6S8kNk`zzG4R>bQ1
+R3
+I8ii@4]S>TbZM<2X8^nnZ81
+R4
+S1
+R0
+R12
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\ex\rv32_alu.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\ex\rv32_alu.v
+!i122 0
+L0 24 75
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core/rv32_defs.vh|C:\FPGA\riscv_soc_de10_lite\rtl\core\ex\rv32_alu.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\ex\rv32_alu.v|
+!i113 1
+R8
+R9
+R10
+vrv32_branch_unit
+R1
+R2
+!i10b 1
+!s100 1ghoDM8[Md5:UnX_@@_HL0
+R3
+I=W12>Qfh4S3QnWbZgOBob2
+R4
+S1
+R0
+R12
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\ex\rv32_branch_unit.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\ex\rv32_branch_unit.v
+!i122 1
+L0 23 59
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core\ex\rv32_branch_unit.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\ex\rv32_branch_unit.v|
+!i113 1
+R8
+R9
+R10
+vrv32_core
+R1
+R2
+!i10b 1
+!s100 jH<;aE:G?C?GDNecXPj_62
+R3
+I3YjZ]MmzJo:zZdZ8[JBTP1
+R4
+S1
+R0
+w1790670731
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\rv32_core.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\rv32_core.v
+!i122 7
+L0 48 516
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core/rv32_defs.vh|C:\FPGA\riscv_soc_de10_lite\rtl\core\rv32_core.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\rv32_core.v|
+!i113 1
+R8
+R9
+R10
+vrv32_decoder
+R1
+R2
+!i10b 1
+!s100 cE2j;]n^31R`89`TC<C2Q2
+R3
+IZ1cS:i>cZ696afYICa:ho0
+R4
+S1
+R0
+R12
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\id\rv32_decoder.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\id\rv32_decoder.v
+!i122 2
+L0 31 326
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core/rv32_defs.vh|C:\FPGA\riscv_soc_de10_lite\rtl\core\id\rv32_decoder.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\id\rv32_decoder.v|
+!i113 1
+R8
+R9
+R10
+vrv32_ex_mem_reg
+R1
+R11
+!i10b 1
+!s100 _2NDRB^?fVKkzPng[?^M91
+R3
+I``>b7Sif_O[=KAo_z7Ch@2
+R4
+S1
+R0
+Z15 w1790670699
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\pipeline\rv32_ex_mem_reg.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\pipeline\rv32_ex_mem_reg.v
+!i122 19
+L0 8 98
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core/rv32_defs.vh|C:\FPGA\riscv_soc_de10_lite\rtl\core\pipeline\rv32_ex_mem_reg.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\pipeline\rv32_ex_mem_reg.v|
+!i113 1
+R8
+R9
+R10
+vrv32_ex_stage
+R1
+R11
+!i10b 1
+!s100 9^?==]>5We@Qh1cOk9YM]1
+R3
+IcLgP@5`j:Oh_mLK>@^KJE1
+R4
+S1
+R0
+w1790651242
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\ex\rv32_ex_stage.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\ex\rv32_ex_stage.v
+!i122 13
+L0 8 167
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core/rv32_defs.vh|C:\FPGA\riscv_soc_de10_lite\rtl\core\ex\rv32_ex_stage.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\ex\rv32_ex_stage.v|
+!i113 1
+R8
+R9
+R10
+vrv32_hazard_unit
+R1
+R2
+!i10b 1
+!s100 X1aO03P:S13F=7DIfoD:O3
+R3
+I[GB:51?hJfaC`1MN[[LP23
+R4
+S1
+R0
+Z16 w1790651128
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\control\rv32_hazard_unit.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\control\rv32_hazard_unit.v
+!i122 3
+L0 9 78
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core/rv32_defs.vh|C:\FPGA\riscv_soc_de10_lite\rtl\core\control\rv32_hazard_unit.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\control\rv32_hazard_unit.v|
+!i113 1
+R8
+R9
+R10
+vrv32_id_ex_reg
+R1
+R11
+!i10b 1
+!s100 4>3ZAi2M1WQgRKFFR@65]1
+R3
+IU:bEn^8TbC;I5HdX`_dZH0
+R4
+S1
+R0
+R15
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\pipeline\rv32_id_ex_reg.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\pipeline\rv32_id_ex_reg.v
+!i122 20
+L0 9 141
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core/rv32_defs.vh|C:\FPGA\riscv_soc_de10_lite\rtl\core\pipeline\rv32_id_ex_reg.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\pipeline\rv32_id_ex_reg.v|
+!i113 1
+R8
+R9
+R10
+vrv32_id_stage
+R1
+R11
+!i10b 1
+!s100 bQ]^Y[4eDA]>Vf>PU<RRj1
+R3
+I^K6jFM7DoMf3ig=^d4JzI3
+R4
+S1
+R0
+Z17 w1790651193
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\id\rv32_id_stage.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\id\rv32_id_stage.v
+!i122 14
+L0 8 141
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core/rv32_defs.vh|C:\FPGA\riscv_soc_de10_lite\rtl\core\id\rv32_id_stage.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\id\rv32_id_stage.v|
+!i113 1
+R8
+R9
+R10
+vrv32_if_fifo
+R1
+R11
+!i10b 1
+!s100 V89QF<kjfKj`8nE[A502N1
+R3
+IBVZah0eHn8;0mK0zY_O`11
+R4
+S1
+R0
+w1790670736
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\if\rv32_if_fifo.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\if\rv32_if_fifo.v
+!i122 15
+L0 11 105
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core\if\rv32_if_fifo.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\if\rv32_if_fifo.v|
+!i113 1
+R8
+R9
+R10
+vrv32_if_request_queue
+R1
+R11
+!i10b 1
+!s100 am2QY]1V2iRjBLaOd[=bC1
+R3
+IUN2iMP^9ab:N8elJhHB;F0
+R4
+S1
+R0
+w1790670735
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\if\rv32_if_request_queue.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\if\rv32_if_request_queue.v
+!i122 16
+L0 11 82
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core\if\rv32_if_request_queue.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\if\rv32_if_request_queue.v|
+!i113 1
+R8
+R9
+R10
+vrv32_if_stage
+R1
+R11
+!i10b 1
+!s100 VJag6]h8L2N@@dijiGoBl3
+R3
+Il7e[BZZzVgHP??03^k^gL1
+R4
+S1
+R0
+w1790741445
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\if\rv32_if_stage.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\if\rv32_if_stage.v
+!i122 17
+L0 16 252
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core/rv32_defs.vh|C:\FPGA\riscv_soc_de10_lite\rtl\core\if\rv32_if_stage.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\if\rv32_if_stage.v|
+!i113 1
+R8
+R9
+R10
+vrv32_imm_gen
+R1
+R2
+!i10b 1
+!s100 ]Xf;^^FBoL3V8RDQ2iNFF0
+R3
+Ia9>]Hh_^TebG<Co`X4Sne1
+R4
+S1
+R0
+R12
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\id\rv32_imm_gen.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\id\rv32_imm_gen.v
+!i122 4
+L0 25 62
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core/rv32_defs.vh|C:\FPGA\riscv_soc_de10_lite\rtl\core\id\rv32_imm_gen.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\id\rv32_imm_gen.v|
+!i113 1
+R8
+R9
+R10
+vrv32_lsu
+R1
+R2
+!i10b 1
+!s100 _JmR`H:EzFQnH2a?RbW950
+R3
+I1k4H3`42z<a]:LLD>LQ9[0
+R4
+S1
+R0
+R12
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\common\rv32_lsu.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\common\rv32_lsu.v
+!i122 5
+L0 32 140
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core\common\rv32_lsu.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\common\rv32_lsu.v|
+!i113 1
+R8
+R9
+R10
+vrv32_mem_stage
+R1
+R11
+!i10b 1
+!s100 Tm:1oI1LT]ooPQiE_Zo?71
+R3
+InWHD^W=d5P^3DN@ZBEad13
+R4
+S1
+R0
+R16
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\mem\rv32_mem_stage.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\mem\rv32_mem_stage.v
+!i122 18
+L0 8 99
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core/rv32_defs.vh|C:\FPGA\riscv_soc_de10_lite\rtl\core\mem\rv32_mem_stage.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\mem\rv32_mem_stage.v|
+!i113 1
+R8
+R9
+R10
+vrv32_mem_wb_reg
+R1
+R11
+!i10b 1
+!s100 ljN;kIHL=8VGPZ8?=cM3z2
+R3
+I^lNGI4Ed9:mjjl7Mdbi_21
+R4
+S1
+R0
+w1790670700
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\pipeline\rv32_mem_wb_reg.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\pipeline\rv32_mem_wb_reg.v
+!i122 21
+L0 8 78
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core/rv32_defs.vh|C:\FPGA\riscv_soc_de10_lite\rtl\core\pipeline\rv32_mem_wb_reg.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\pipeline\rv32_mem_wb_reg.v|
+!i113 1
+R8
+R9
+R10
+vrv32_pipeline_control
+R1
+R11
+!i10b 1
+!s100 K8PkKbD[H^:DTY1DB]nb=2
+R3
+I1nWdI>DSKKn9B>2?]EZ_n3
+R4
+S1
+R0
+w1790651192
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\control\rv32_pipeline_control.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\control\rv32_pipeline_control.v
+!i122 12
+L0 8 118
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core\control\rv32_pipeline_control.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\control\rv32_pipeline_control.v|
+!i113 1
+R8
+R9
+R10
+vrv32_regfile
+R1
+R2
+!i10b 1
+!s100 iSj6cHYcNjJSk@mnY`aW<1
+R3
+I>3jM00Z>`glm?6g4Q]di12
+R4
+S1
+R0
+R12
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\id\rv32_regfile.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\id\rv32_regfile.v
+!i122 6
+L0 26 76
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core\id\rv32_regfile.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\id\rv32_regfile.v|
+!i113 1
+R8
+R9
+R10
+vrv32_soc
+R1
+R14
+!i10b 1
+!s100 <UF9YSmON_DAMFnT`h2FA1
+R3
+I^K:UHUTOP3XiFaF3LOLLC2
+R4
+S1
+R0
+w1790473044
+8C:\FPGA\riscv_soc_de10_lite\rtl\soc\rv32_soc.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\soc\rv32_soc.v
+!i122 35
+L0 35 316
+R6
+r1
+!s85 0
+31
+Z18 !s108 1791177986.000000
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\bus/soc_map.vh|C:\FPGA\riscv_soc_de10_lite\rtl\soc\rv32_soc.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\soc\rv32_soc.v|
+!i113 1
+R8
+R9
+R10
+vrv32_wb_stage
+R1
+R11
+!i10b 1
+!s100 LH@[jV><c2=iYQGLj4n`52
+R3
+I;=iPoli`cP`;``Jm8MFdi3
+R4
+S1
+R0
+R17
+8C:\FPGA\riscv_soc_de10_lite\rtl\core\wb\rv32_wb_stage.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\core\wb\rv32_wb_stage.v
+!i122 22
+L0 9 93
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core/rv32_defs.vh|C:\FPGA\riscv_soc_de10_lite\rtl\core\wb\rv32_wb_stage.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\core\wb\rv32_wb_stage.v|
+!i113 1
+R8
+R9
+R10
+vsoc_bus
+R1
+R2
+!i10b 1
+!s100 [VDdWAX_9:AThOnc5V>eW0
+R3
+IGFh]8j3ADlMbD5ojRA7@@1
+R4
+S1
+R0
+Z19 w1790441197
+8C:\FPGA\riscv_soc_de10_lite\rtl\bus\soc_bus.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\bus\soc_bus.v
+!i122 11
+L0 15 123
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\bus/soc_map.vh|C:\FPGA\riscv_soc_de10_lite\rtl\bus\soc_bus.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\bus\soc_bus.v|
+!i113 1
+R8
+R9
+R10
+vsoc_gpio
+R1
+R14
+!i10b 1
+!s100 QDLWfeLf8Ci_jFXAG>R:T2
+R3
+IXcTb3Ab6im>47L`7XjE@H0
+R4
+S1
+R0
+Z20 w1790583424
+8C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_gpio.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_gpio.v
+!i122 28
+L0 13 64
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_gpio.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_gpio.v|
+!i113 1
+R8
+R9
+R10
+vsoc_i2c_master
+R1
+R14
+!i10b 1
+!s100 VZh1a5:97Bg1X[84UiAoz2
+R3
+I@<0_?RBH[^W5_9WzfgPj92
+R4
+S1
+R0
+R5
+8C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_i2c_master.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_i2c_master.v
+!i122 29
+L0 27 364
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_i2c_master.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_i2c_master.v|
+!i113 1
+R8
+R9
+R10
+vsoc_ram
+R1
+R14
+!i10b 1
+!s100 Jn9SkX1V5BJeB;zUbKDHe0
+R3
+IhK6kI9S^K<jbi_CSWA4]c3
+R4
+S1
+R0
+w1790316082
+8C:\FPGA\riscv_soc_de10_lite\rtl\memory\soc_ram.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\memory\soc_ram.v
+!i122 26
+L0 16 96
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\memory\soc_ram.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\memory\soc_ram.v|
+!i113 1
+R8
+R9
+R10
+vsoc_rom_dp
+R1
+R14
+!i10b 1
+!s100 AlN20Z6X49H4bcYEiNZEN3
+R3
+I3EN_h0CFAThOUNTf6?YP<3
+R4
+S1
+R0
+w1790316083
+8C:\FPGA\riscv_soc_de10_lite\rtl\memory\soc_rom_dp.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\memory\soc_rom_dp.v
+!i122 27
+L0 21 124
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\memory\soc_rom_dp.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\memory\soc_rom_dp.v|
+!i113 1
+R8
+R9
+R10
+vsoc_timer
+R1
+R14
+!i10b 1
+!s100 okjfPCPIW?LoA14X:4nP`1
+R3
+IcCc;0@EDYWgJbjgB75RPD2
+R4
+S1
+R0
+R20
+8C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_timer.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_timer.v
+!i122 30
+L0 15 92
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_timer.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_timer.v|
+!i113 1
+R8
+R9
+R10
+vsoc_uart
+R1
+R14
+!i10b 1
+!s100 nYoYioVNUSmBDUiJ5GIQm2
+R3
+IAo4gkC:3Y^TfRden2;64_1
+R4
+S1
+R0
+w1790583348
+8C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\uart\soc_uart.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\peripherals\uart\soc_uart.v
+!i122 32
+L0 11 108
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\uart\soc_uart.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\uart\soc_uart.v|
+!i113 1
+R8
+R9
+R10
+vsoc_uart_tx
+R1
+R14
+!i10b 1
+!s100 A6RiNU3^7N=d2[0bkX3oE2
+R3
+INUD3g;He^c`_];nFN0P5o0
+R4
+S1
+R0
+w1790439036
+8C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_uart_tx.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_uart_tx.v
+!i122 31
+L0 14 140
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_uart_tx.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\soc_uart_tx.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_alu
+R1
+R14
+!i10b 1
+!s100 4?5oflK:lnWYb_DcMW1ZG2
+R3
+IKJABMV_H2I:i4Mn8b]m?20
+R4
+S1
+R0
+w1789744148
+8C:\FPGA\riscv_soc_de10_lite\tb\core\ex\tb_rv32_alu.v
+FC:\FPGA\riscv_soc_de10_lite\tb\core\ex\tb_rv32_alu.v
+!i122 36
+L0 16 227
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\core\ex\tb_rv32_alu.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\core\ex\tb_rv32_alu.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_branch_unit
+R1
+Z21 !s110 1791177987
+!i10b 1
+!s100 <Q?oZ?JHCQ::FGBdAiY<:1
+R3
+IWVmM0A`nRfQkA8K:Yiki53
+R4
+S1
+R0
+Z22 w1789744268
+8C:\FPGA\riscv_soc_de10_lite\tb\core\ex\tb_rv32_branch_unit.v
+FC:\FPGA\riscv_soc_de10_lite\tb\core\ex\tb_rv32_branch_unit.v
+!i122 37
+L0 14 120
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\core\ex\tb_rv32_branch_unit.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\core\ex\tb_rv32_branch_unit.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_core
+R1
+R21
+!i10b 1
+!s100 IIHG>_]I70FnIT_j77D;31
+R3
+IOU;gUgfo]6I3nhbYQ7_Fa1
+R4
+S1
+R0
+w1790317369
+8C:\FPGA\riscv_soc_de10_lite\tb\core\tb_rv32_core.v
+FC:\FPGA\riscv_soc_de10_lite\tb\core\tb_rv32_core.v
+!i122 38
+L0 31 1098
+R6
+r1
+!s85 0
+31
+Z23 !s108 1791177987.000000
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\core\tb_rv32_core.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\core\tb_rv32_core.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_core_bus_wait
+R1
+R21
+!i10b 1
+!s100 2l]BKJ]WSMCSbU3_XX_T?0
+R3
+I9gPlP8XVeAQk<nM>F>QU22
+R4
+S1
+R0
+w1790441535
+8C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_core_bus_wait.v
+FC:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_core_bus_wait.v
+!i122 39
+L0 4 94
+R6
+r1
+!s85 0
+31
+R23
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_core_bus_wait.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_core_bus_wait.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_core_fetch
+R1
+R21
+!i10b 1
+!s100 W=0_IAP2F>MQ^C<>jP>JG1
+R3
+IYiQBNDGVdYaKcJohCW7?b0
+R4
+S1
+R0
+w1790251834
+8C:\FPGA\riscv_soc_de10_lite\tb\core\tb_rv32_core_fetch.v
+FC:\FPGA\riscv_soc_de10_lite\tb\core\tb_rv32_core_fetch.v
+!i122 40
+L0 5 50
+R6
+r1
+!s85 0
+31
+R23
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\core\tb_rv32_core_fetch.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\core\tb_rv32_core_fetch.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_core_ordering
+R1
+R21
+!i10b 1
+!s100 <A<jndMEkLlSZg2:2h8>13
+R3
+IB459l0?X]V4U]`j0W[;[@3
+R4
+S1
+R0
+w1790222371
+8C:\FPGA\riscv_soc_de10_lite\tb\core\tb_rv32_core_ordering.v
+FC:\FPGA\riscv_soc_de10_lite\tb\core\tb_rv32_core_ordering.v
+!i122 41
+L0 5 145
+R6
+r1
+!s85 0
+31
+R23
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\core\tb_rv32_core_ordering.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\core\tb_rv32_core_ordering.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_core_traps
+R1
+R21
+!i10b 1
+!s100 nmnkPQbn^1<@1jJz^G4l:3
+R3
+Id3mL`CzzAVc4V]C]SEgbN3
+R4
+S1
+R0
+w1790252393
+8C:\FPGA\riscv_soc_de10_lite\tb\core\tb_rv32_core_traps.v
+FC:\FPGA\riscv_soc_de10_lite\tb\core\tb_rv32_core_traps.v
+!i122 42
+L0 15 152
+R6
+r1
+!s85 0
+31
+R23
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\core\tb_rv32_core_traps.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\core\tb_rv32_core_traps.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_decoder
+R1
+R21
+!i10b 1
+!s100 8lhPRzm;IdJUaZINNW]lb3
+R3
+IdRKi9ePQbdHOVbBnc03Mc2
+R4
+S1
+R0
+Z24 w1789744314
+8C:\FPGA\riscv_soc_de10_lite\tb\core\id\tb_rv32_decoder.v
+FC:\FPGA\riscv_soc_de10_lite\tb\core\id\tb_rv32_decoder.v
+!i122 43
+L0 26 372
+R6
+r1
+!s85 0
+31
+R23
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\core/rv32_defs.vh|C:\FPGA\riscv_soc_de10_lite\tb\core\id\tb_rv32_decoder.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\core\id\tb_rv32_decoder.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_firmware_e2e
+R1
+R21
+!i10b 1
+!s100 ^1iS951N];FW]=Gk2oODE1
+R3
+IPMkKf9Aj[19Z4`PJ[_dGX0
+R4
+S1
+R0
+w1790495481
+8C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_firmware_e2e.sv
+FC:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_firmware_e2e.sv
+!i122 44
+L0 6 212
+R6
+r1
+!s85 0
+31
+R23
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\accelerator/qnn_model_config.vh|C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_firmware_e2e.sv|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_firmware_e2e.sv|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_gpio
+R1
+R21
+!i10b 1
+!s100 3Hm7b@J_VCIEkbboV5O2z1
+R3
+IKHHSob7=SNf<Db50_ROD22
+R4
+S1
+R0
+w1790441199
+8C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_gpio.v
+FC:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_gpio.v
+!i122 45
+L0 4 61
+R6
+r1
+!s85 0
+31
+R23
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_gpio.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_gpio.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_hazard_unit
+R1
+R21
+!i10b 1
+!s100 jcN1o>@>]SF2HhVShS<;90
+R3
+Im^iYnMM4cBHCSZhb@JHE02
+R4
+S1
+R0
+w1789743943
+8C:\FPGA\riscv_soc_de10_lite\tb\core\control\tb_rv32_hazard_unit.v
+FC:\FPGA\riscv_soc_de10_lite\tb\core\control\tb_rv32_hazard_unit.v
+!i122 46
+L0 12 160
+R6
+r1
+!s85 0
+31
+R23
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\core\control\tb_rv32_hazard_unit.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\core\control\tb_rv32_hazard_unit.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_i2c_master
+R1
+R21
+!i10b 1
+!s100 VUd<]0FZTS=938>TKkmF40
+R3
+I^eh3V44Hh`c>YXMOKkG_X2
+R4
+S1
+R0
+R19
+8C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_i2c_master.v
+FC:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_i2c_master.v
+!i122 47
+L0 16 167
+R6
+r1
+!s85 0
+31
+R23
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_i2c_master.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_i2c_master.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_i2c_recovery
+R1
+R21
+!i10b 1
+!s100 PN1?AJlHe1ASMAf=^inH82
+R3
+I5JPbPcd6[m_MK6j42`VWh1
+R4
+S1
+R0
+R19
+8C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_i2c_recovery.v
+FC:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_i2c_recovery.v
+!i122 48
+L0 4 154
+R6
+r1
+!s85 0
+31
+R23
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_i2c_recovery.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_i2c_recovery.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_i2c_transactions
+R1
+Z25 !s110 1791177988
+!i10b 1
+!s100 mKmGKGdo_D45zP_h71Dcd2
+R3
+IWW[G6RWioDaOndi3ZeOkf0
+R4
+S1
+R0
+R19
+8C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_i2c_transactions.v
+FC:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_i2c_transactions.v
+!i122 49
+L0 5 190
+R6
+r1
+!s85 0
+31
+R23
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_i2c_transactions.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_i2c_transactions.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_if_stage
+R1
+R25
+!i10b 1
+!s100 N==o<HSOIBJ2[2?5]Z3Fi3
+R3
+I_PTa8U>NMZB_0nijgQ;mK2
+R4
+S1
+R0
+w1790251833
+8C:\FPGA\riscv_soc_de10_lite\tb\core\if\tb_rv32_if_stage.v
+FC:\FPGA\riscv_soc_de10_lite\tb\core\if\tb_rv32_if_stage.v
+!i122 50
+L0 4 267
+R6
+r1
+!s85 0
+31
+Z26 !s108 1791177988.000000
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\core\if\tb_rv32_if_stage.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\core\if\tb_rv32_if_stage.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_imm_gen
+R1
+R25
+!i10b 1
+!s100 S:;GK7za;a?[H>942`VjQ2
+R3
+IgXJ;Ti;3JDBGKB]0>Pia81
+R4
+S1
+R0
+w1789744267
+8C:\FPGA\riscv_soc_de10_lite\tb\core\id\tb_rv32_imm_gen.v
+FC:\FPGA\riscv_soc_de10_lite\tb\core\id\tb_rv32_imm_gen.v
+!i122 51
+L0 16 165
+R6
+r1
+!s85 0
+31
+R26
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\core\id\tb_rv32_imm_gen.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\core\id\tb_rv32_imm_gen.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_lsu
+R1
+R25
+!i10b 1
+!s100 Uc94046?Z;>mbRRzzChHJ0
+R3
+I4h5e6G7>lLf3[b8>Q_d8J1
+R4
+S1
+R0
+R22
+8C:\FPGA\riscv_soc_de10_lite\tb\core\common\tb_rv32_lsu.v
+FC:\FPGA\riscv_soc_de10_lite\tb\core\common\tb_rv32_lsu.v
+!i122 52
+L0 17 270
+R6
+r1
+!s85 0
+31
+R26
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\core\common\tb_rv32_lsu.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\core\common\tb_rv32_lsu.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_qnn_model
+R1
+R25
+!i10b 1
+!s100 _]HNSc5?h5UizG@>=H0B`2
+R3
+ITkKblC==?PnCP_bBSS>]o3
+R4
+S1
+R0
+w1789861379
+8C:\FPGA\riscv_soc_de10_lite\tb\accelerator\tb_rv32_qnn_model.v
+FC:\FPGA\riscv_soc_de10_lite\tb\accelerator\tb_rv32_qnn_model.v
+!i122 53
+L0 20 114
+R6
+r1
+!s85 0
+31
+R26
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\accelerator/qnn_model_config.vh|C:\FPGA\riscv_soc_de10_lite\tb\accelerator\tb_rv32_qnn_model.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\accelerator\tb_rv32_qnn_model.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_qnn_soc_accelerator
+R1
+R25
+!i10b 1
+!s100 Wl8H9zfCTXGdXg:S>HfKZ0
+R3
+IQ4B39]@6G3<_mldjMa2360
+R4
+S1
+R0
+w1790440454
+8C:\FPGA\riscv_soc_de10_lite\tb\accelerator\tb_rv32_qnn_soc_accelerator.v
+FC:\FPGA\riscv_soc_de10_lite\tb\accelerator\tb_rv32_qnn_soc_accelerator.v
+!i122 54
+L0 15 141
+R6
+r1
+!s85 0
+31
+R26
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\accelerator\tb_rv32_qnn_soc_accelerator.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\accelerator\tb_rv32_qnn_soc_accelerator.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_regfile
+R1
+R25
+!i10b 1
+!s100 n@FD>^ZkLTYNQChD67m>g3
+R3
+IbUfQDTZK9VD:>ZQelA2I02
+R4
+S1
+R0
+R24
+8C:\FPGA\riscv_soc_de10_lite\tb\core\id\tb_rv32_regfile.v
+FC:\FPGA\riscv_soc_de10_lite\tb\core\id\tb_rv32_regfile.v
+!i122 55
+L0 21 395
+R6
+r1
+!s85 0
+31
+R26
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\core\id\tb_rv32_regfile.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\core\id\tb_rv32_regfile.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_reset_controller
+R1
+R25
+!i10b 1
+!s100 On29;h[:5WUI6ilD4^nk;0
+R3
+IRn2?dd:127_:KDcn=Aza42
+R4
+S1
+R0
+R19
+8C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_reset_controller.v
+FC:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_reset_controller.v
+!i122 56
+L0 3 42
+R6
+r1
+!s85 0
+31
+R26
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_reset_controller.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_reset_controller.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_soc
+R1
+R25
+!i10b 1
+!s100 PkjZdj8UdJ59`6XjhJL[62
+R3
+Im4iE^HA^B<Rl1@]87kn1N2
+R4
+S1
+R0
+R19
+8C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_soc.v
+FC:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_soc.v
+!i122 57
+L0 14 132
+R6
+r1
+!s85 0
+31
+R26
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_soc.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_soc.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_soc_bus
+R1
+R25
+!i10b 1
+!s100 ;g@kaUi0^B6<_l=zKDDF60
+R3
+Idg9Yff`KV@P;;:i0DEK5_2
+R4
+S1
+R0
+R19
+8C:\FPGA\riscv_soc_de10_lite\tb\bus\tb_rv32_soc_bus.v
+FC:\FPGA\riscv_soc_de10_lite\tb\bus\tb_rv32_soc_bus.v
+!i122 58
+L0 4 123
+R6
+r1
+!s85 0
+31
+R26
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\bus\tb_rv32_soc_bus.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\bus\tb_rv32_soc_bus.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_soc_mmio
+R1
+R25
+!i10b 1
+!s100 4a7oOI4;8hD_nadhhd@i91
+R3
+IP?OHo=MGYBUM4O2aMdfDd0
+R4
+S1
+R0
+w1790441506
+8C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_soc_mmio.v
+FC:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_soc_mmio.v
+!i122 59
+L0 5 87
+R6
+r1
+!s85 0
+31
+R26
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_soc_mmio.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_soc_mmio.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_soc_ram
+R1
+R25
+!i10b 1
+!s100 B?Re786hZTUU0fDEdVBDf3
+R3
+IgE5l[FE2mmdd:LYR8ngUY0
+R4
+S1
+R0
+w1789960226
+8C:\FPGA\riscv_soc_de10_lite\tb\memory\tb_rv32_soc_ram.v
+FC:\FPGA\riscv_soc_de10_lite\tb\memory\tb_rv32_soc_ram.v
+!i122 60
+L0 11 104
+R6
+r1
+!s85 0
+31
+R26
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\memory\tb_rv32_soc_ram.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\memory\tb_rv32_soc_ram.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_soc_rom
+R1
+Z27 !s110 1791177989
+!i10b 1
+!s100 a9fN6AI69C4j1>T[08_EF3
+R3
+IF<O31JQdf^?5<a8D_WIke3
+R4
+S1
+R0
+w1790251929
+8C:\FPGA\riscv_soc_de10_lite\tb\memory\tb_rv32_soc_rom.v
+FC:\FPGA\riscv_soc_de10_lite\tb\memory\tb_rv32_soc_rom.v
+!i122 61
+L0 5 100
+R6
+r1
+!s85 0
+31
+R26
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\memory\tb_rv32_soc_rom.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\memory\tb_rv32_soc_rom.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_soc_uart_rx
+R1
+R27
+!i10b 1
+!s100 3?jUnUQko@JnEHSLQAMJ]2
+R3
+I`f@B6Se55EBecegh=kO<i0
+R4
+S1
+R0
+w1790441445
+8C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_soc_uart_rx.v
+FC:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_soc_uart_rx.v
+!i122 62
+L0 4 39
+R6
+r1
+!s85 0
+31
+Z28 !s108 1791177989.000000
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_soc_uart_rx.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\soc\tb_rv32_soc_uart_rx.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_timer
+R1
+R27
+!i10b 1
+!s100 0m<e_K2Ra?HmQ0@@z@fRk2
+R3
+IoS_M`]eCQhDaHaQFe<d^43
+R4
+S1
+R0
+R19
+8C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_timer.v
+FC:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_timer.v
+!i122 63
+L0 4 78
+R6
+r1
+!s85 0
+31
+R28
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_timer.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_timer.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_uart_fifo
+R1
+R27
+!i10b 1
+!s100 PdomiFnU]4HNPH7m=]aD[1
+R3
+I38<>AXc1lnfzk3TQfT_TM3
+R4
+S1
+R0
+w1790323721
+8C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_uart_fifo.v
+FC:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_uart_fifo.v
+!i122 64
+L0 5 98
+R6
+r1
+!s85 0
+31
+R28
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_uart_fifo.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_uart_fifo.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_uart_rx
+R1
+R27
+!i10b 1
+!s100 Kj9:P08Hc`7<4FCXL5=`31
+R3
+IG4O[o49g4=l1=^@bVcMaI0
+R4
+S1
+R0
+w1790441308
+8C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_uart_rx.v
+FC:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_uart_rx.v
+!i122 65
+L0 4 112
+R6
+r1
+!s85 0
+31
+R28
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_uart_rx.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_uart_rx.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_uart_rx_fifo
+R1
+R27
+!i10b 1
+!s100 [5o^FRGo@Xbgh<[8>UaoH0
+R3
+Iz5TLhiVR:Vbo?3`b:ao=c2
+R4
+S1
+R0
+w1790441309
+8C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_uart_rx_fifo.v
+FC:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_uart_rx_fifo.v
+!i122 66
+L0 3 35
+R6
+r1
+!s85 0
+31
+R28
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_uart_rx_fifo.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_uart_rx_fifo.v|
+!i113 1
+R8
+R9
+R10
+vtb_rv32_uart_tx
+R1
+R27
+!i10b 1
+!s100 0]5oRk69h5IHZHYRV>Zdm1
+R3
+I;B73X_gNSV<4CoMk_8l712
+R4
+S1
+R0
+w1790323500
+8C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_uart_tx.v
+FC:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_uart_tx.v
+!i122 67
+L0 4 67
+R6
+r1
+!s85 0
+31
+R28
+!s107 C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_uart_tx.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\tb\peripherals\tb_rv32_uart_tx.v|
+!i113 1
+R8
+R9
+R10
+vuart_rx
+R1
+R14
+!i10b 1
+!s100 zG`3K4i6bFA26<BH@Q?L]1
+R3
+IBaEV^UP1k==Qd1eh^l2B62
+R4
+S1
+R0
+Z29 w1790583349
+8C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\uart\uart_rx.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\peripherals\uart\uart_rx.v
+!i122 33
+L0 10 114
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\uart\uart_rx.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\uart\uart_rx.v|
+!i113 1
+R8
+R9
+R10
+vuart_rx_fifo
+R1
+R14
+!i10b 1
+!s100 RPe9A:T:B9Fi4eEBPkC:23
+R3
+IQ^^Gb1E1G71CBRoM;mN^c2
+R4
+S1
+R0
+R29
+8C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\uart\uart_rx_fifo.v
+FC:\FPGA\riscv_soc_de10_lite\rtl\peripherals\uart\uart_rx_fifo.v
+!i122 34
+L0 10 57
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\uart\uart_rx_fifo.v|
+!s90 -sv|-work|rtl_work|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\core|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\bus|+incdir+C:\FPGA\riscv_soc_de10_lite\rtl\accelerator|C:\FPGA\riscv_soc_de10_lite\rtl\peripherals\uart\uart_rx_fifo.v|
+!i113 1
+R8
+R9
+R10

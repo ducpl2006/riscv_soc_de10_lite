@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : 1.715
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'core_soc_cnn|axi_top|vga_slave|vga_core|u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 6.160
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'core_soc_cnn|axi_top|vga_slave|vga_core|u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.309
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.541
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'core_soc_cnn|axi_top|vga_slave|vga_core|u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.683
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : 3.217
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'core_soc_cnn|axi_top|vga_slave|vga_core|u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7.500
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'core_soc_cnn|axi_top|vga_slave|vga_core|u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.261
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.569
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'core_soc_cnn|axi_top|vga_slave|vga_core|u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.698
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : 12.115
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'core_soc_cnn|axi_top|vga_slave|vga_core|u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 14.073
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'core_soc_cnn|axi_top|vga_slave|vga_core|u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.400
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'core_soc_cnn|axi_top|vga_slave|vga_core|u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.715
+TNS   : 0.000
+
+------------------------------------------------------------

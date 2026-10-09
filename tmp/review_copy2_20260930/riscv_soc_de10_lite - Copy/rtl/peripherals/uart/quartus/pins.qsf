@@ -1,0 +1,22 @@
+# File này chủ ý chưa có gán chân cho đến khi xác định dây nối thực tế.
+# Thay mọi chỗ <...> bên dưới bằng giá trị đã đối chiếu với tài liệu/schematic
+# DE10-Lite chính thức trước khi chạy fitter hoặc programmer.
+
+# set_location_assignment <CLOCK_50_PIN> -to CLOCK_50
+# set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50
+
+# set_location_assignment <KEY0_PIN> -to KEY[0]
+# set_location_assignment <KEY1_PIN> -to KEY[1]
+# set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to KEY[0]
+# set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to KEY[1]
+
+# Chọn hai chân header phù hợp với điện áp và dây nối UART bên ngoài.
+# set_location_assignment <UART_RX_GPIO_PIN> -to GPIO_UART_RX
+# set_location_assignment <UART_TX_GPIO_PIN> -to GPIO_UART_TX
+# set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_UART_RX
+# set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_UART_TX
+
+# Thêm LEDR[0] đến LEDR[9] từ template gán chân DE10-Lite chính thức.
+# Ví dụ cú pháp bên dưới không phải vị trí chân thật:
+# set_location_assignment <LEDR0_PIN> -to LEDR[0]
+# set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[0]
